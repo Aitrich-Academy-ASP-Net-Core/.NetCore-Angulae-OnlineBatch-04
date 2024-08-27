@@ -1,5 +1,3 @@
 git --version<to check the currently installed versionlient-Server Communication
 
-1. What is a RESTful API, and how does it facilitate client-server communication?
 
-A RESTful API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (such as GET, POST, PUT, DELETE) to perform operations on resources, which are typically represented as URLs.
