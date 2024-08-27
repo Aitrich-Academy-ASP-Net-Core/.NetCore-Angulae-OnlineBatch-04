@@ -1,0 +1,9 @@
+git commands
+
+git clone file path
+git add folder name
+
+git commit -m "text"
+
+git pull
+git push
