@@ -1,0 +1,18 @@
+git --version  →check the current version of Git installed
+
+git clone <paste remote repository link>
+     →to create a copy of a Git repository on your local machine.
+
+git add<file name. Extension>
+        →to stage changes in your working directory for the next commit in Git.
+
+git commit -m "what changes you have made"     →to save staged changes to the local repository. 
+
+git pull   →to update your local repository with changes from a remote repository.
+
+git push  →to upload your local repository commits to a remote repository.
+
+
+git config  →to set name and email address which will be associated with your commits
+git config --global user.name "your name"
+git config --global user.email "your email"
