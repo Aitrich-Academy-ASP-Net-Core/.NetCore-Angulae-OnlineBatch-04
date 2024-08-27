@@ -8,3 +8,8 @@ HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that provides
 	•	Authentication: HTTPS verifies the identity of the server, ensuring that the client is communicating with the intended server and not a malicious one.
 	•	Data Integrity: HTTPS ensures that the data sent between the client and server has not been altered during transmission.
 
+lient-Server Communication
+
+1. What is a RESTful API, and how does it facilitate client-server communication?
+
+A RESTful API (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services. It uses standard HTTP methods (such as GET, POST, PUT, DELETE) to perform operations on resources, which are typically represented as URLs.
