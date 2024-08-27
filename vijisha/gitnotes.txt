@@ -1,3 +1,8 @@
-git --version<to check the currently installed versionlient-Server Communication
+What is Git?
+Git [Global Information Tracker] is a powerful version control system widely used for software development and other collaborative projects. GIT allows multiple developers to work on a project simultaneously while ensuring that their changes do not interfere with one another.
+
+
+
+git --version<to check the currently installed versioning-Server Communication
 
 
