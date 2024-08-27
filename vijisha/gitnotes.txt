@@ -1,0 +1,10 @@
+HTTPS vs HTTP
+
+1. What is HTTPS, and how does it differ from HTTP?
+
+HTTPS (Hypertext Transfer Protocol Secure) is an extension of HTTP that provides a secure communication channel over the internet by encrypting the data transmitted between the client and server. HTTPS differs from HTTP in the following ways:
+
+	•	Encryption: HTTPS uses SSL/TLS (Secure Sockets Layer / Transport Layer Security) to encrypt the data, making it difficult for attackers to intercept or tamper with the information.
+	•	Authentication: HTTPS verifies the identity of the server, ensuring that the client is communicating with the intended server and not a malicious one.
+	•	Data Integrity: HTTPS ensures that the data sent between the client and server has not been altered during transmission.
+
