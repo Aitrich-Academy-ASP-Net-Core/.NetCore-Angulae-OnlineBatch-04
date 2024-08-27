@@ -1,6 +1,6 @@
 GitHub is a code hosting platform for collaboration and version control.
 
-GitHubGitHub essentials are:
+GitHub essentials are:
 
 *Repositories
 
