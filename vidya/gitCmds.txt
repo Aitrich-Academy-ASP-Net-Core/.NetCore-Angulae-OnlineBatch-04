@@ -7,3 +7,13 @@ git commit -m "text"
 
 git pull
 git push
+
+git switch vidya
+
+git clone file path
+git add folder name
+
+git commit -m "text"
+
+git pull
+git push
