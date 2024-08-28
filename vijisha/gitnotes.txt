@@ -1,4 +1,0 @@
-HTTPS vs HTTP
-
-1. What is HTTPS, and how does it differ from HTTP?
-
