@@ -1,0 +1,8 @@
+git commands
+
+git clone <path>
+git add <file name>
+git commit -m "text inserted"
+git pull
+git push
+git add .

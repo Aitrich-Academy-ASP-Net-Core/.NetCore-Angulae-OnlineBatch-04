@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 What is Git?
 Git [Global Information Tracker] is a powerful version control system widely used for software development and other collaborative projects. GIT allows multiple developers to work on a project simultaneously while ensuring that their changes do not interfere with one another.
 
@@ -26,3 +27,5 @@ These commands are the basics to get started with Git.
 git --version<to check the currently installed versioning-Server Communication
 
 
+=======
+>>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
