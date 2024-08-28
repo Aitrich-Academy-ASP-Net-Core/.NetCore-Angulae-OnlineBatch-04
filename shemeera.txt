@@ -1,0 +1,4 @@
+Git is a version control tool used for source code management.
+it is free and open source version control system and used to
+handle small to very large projects. Git makes branching and 
+merging code seamless.

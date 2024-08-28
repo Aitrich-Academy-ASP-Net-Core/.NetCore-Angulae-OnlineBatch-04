@@ -1,6 +1,7 @@
 Git is a version control tool used for source code management.
 it is free and open source version control system and used to
 handle small to very large projects. Git makes branching and 
+<<<<<<< HEAD
 merging code seamless.
 
     GIT COMMANDS:                          DESCRIPTION:
@@ -23,3 +24,6 @@ merging code seamless.
 
    Git commit                              This commands records the changes made to the 
                                            repository
+=======
+merging code seamless.
+>>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
