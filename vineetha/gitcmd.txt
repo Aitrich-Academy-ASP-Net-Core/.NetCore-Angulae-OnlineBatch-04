@@ -6,4 +6,4 @@ git add folder name
 git commit -m "text"
 
 git pull
-git push .
+git push
