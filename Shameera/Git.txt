@@ -1,4 +1,33 @@
 Git is a version control tool used for source code management.
 it is free and open source version control system and used to
 handle small to very large projects. Git makes branching and 
+<<<<<<< HEAD
 merging code seamless.
+=======
+<<<<<<< HEAD
+merging code seamless.
+
+    GIT COMMANDS:                          DESCRIPTION:
+    
+    Git clone                              It is used to make local copy of a remote repository
+     
+    Git status                             This commands returns current state of the repository
+
+    Git add                                This commands adds a change in the working directory 
+                                           to the staying area
+
+    Git push                               It is used to upload local repository content to a 
+                                           remote repository
+     
+    Git pull                               This command is used to update the local version of
+                                           repository from a remote
+
+    Git config                             The git config command used to enter the login and 
+                                           email addresses you want to be associated
+
+   Git commit                              This commands records the changes made to the 
+                                           repository
+=======
+merging code seamless.
+>>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
+>>>>>>> 0b37dc9e90959e335b442514f8b7976896c80b54

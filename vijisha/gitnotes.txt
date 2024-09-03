@@ -1,4 +1,34 @@
-HTTPS vs HTTP
+<<<<<<< HEAD
+What is Git?
+Git [Global Information Tracker] is a powerful version control system widely used for software development and other collaborative projects. GIT allows multiple developers to work on a project simultaneously while ensuring that their changes do not interfere with one another.
 
-1. What is HTTPS, and how does it differ from HTTP?
+What is Git?
+powerful version control system widely used for software development and other collaborative projects. GIT allows multiple developers to work on a project simultaneously while ensuring that their changes do not interfere with one another.
 
+<<<<<<< HEAD
+=======
+
+
+Common Git Commands:
+git --version: This command will output the version number of Git installed .
+git clone <repository>: Creates a copy of an existing Git repository to your local machine.
+git add <file>: Stages changes (new or modified files) for the next commit.
+git commit -m "<message>": Commits the staged changes to the repository with a descriptive message.
+git status: Shows the status of changes in the working directory and staging area.
+git log: Displays the commit history.
+git branch: Lists all branches in the repository.
+git checkout <branch>: Switches to a different branch.
+git merge <branch>: Merges changes from another branch into the current branch.
+git pull: Fetches and integrates changes from a remote repository to your local branch.
+git push: Uploads local commits to a remote repository.
+git remote: Manages the set of repositories ("remotes") that your project is tracking.
+git fetch: Downloads objects and refs from another repository.
+git rebase <branch>: Reapplies commits on top of another base branch.
+These commands are the basics to get started with Git.
+
+git --version<to check the currently installed versioning-Server Communication
+
+
+=======
+>>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
+>>>>>>> 0b37dc9e90959e335b442514f8b7976896c80b54
