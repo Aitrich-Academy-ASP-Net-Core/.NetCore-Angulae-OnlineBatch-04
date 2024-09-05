@@ -6,4 +6,18 @@ git add folder name
 git commit -m "text"
 
 git pull
+<<<<<<< HEAD
+git push
+
+git switch vidya
+
+git clone file path
+git add folder name
+
+git commit -m "text"
+
+git pull
+git push
+=======
 git push .
+>>>>>>> 0b37dc9e90959e335b442514f8b7976896c80b54

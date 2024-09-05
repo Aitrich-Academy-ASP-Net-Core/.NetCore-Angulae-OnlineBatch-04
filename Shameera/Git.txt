@@ -3,6 +3,9 @@ it is free and open source version control system and used to
 handle small to very large projects. Git makes branching and 
 <<<<<<< HEAD
 merging code seamless.
+=======
+<<<<<<< HEAD
+merging code seamless.
 
     GIT COMMANDS:                          DESCRIPTION:
     
@@ -27,3 +30,4 @@ merging code seamless.
 =======
 merging code seamless.
 >>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
+>>>>>>> 0b37dc9e90959e335b442514f8b7976896c80b54

@@ -5,6 +5,8 @@ Git [Global Information Tracker] is a powerful version control system widely use
 What is Git?
 powerful version control system widely used for software development and other collaborative projects. GIT allows multiple developers to work on a project simultaneously while ensuring that their changes do not interfere with one another.
 
+<<<<<<< HEAD
+=======
 
 
 Common Git Commands:
@@ -29,3 +31,4 @@ git --version<to check the currently installed versioning-Server Communication
 
 =======
 >>>>>>> d33da5d4c5c5af822e1eecc4e14451c129395a6a
+>>>>>>> 0b37dc9e90959e335b442514f8b7976896c80b54
