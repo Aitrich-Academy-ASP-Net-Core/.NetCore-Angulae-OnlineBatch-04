@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating a contact form[form....>labelfor,input type..id..value..,(text,email,password,messages{textarea},submit)</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name"name="name"required><br><br>
+        <label for="Email">Email:</label>
+        <input type="email"id="email"name="email"required><br><br>
+        <label for="Messages">Messages:</label>
+        <textarea id="Messages"name="messages" rows="4" cols="50"required></textarea><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <h1>Selecting Preffered Option[checkbox & Radio button]</h1>
+    <form>
+        <label>preffered programming languages:</label>
+        <input type="checkbox"id="name"name="languages"value="java">
+        <label for="java">JAVA</label>
+        <input type="checkbox" id="name"name="language"value="python">
+        <label for="python">python</label>
+        <input type="checkbox" id="name" name="language" value="Asp.Net">
+        <label for="Asp.Net">Asp.Net</label><br><br><br>
+
+        <label >prefered programming language</label><br>
+        <input type="radio" id="windows" name="os" value="windows">
+        <label for="windows">windows</label><br>
+        <input type="radio" id="linux" name="os" value="linux">
+        <label for="linux">linux</label><br>
+        <input type="radio" id="Mac" name="os" value="Macos">
+        <label for="Mac">Mac</label>
+    </form>
+    <h1>Ordering Pizza With Dropbox{select,(option)}</h1>
+    <form>
+        <label for="size">size</label>
+        <select id="size" name="size">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="big">Large</select>
+        </select><br><br>
+
+
+        <label for="crust">Crust Type:</label>
+        <select id="crust">
+            <option value="thin">Thin Crust</option>
+            <option value="thick crust">Thick</option>
+            <option value="stuffed crust">Stuffed</option>
+        </select><br><br>
+
+
+        <label for="Toppigs"> Toppings</label><br><br>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="Pepperoni">pepperoni</label><br><br>
+        <input type="checkbox" id="name" name="toppings" value="mushrooms">
+        <label for="mushrooms">mushrooms</label><br><br>
+        <input type="checkbox" id="name" name="toppings" value="olives">
+        <label for="olives">Olives</label>
+
+    </form>
+</body>
+</html>
