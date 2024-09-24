@@ -1,0 +1,44 @@
+
+
+#content{ 
+    text-align: center;
+     font-weight: lighter;
+     float: left;
+    background-color:#347deb;
+    width: 250px;
+    height: 550px;
+}
+
+#side{ text-align: center;
+      
+    float: left;
+    background-color:lightgray;
+    width: 800px;
+    height: 550px;
+}
+
+h2{ padding-top: 20px; 
+    border:2px solid #347deb;
+    background-color: white;
+    height: 60px;
+    text-align: center;
+    margin-top: 2px;
+    color:  #347deb;
+         
+}
+
+h3{  color: white;
+    padding-top: 20px;
+    border:2px solid rgb(78, 78, 247);
+    height: 50px;
+}
+
+h1{  
+    padding-top: 20px;
+    text-align: center;
+    color: red;
+    border: 1px solid white;
+    width: 250px;
+    height: 80px;
+    margin-left: 300px;
+}
