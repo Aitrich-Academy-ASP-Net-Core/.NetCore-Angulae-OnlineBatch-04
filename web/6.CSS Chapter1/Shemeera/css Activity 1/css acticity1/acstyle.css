@@ -1,0 +1,41 @@
+#parent{
+    width: 50%;
+    height: 350px;
+    background-color: rgb(188, 179, 169);
+    text-align: center;
+   margin-bottom: 10px;
+   border: 1px;
+}
+#child1{
+    background-color:white;
+    width: 20%;
+    height: 80px;
+
+}
+#child2{background-color: blue;
+width: 20%;
+height: 320px; 
+
+}
+
+
+
+#parent1{
+    width: 50%;
+    height: 400px;
+    background-color: rgb(188, 179, 169);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px;
+}
+#ch1{
+    background-color:white;
+    width: 20%;
+    height: 80px;
+    
+}
+#ch2{background-color: blue;
+width: 20%;
+height: 320px;
+}
+
