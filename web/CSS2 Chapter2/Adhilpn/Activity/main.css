@@ -203,3 +203,34 @@
     left: 20px;
 
 }
+.head{
+    border-color: white;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+}
+.data{
+    
+    border-top: white;    
+    border-bottom: solid white;
+    border-bottom-width:5px ;
+    border-left:solid ;
+    border-right:solid ;
+    border-left-color: #e9e9e9;
+    border-right-color:#e9e9e9 ;
+    
+}
+#data1{
+    border-right-style: double ;
+    border-right-width: 4px;
+    border-right-color:#e9e9e9 ;
+}
+.blue{
+    border-bottom-color:#077dff ;
+    border-bottom-width:3px ;
+    border-left:solid ;
+    border-right:solid ;
+    border-left-color: #e9e9e9;
+    border-right-color:#e9e9e9 ;
+   
+}
+

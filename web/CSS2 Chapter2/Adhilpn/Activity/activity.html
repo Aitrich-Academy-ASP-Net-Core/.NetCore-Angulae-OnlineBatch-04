@@ -19,10 +19,7 @@
             padding: 10px ;
             border-radius: 10px;
         }
-        th{
-            border-radius: 20px;
-            border-color: white;
-        }
+        
         .box{
             padding: 20px;
             border: solid;
@@ -213,32 +210,32 @@
 
     <!--Qn3-->
     <h2>Student Scores</h2>
-    <table class="scores"  cellpadding="20px" border="1" style="border-collapse: collapse;"  cellspacing="10px">
-        <tr style="border: none;background-color: aliceblue;border-radius: 10px;">
-            <th >Name</th>
-            <th>Math</th>
-            <th>Science</th>
-            <th>English</th>
+    <table class="scores"  border="1"  style="border-collapse: collapse;""  >
+        <tr class="head" >
+            <th class="head">Name</th>
+            <th class="head">Math</th>
+            <th class="head">Science</th>
+            <th class="head">English</th>
         </tr>
 
-        <tr style="border-bottom: white;" >
-            <td >John</td>
-            <td >85</td>
-            <td >92</td>
-            <td >78</td>
+        <tr class="row1">
+            <td class="data" id="data1" style="color: #077dff;">John</td>
+            <td class="data" id="data1">85</td>
+            <td class="data" id="data1">92</td>
+            <td class="data" >78</td>
         </tr>
-        <tr style="border-bottom: white;">
-            <td >Alice</td>
-            <td >75</td>
-            <td>88</td>
-            <td >95</td>
+        <tr class="row2">
+            <td class="data" id="data1" style="color: #077dff;">Alice</td>
+            <td class="data" id="data1">75</td>
+            <td class="data" id="data1">88</td>
+            <td class="data">95</td>
         </tr>
 
-        <tr style="border-bottom: blue;">
-            <td >Micheal</td>
-            <td >90</td>
-            <td >85</td>
-            <td >88</td>
+        <tr class="row3">
+            <td class="blue" id="data1" style="color: #077dff;">Micheal</td>
+            <td class="blue" id="data1">90</td>
+            <td class="blue" id="data1">85</td>
+            <td class="blue" >88</td>
         </tr>
     </table>
     <br>
@@ -292,7 +289,7 @@
 
         <div class="email"><img src="./images/Google.jpeg" alt="Google" width="50px" id="google"><a href="#" id="login">Log in with Google</a></div>
 
-        <p style="position: relative; left: 170px;">OR LOGIN WITH E-MAIL</p>
+        <p style="position: relative; left: 170px; color: silver;">OR LOGIN WITH E-MAIL</p>
 
         <input type="email" placeholder="Your Email" id="emaill" ><br><br>
 
