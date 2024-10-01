@@ -1,0 +1,205 @@
+.email{
+    
+    border: solid;
+    border-top-style: none ;
+   border-bottom-style: outset;
+   border-right-style: ridge;
+   border-left-style: ridge;
+   padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+#google{
+    position: relative;
+    right :150px
+}
+#login{
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+}
+#emaill{
+    width: 500px;
+    padding: 10px;
+}
+#pass{
+    width: 500px;
+    padding: 10px;
+}
+
+#Log_in{
+    width: 520px;
+    padding: 10px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+}
+#welcome{
+    position: relative;
+    left: 200px;
+}
+#comp{
+    position: relative;
+    left: 240px;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.page3{
+    height: 700px;
+    background-color: aliceblue;
+    margin-top: 40px;
+}
+.dashboard{
+    background-color: #117ebd;
+    height: 700px;
+    width: 350px;
+    position: relative;
+}
+#hire{
+    font-size: 50px;
+    font-weight: bolder;
+    padding-top: 40px;
+    margin-left: 15px;
+    color: white;
+}
+.dashboard_ul{
+    margin-top: 100px;
+    color: white;
+    font-size: 30px;
+}
+#hoem{
+    
+    margin-left: 60px;
+    list-style-image: url(./images/dashboard\ 1\ \(1\).png);
+    margin-bottom: 20px;
+    
+    
+    
+}
+#Jobs{
+    margin-left: 60px;
+    list-style-image: url(./images/suitcase\ 2.png);
+    margin-bottom: 20px;
+}
+#Applications{
+    margin-left: 60px;
+    list-style-image: url(./images/application\ \(1\)\ 1.png);
+    margin-bottom: 20px;
+}
+#Interviews{
+    margin-left: 60px;
+    list-style-image: url(./images/question\ \(1\)\ 1.png);
+    margin-bottom: 20px;
+}
+#Message{
+    margin-left: 60px;
+    list-style-image: url(./images/message\ 1.png);
+    margin-bottom: 20px;
+}
+.main{
+    position: relative;
+    bottom: 600px;
+    left: 500px;
+    border: solid;
+    border-radius: 10px;
+    width: 800px;
+    border-color: silver;
+    height: 550px;
+}
+#profile{
+    border-radius: 50%;
+    position: relative;
+    left: 330px;
+    width: 150px;
+    margin-top: 30px;
+}
+.pos{
+    position: relative;
+    left: 190px;
+}
+#company{
+    position: relative;
+    color: silver;
+    left: 350px;
+}
+#Designation{
+    position: relative;
+    color: silver;
+    left: 365px;
+    top: 4px;
+}
+.info{
+    color: silver;
+    margin-left: 150px;
+    font-size: large;
+    
+}
+.page4{
+    border: solid;
+    border-color: silver;
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    position: relative;
+    left: 500px;
+    margin-top: 100px;
+
+}
+.field{
+    width: 500px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.page5{
+    background-color: aliceblue;
+    margin-top: 100px;
+}
+.profilepic{
+    width: 50px;
+    border-radius: 50px;
+    border: solid;
+    margin-right: 20px;
+}
+.divider{
+    color: silver;
+    width: 900px;
+}
+.content{
+    width: fit-content;
+    margin-left: 300px;
+    
+}
+.mail{
+    position: relative;
+    left: 450px;
+    bottom: 273px;
+    
+}
+.qns{
+    padding: 10px;
+    border-color: silver;
+    border-radius: 10px;
+}
+#email{
+    width: 380px;
+}
+#name{
+    width: 380px;
+}
+#change{
+    padding: 15px;
+    background-color: #9340fb;
+    color: white;
+    border: none;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+
+}
