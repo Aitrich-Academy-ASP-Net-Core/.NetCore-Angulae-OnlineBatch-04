@@ -1,0 +1,314 @@
+
+*{  margin: 0%}
+
+body
+{
+    
+    padding: 0px;
+    height: 100%;
+   
+    border-style: hidden;
+}
+
+
+#body
+{
+    width: 100%;
+    background-color: rgb(242, 239, 236);
+    margin-top:0%;
+}
+
+#sidebar
+{
+    width: 300px;
+    height: 800px;
+    background-color: rgb(25, 149, 207);
+}
+
+#bottom
+{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(25, 149, 207);
+    position: relative;
+    top: -30px;
+    margin-top: 0;
+}
+
+#footer
+{
+    width: 100%;
+    height: 300px;
+    /* background-color: black; */
+    border: 0px solid;
+
+}
+
+#hireme
+{
+    text-align: center;
+    padding-top: 30px;
+    color: antiquewhite;
+}
+
+#candidate
+{
+    position: absolute;
+    left: 80px;
+    top: 90px;
+    color: antiquewhite;
+    text-align: center;
+    font-size: small;
+}
+
+#status
+{
+    border: 0px solid green;
+    background-color: rgb(46, 139, 46);
+    width: 100px;
+    border-radius: 5px;
+    color: antiquewhite;
+    text-align: center;
+    font-size: small;
+}
+#cndidtimage
+{
+    position: absolute;
+    top: -30px;
+    left: 40px;
+}
+
+.item
+{
+    
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    
+    color: antiquewhite;  
+    text-indent: 40px;
+}
+
+.indend
+{
+padding-bottom: 20px;
+}
+#itemnotwo
+{
+    list-style-type: none;
+position: absolute;
+top: 500px;
+left: 30px;
+color: antiquewhite;
+text-indent: 40px;
+}
+
+#linkforjobs
+{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    border-bottom: 1px solid rgb(215, 209, 198);
+}
+
+#alljobs
+{
+position: absolute;
+top: 10px;
+left: 20px;
+font-size: medium;
+
+}
+#savedjob
+{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+    font-size: medium;
+}
+
+#bell
+{
+    width: 30px;
+    position: absolute;
+    left: 900px;
+    top: 10px;
+}
+
+
+#lesly
+{
+    width:30px;
+    position: absolute;
+    left: 950px;
+    top: 10px;
+    
+}
+
+
+#fullname
+{
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+}
+.contentsection
+{
+    width: 1100px;
+    height: 160px;
+    border: 3px solid rgb(221, 218, 213);
+    
+}
+
+#contentsection1
+{
+    position: absolute;
+    left: 350px;
+    top: 140px;
+}
+
+#contentsection2
+{
+    position: absolute;
+    left: 350px;
+    top: 340px;
+}
+
+#contentsection3
+{
+    position: absolute;
+    left: 350px;
+    top: 540px;
+}
+
+.jobsearch
+{
+    position: absolute;
+    top: 80px;
+    left: 360px;
+    text-align: end;
+    
+}
+
+#searchhere
+{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#location
+{
+
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0px;
+    text-align: end;
+}
+
+#sort
+{
+    position:absolute ;
+    top: 120px;
+    left: 1350px;
+    
+    border-radius: 5px;
+}
+
+.buttons
+{
+position: absolute;
+border-radius:10px;
+ width: 100px; 
+ top: 120px;
+background-color: rgb(179, 156, 112);
+padding: 5px;
+margin-left: 20px;
+}
+
+
+#cyberimage{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 40px;
+}
+
+
+#posi1-buttons
+{
+position: absolute;
+left: 150px;
+}
+#posi2-buttons
+{
+position: absolute;
+left: 300px;
+}
+#posi3-buttons
+{
+position: absolute;
+left: 450px;
+}
+#posi4-buttons
+{
+position: absolute;
+left: 600px;
+}
+#posi4-buttons
+{
+
+}
+#trainee
+{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    
+}
+#cyber
+{
+    position: absolute;
+    top: 30px;
+    left: 60px; 
+    color: rgb(12, 108, 226);
+}
+#postdescription
+{
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
+#footercontent
+{
+    text-align: center;
+    color: antiquewhite;
+}
+.footerlist
+{
+    list-style-type: none;
+}
+.socialmesia
+{
+    width: auto
+    
+}
+#hover
+{
+    border-radius: 5px;
+    width: 80px;
+}
+li:hover
+{
+    background-color: antiquewhite;
+    color: blue;
+}
+
+h5:hover
+{
+    background-color: rgb(145, 145, 217);
+}
