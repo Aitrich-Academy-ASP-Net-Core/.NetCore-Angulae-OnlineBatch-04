@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stylinglist
+        {
+           list-style-type: none; 
+           background-color: antiquewhite;
+        }
+        .listyle
+        {
+            background-color: brown;
+            margin: 5px;
+        }
+         
+
+
+         #first
+         {
+            width: 400px;
+            border: 2px solid black;
+            padding: 5px;
+            a{
+                color: rgb(36, 5, 137);
+                /* background-color: tomato; */
+            }
+            a:hover
+            {
+                color: rgb(152, 13, 232);
+                background-color: rgb(198, 118, 15);
+                font-size: larger;
+            }
+         }
+         #second
+         {
+            width: 400px;
+            border: 2px solid black;
+            padding: 5px;
+            position: relative;
+            top: -130px;
+            left: 500px;
+            a{
+                color: rgb(64, 8, 204);
+                background-color: rgb(235, 186, 26);
+                font-weight: bolder;
+
+            }
+         }
+        #outer{
+             border: 2px solid rgb(220, 215, 215);
+            /* border-spacing: 5px;  */
+            width: 300px;
+            padding-bottom: 30px;
+            padding-left: 10px;
+            /* padding-right:0; */
+           
+            box-sizing: border-box;
+            white-space-collapse: 100%;
+            white-space: nowrap;
+            margin-right: 0%;
+         }
+         #heading
+         {
+            font-size: xx-large;
+           
+         }
+
+
+         .headingname
+         {
+            background-color: rgb(219, 222, 225);
+                border: 2px;
+               border-radius: 5px;
+            
+         }
+
+         .student
+         {
+            font-size: large;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(8, 115, 238);
+            padding-right: 0%;
+            white-space: nowrap;       
+            
+         }
+         .cellborder
+         {
+              td
+            {
+                border-left: 2px solid rgb(218, 212, 212);            
+                border-right: 2px solid rgb(218, 212, 212);
+               
+           }
+          
+         }
+         #bottomborder
+         {
+            td
+            {
+             border-bottom: 3px solid rgb(15, 102, 216);
+            }
+         }   
+         table{
+            border-spacing: 5px; 
+            padding-right: 0%;
+         }
+        
+         #boxmodel
+         {
+            width: 300px;
+            height: 300px;
+            border: 5px solid rgb(15, 124, 212);
+            background-color: rgb(233, 234, 238);
+            padding-left: 50px;
+            padding-top: 50px;
+            font-size: xx-large;
+         }
+         #boxmodel:hover
+         {
+            outline: 30px solid red;
+            
+         }
+         #image
+         {
+           
+            border: 5px solid rgb(57, 170, 231);
+            margin-top: 30px;  
+         }
+         #image:hover
+           {
+            padding: 30px;
+            background-color: rgb(33, 112, 181);
+           }
+           #QsNofive
+           {
+            border: 2px solid black;
+            width: 800px;
+            height: 200px;
+            outline-width: 80px solid rgb(148, 11, 11);
+            padding: 10px;
+            text-align: center;
+            
+           }
+
+           #border2
+           {
+            height: 150px;
+            border: 5px  solid blue;
+            margin-top: 25px;
+            border-radius: 20px;
+           }
+
+           #decorborder
+           {
+            border-top: 5px solid rgb(18, 32, 225);
+            border-left: 5px solid blue;
+            /* padding: 20px; */
+            margin-left: 20px;
+            margin-right: 20px;
+           }
+           
+           
+    </style>
+</head>
+<body>
+    <a href="css-ch-2-activity.html" id="pages">QSNO-1to5--&nbsp</a><a href="css-activity-last.html" id="pages">nextpage&nbsp--</a><a href="login.html" id="pages">nextpage--&nbsp</a><a href="jobprovider.html" id="pages">nextpage--&nbsp</a><a href="candidate.html" id="pages">nextpage</a>
+    <hr style="border: 2px solid green;">
+    <h1>First Question</h1>
+    <p>Task List</p>
+    <ol class="stylinglist">
+        <li class="listyle">Compleate css activity</li>
+        <li class="listyle">Read a book</li>
+        <li class="listyle">Go for a walk</li>
+        <li class="listyle">Practice coding</li>
+    </ol>
+    <h1>second Question</h1>
+    <section id="first">
+        <h1>Welcome to My Website</h1>
+          <p>This is a site for Educational Training Institution<a href="#" > aitrich</a> for styling</p>
+
+    </section id="secondlink">
+    <section id="second">
+        <h1>Welcome to My Website</h1>
+          <p>This is a site for Educational Training Institution<a href="#" >aitrich </a>for styling </p>
+          
+    </section>
+    <h1>Third Question</h1>
+    <div id="outer">
+    <table >
+       <h1 id="heading">Student Scores</h1>
+       
+       <!-- <table> -->
+             <tr >
+                     <th class="headingname">Name</th>
+                     <th class="headingname">Math</th>
+                     <th class="headingname">Science</th>
+                     <th class="headingname">English</th>
+             </tr>
+        <!-- </table> -->
+
+    <tr class="cellborder">
+        <td class="student">John</td>
+        <td>85</td>
+        <td>92</td>
+        <td>78</td>
+    </tr>
+        <tr class="cellborder">
+            <td class="student">Alice</td>
+            <td>75</td>
+            <td>88</td>
+            <td>95</td>
+        </tr>
+        <tr class="cellborder"id="bottomborder">
+            <td class="student">Michael</td>
+            <td>90</td>
+            <td>85</td> 
+            <td>88</td>
+        </tr>
+    </table>
+    </div>
+    <h1>Forth Question:Box model</h1>
+    <div id="boxmodel">
+        <p>This is a box</p>
+        
+    </div>
+    <h1>Fifth Question:Image Styling</h1>
+    <img src="image\styleimg.png" id="image">
+    <h1>Border Styling</h1>
+
+    <div id="QsNofive">
+        <header id="border2">
+        <h1>Decorative Borders</h1>
+        <p id="decorborder">This is an Example of using decorative borders</p>
+    </header>
+    </div>
+</body>
+</html>

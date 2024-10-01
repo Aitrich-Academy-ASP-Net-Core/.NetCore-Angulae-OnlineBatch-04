@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #dashboard
+    {
+        
+        height: 800px;
+        width: 350px;
+        /* border: 2px solid green; */
+        background-color: rgb(25, 162, 236);
+    }
+
+    #content
+    {
+        position: absolute;
+        top: 120px;
+        left: 500px;
+        height: 600px;
+        width: 700px;
+        border: 2px solid rgb(237, 230, 230);
+    }
+    img
+    {
+        padding-left: 60px;
+        position: absolute;
+    }
+    #image1
+    {
+        width: 20px;
+        top: 150px;
+    }
+    #image2
+    {
+        width: 20px;
+        top: 200px ;
+    }
+    #image3
+    {
+        width: 20px;
+        top:250px ;
+    }
+    #image4
+    {
+        width: 20px;
+        top: 300px;
+    }
+    #image5
+    {
+        width: 20px;
+        top: 350px;
+    }
+    #pstyledashboard
+    {
+        position: absolute;
+        top: 150px;
+        left: 110px;
+        color: white;
+    }
+
+    #pstylejobs
+    {
+        position: absolute;
+        top: 200px ;
+        left: 110px;
+        color: white;
+    }
+
+    #pstyleapplication
+    {
+        position: absolute;
+        top: 250px;
+        left: 110px;
+        color: white;
+    }
+
+    #pstyleinterviews
+    {
+        position: absolute;
+        top: 300px;
+        left: 110px;
+        color: white;
+    }
+
+    #pstylemessages
+    {
+        position: absolute;
+        left: 110px;
+        top: 350px;
+        color: white;
+    }
+    h1
+    {
+        position: absolute;
+        left: 50px;
+        color: white;
+    }
+    h2
+    {
+        
+        position: absolute;
+        top: 70px;
+        left: 170px;
+        
+    }
+    #imageprovider
+    {
+        position: absolute;
+        top: 10px;
+        left: 230px;
+
+    }
+
+    h4
+    {
+        position: absolute;
+        top: 150px;
+        left: 270px;
+        color: rgb(206, 200, 200);
+    }
+
+    #h4
+    {
+        position: absolute;
+        top: 180px;
+        left: 285px;
+    }
+
+    #contactdetails
+    {
+        position: absolute;
+        top: 300px;
+        left: 160px;
+        
+        
+      
+    }
+   
+
+    #contactdetail1
+    {
+        list-style-image:url("image/sms.png") ;
+        margin-bottom: 20px;
+        padding-left: 20px;
+
+    }
+
+    #contactdetail2
+    {
+        margin-bottom: 20px;
+        list-style-image: url("image/call.png");
+        padding-left: 20px;
+    }
+
+    #contactdetail3
+    {
+        margin-bottom: 20px;
+        list-style: url("image/Vector.png");
+        padding-left: 20px;
+
+    } 
+
+    a{
+        position: absolute;
+        top: 407px;
+        left: 480px;
+        
+    }
+
+    #imageunderline
+    {
+        width: 5%;
+        position: absolute;
+        top: 435px;
+        left: 470px;
+        background-color: rgb(245, 238, 238);
+
+    }
+
+    #jobdetails
+    {
+        border: 2px solid gray;
+        width: 800px;
+        height: 310px;
+        position: absolute;
+        top: 850px;
+        left: 400px;
+    }
+
+    #title
+    {
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        width: 700px;
+        padding: 10px;
+        border: 2px solid gainsboro;
+        border-radius: 10px ;
+    }
+
+    #jobtitle
+    {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    #jobtitle2
+    {
+        position: absolute;
+        top: 120px;
+        left: 50px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    #title2
+    {
+        position: absolute;
+        top: 160px;
+        left: 40px;
+        width: 700px;
+        padding: 10px;
+        border: 2px solid gainsboro;
+        border-radius: 10px ;
+    }
+
+
+    #jobtitle3
+    {
+        position: absolute;
+        top: 220px;
+        left: 50px;
+        font-size: large;
+        font-weight: lighter;
+    }
+
+    #title3
+    {
+        position: absolute;
+        top: 250px;
+        left: 40px;
+        width: 700px;
+        padding: 10px;
+        border: 2px solid gainsboro;
+        border-radius: 10px ;
+    }
+
+    #jobdetails::placeholder
+    {
+        text-align: center;
+    }
+    #pages
+           {
+            position: relative;
+            left: 500px;
+            top: 20px;
+           }
+
+
+
+    </style>
+
+</head>
+<body>
+    <a href="css-ch-2-activity.html" id="pages">QSNO-1to5--&nbsp</a><a href="css-activity-last.html" id="pages">nextpage&nbsp--</a><a href="login.html" id="pages">nextpage--&nbsp</a><a href="jobprovider.html" id="pages">nextpage--&nbsp</a><a href="candidate.html" id="pages">nextpage</a>
+    <div id="dashboard">
+        
+        <h1> Hire Me Now! </h1><br>
+            <img src="image\dashboard 1.png" id="image1"> <p id="pstyledashboard">Dash Board</p><br>
+            <img src="image\suitcase 2.png" id="image2"><p id="pstylejobs">Jobs</p><br>
+            <img src="image\application (1) 1.png" id="image3"><p id="pstyleapplication">Applications</p><br>
+            <img src="image\question (1) 1.png" id="image4"><p id="pstyleinterviews">Interviews</p><br>
+            <img src="image\message 1.png" id="image5"><p id="pstylemessages">Messages</p>
+
+    </div>
+    <div id="content">
+        <img src="image\girl.png" id="imageprovider"><br>
+        <h2>Job Provider/Company member</h2>
+        <H4>Company Name</H4>  <h4 id="h4"> Designation</H4>
+            <ul id="contactdetails">
+                <li id="contactdetail1">
+                    Provider@mail.com
+                </li>
+                <li id="contactdetail2">
+                    123456789012
+                </li>
+                <li id="contactdetail3">
+                    Provider@mail.com
+                </li>
+            </ul>
+            <a href=""><img src="image\icons8-pencil-drawing-32.png"></a>
+            <img src="image\Divider.png" id="imageunderline">
+            
+    </div><hr style="margin-top: 0%; border:1px solid rgb(73, 130, 244);">
+        <form id="jobdetails">
+            <label for="" id="jobtitle">
+                Job Title
+            </label>
+            <input type="text" id="title" placeholder="Enter job title">
+
+            <label for="" id="jobtitle2" >
+               Description
+            </label>
+            <input type="text" id="title2" placeholder="Enter Description">
+
+            <label for="" id="jobtitle3">
+               Salary
+             </label>
+             <input type="text" id="title3" placeholder="Enter Salary">
+        </form>
+</body>
+</html>

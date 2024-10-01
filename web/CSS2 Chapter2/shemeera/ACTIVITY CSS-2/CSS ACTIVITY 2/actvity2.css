@@ -1,0 +1,282 @@
+body{
+
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family:monospace;
+}
+
+
+
+#logo{width:30%;
+height: 400px;
+position: relative;
+top: 10px;
+left: 400px;
+
+border:2px solid rgb(204, 204, 230);
+}
+#image{
+
+    position: absolute;
+    left:200px;
+    top: 10px;
+
+}
+#box{background-color:white;
+    width: 60%;
+    height: 30px;
+    border:2px solid rgb(240, 240, 249);
+    text-align: center;
+    position: absolute;
+    left:100px;
+    top:130px;
+border-bottom-style: groove;
+    
+    
+}
+
+#link{
+
+    text-decoration: none;
+}
+
+#logemail{
+
+    position: absolute;
+    top:180px ;
+    left: 150px;
+}
+.longbox{
+    width: 60%;
+    height: 30px;
+    border: 2px solid blue;
+    position: absolute;
+    top: 200px;
+left: 100px;
+
+}
+.password{
+    width: 60%;
+    height: 30px;
+    border: 2px solid blue;
+    position: absolute;
+    top: 250px;
+left: 100px;
+}
+#logged{
+   
+    position: absolute;
+    top: 300px;
+left: 100px;
+}
+.login{
+
+    width: 60%;
+    height: 30px;
+    border: 2px solid blue;
+    background-color: blue;
+    position: absolute;
+    top: 350px;
+left: 100px;
+text-align: center;
+}
+.login:hover{
+    background-color: antiquewhite;
+}
+#main{
+width: 50%;
+height: 400px;
+position: relative;
+left: 250px;
+top: 100px;
+border: 2px solid rgb(136, 136, 172);
+
+}
+#sidebox{
+    width: 30%;
+    height: 400px;
+    background-color: blue;
+    position: absolute;
+    left: 0%;
+    text-align: center;
+
+}
+
+#jobprovider{
+    width:60%;
+    height: 370px;
+    border: 2px solid rgb(231, 221, 242);
+        position: absolute;
+    left: 290px;
+        top:10px ;
+    
+    
+    }
+    #providerimage{
+        position: absolute;
+        top: 20px;
+        left: 150px;
+    }
+    #pencil{background-color: rgb(219, 204, 233);
+        height: 40px;
+        position: absolute;
+        top: 330px;
+        right: 1px;
+
+    }
+#pencil:hover{
+    background-color: rgb(88, 57, 117);
+}
+
+
+    #providerlist{
+        position: absolute;
+        top:250px;
+        left:90px ;
+       
+    }
+    ul li{
+        list-style-type: none;
+    }
+    #list{
+        position: absolute;
+        top: 80px;
+        left: 10px;
+    }
+    #job{
+
+        width: 300%;
+        height: 300px;
+        position: relative;
+        top: 400px;
+        left: ;
+        border: 2px solid blueviolet;
+    }
+#jobtitle{
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    left: ;
+
+}
+#titlebox{
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: ;
+    top: 40px;
+    
+    background-color: rgb(224, 217, 231);
+    text-align: left;
+}
+#description{
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    left: ;
+    top: 100px;
+
+}
+#desbox{
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: ;
+    top: 130px;
+     background-color: rgb(224, 217, 231);
+    text-align: left;
+    
+}
+#salary{
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    left: ;
+    top: 200px;
+
+}
+#salarybox{
+    width: 80%;
+    height: 30px;
+    position: absolute;
+    left: ;
+    top: 230px;
+     background-color: rgb(224, 217, 231);
+    text-align: left;
+    
+}
+#footer{
+    width: 30%;
+    height: 500px;
+border: 2px solid blueviolet;
+position: relative;
+top: 500px;
+left: 300px;
+
+}
+#name{
+    position: absolute;
+    left:px ;
+    top: 190px;
+    left: 5px;
+
+
+}
+#namebox{
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top:210px ;
+    left:5px ;
+    border: 2px solid rgb(208, 183, 232);
+
+}
+#emailaddress{
+position: absolute;
+left:200px ;
+top: 190px;
+
+
+}
+#email{
+
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top:210px ;
+    left:200px ;
+   border: 2px solid rgb(208, 183, 232);
+
+}
+
+#aboutbio{
+    position: absolute;
+    left:px ;
+    top: 250px;
+    left: 5px;
+
+
+}
+#biography{ width: 90%;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    top:270px ;
+   left: 5px;
+    border: 2px solid rgb(208, 183, 232);
+text-align: ;
+}
+.savechanges{
+    width: 40%;
+    height: 50px;
+position: absolute;
+left: 50px;
+top:420px ;
+background-color: rgb(147, 32, 128);
+border-radius:10px ;
+}
+.savechanges:hover{
+    background-color: aqua;
+}
