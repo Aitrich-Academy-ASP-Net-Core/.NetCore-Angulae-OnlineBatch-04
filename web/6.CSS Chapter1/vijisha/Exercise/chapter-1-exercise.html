@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(249, 249, 252);
+
+      background-repeat: no-repeat;
+
+    }
+
+    #sidebar {
+      height: 1500px;
+      width: 400px;
+
+      background-color: rgb(46, 39, 130);
+      margin-top: 0px;
+      background-position: 30%;
+    }
+
+
+    #bodycontent {
+      width: 1269px;
+      height: 1503px;
+      background-color: rgb(204, 202, 205);
+      position: relative;
+      right: -200px;
+      display: flex;
+      top: -1502px;
+      left: 228px;
+      border-top-left-radius: 8%;
+      border-bottom-left-radius: 10%;
+    }
+
+
+    img {
+      position: relative;
+      left: 40px;
+      bottom: -80px;
+
+    }
+
+    .pstyle {
+      position: relative;
+      right: -80px;
+      top: -10px;
+      color: antiquewhite;
+
+    }
+
+    .pstyle1 {
+      position: relative;
+      right: -80px;
+      top: -3%;
+      color: antiquewhite;
+      text-align: justify;
+
+    }
+
+    #sidebar2{
+      width: 180px;
+      height: 700px;
+      position: absolute;
+      top: 220px;
+      left: 30px;
+      flex: 1;
+
+    }
+
+    .img2 {
+      position: relative;
+      top: 30px;
+    }
+
+    .img3 {
+
+      position: relative;
+      top: 3%;
+    }
+
+    #input1 {
+      position: absolute;
+      left: 30%;
+      top: 55px;
+      width: 400px;
+      height: 30px;
+      padding: 10px;
+      border: 1px solid #e4dbdb;
+      border-radius: 25px;
+      background-color: #afa9a9;
+    }
+
+    .img4 {
+
+      left: 1000px;
+      top: -15px;
+      width: 20%;
+    }
+
+    section {
+      width: 300px;
+      height: 60px;
+      border-bottom: 3px solid rgb(157, 160, 171);
+
+      position: relative;
+      top: 160px;
+      left: -120px;
+
+
+    }
+
+    #detailsform{
+      width: 900px;
+      height: 600px;
+      background-color: rgb(253, 250, 247);
+      position: relative;
+      top: 250px;
+      right: 400px;
+    }
+
+    .input4 {
+      height: 40px;
+      width: 500px;
+      border-radius: 10px;
+      border-style: hidden;
+      background-color: #dfe2e5;
+      text-emphasis-position: 1px;
+    }
+
+    .input4::placeholder {
+      position: relative;
+      top: -10px;
+      color: #0d0909;
+      font-size: smaller;
+    }
+
+    #form2 {
+      position: absolute;
+      bottom: 140px;
+      left: 50px;
+
+    }
+
+    .label2
+  {
+      font-size: large;
+      color: #746e6e;
+
+
+  }
+
+    #section2 {
+      width: 150px;
+      height: 50px;
+      background-color: rgb(56, 48, 144);
+      color: antiquewhite;
+      text-align: center;
+      border-style: hidden;
+      position: relative;
+      top: 483px;
+      left: 200px;
+      border-radius: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="sidebar">
+    <img src="images2\Group 8.png" width="14%">
+    <p
+      style="position: relative;left:105px;top: -5px; font-size: xx-large;font-style: italic;text-decoration: wavy;font-weight: bolder;font-family: Arial, Helvetica, sans-serif;font-weight:900;color: antiquewhite;">
+      Jobie</p>
+    <div id="sidebar2">
+      <img class="img2" src="images2\Vector.png">
+      <p class="pstyle">Dashboard</p>
+      <img class="img3" src="images2\image 10.png">
+      <p class="pstyle1">Job Providers</p>
+      <img class="img3" src="images2\image 6.png" style="position: relative;top: 0px;">
+      <p class="pstyle1" style="position: relative;top: -35px;">New Registrations</p>
+      <img class="img3" src="images2\image 9.png" style="position: relative ;top: -15px;">
+      <p class="pstyle1" style="position: relative;top:-55px;">Job Seekers</p>
+      <img class="img3" src="images2\ic_search.png" style="position: relative;top: -28px;">
+      <p class="pstyle1" style="position: relative;top: -65px;">Jobs</p>
+      <img class="img3" src="images2\frame.png" style="position: relative;top: -48px;">
+      <p class="pstyle1" style="position: relative;top: -85px;">My Profile</p>
+      <img class="img3" src="images2\card.png" style="position: relative;top: -70px;">
+      <p class="pstyle1" style="position: relative; top:-110px">Messages</p>
+      <img class="img3" src="images2\image 7.png" style="position: relative;top: -88px;">
+      <p class="pstyle1" style="position: relative;top:-130px">Settings</p>
+      <img class="img3" src="images2\image 8.png" style="position: relative;top: -110px;">
+      <p class="pstyle1" style="position: relative;top: -150px;">Logout</p>
+    </div>
+  </div>
+
+  <div id="bodycontent">
+    <form>
+      <img src="images2\ic_menu.png">
+      <p style="position: relative;left: 150px; top: 36px;">My Profile</p>
+      <input type="text" class="my-input" id="input1" placeholder="Search something here" size="50px" width="50px"><img
+        src="images2\Group.png" style="position: absolute; left:735px; top: 66px;">
+      <img src="images2\notification.png" class="img4">
+      <img src="images2\notification (1).png" class="img4">
+      <img src="images2\profilePicture.png" class="img4">
+      <p style="position: absolute; left: 1120px;top: 39px; font-weight: bold;">Oda dink</p>
+      <p style="position: absolute; left: 1119px;top: 69px;font-size: small; color: #746e6e;">Super Admin</p>
+    </form>
+    <section>
+      <img src="images2\icons8-person-16.png" style="position: relative; top:10px ;left: 15px; width: 20px;">
+      <p style="position: relative;top: -25px;right: -50px;font-size: medium;color: #afa9a9;">Account</p>
+
+    </section>
+    <div id="detailsform">
+      <img src="images2\profilePicture.png" style="position: relative;top: 15px;left: 15px;  width: 8%;">
+      <form id="form2">
+        <label for="" class="label2">Full name</label><br>
+        <input type="text" class="input4" placeholder="Please enter your full name"><br><br><br>
+        <label for="" class="label2">Username</label><br>
+        <input type="text" class="input4" placeholder="Please enter your Username"><br><br><br>
+        <label for="" class="label2">Email</label><br>
+        <input type="email" class="input4" placeholder="Please enter your email" ><br><br><br>
+        <label for="" class="label2">Phone No</label><br>
+        <input type="number" class="input4" placeholder="Please enter your Phoneno"><br><br>
+
+      </form>
+      <section id="section2">
+        <p>Update Details</p>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>

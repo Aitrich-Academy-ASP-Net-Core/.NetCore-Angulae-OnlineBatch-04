@@ -1,0 +1,384 @@
+body{
+
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family:monospace;
+}
+#head{
+    width:30%;
+    height: 400px;
+    margin-left: 20px;
+    float: left;
+
+}
+.dreamjob{
+    height:40px;
+    width:200px;
+border-radius:2px ;
+    margin-top: 10px;
+   
+    text-align: center;
+   background-color: aqua;
+    display: inline-block;
+  position: absolute;
+  top:300px ;
+  left: 300px;
+  
+
+}
+
+.dreamjob:hover{
+
+background-color: chartreuse;
+}
+
+
+
+.explore{
+background-color: blue;
+border-radius: 3px;
+color: white;
+position: absolute;
+top: 250px;
+left: 300px;
+}
+.explore:hover{
+
+    background-color: aqua;
+
+}
+
+
+
+
+
+
+.result{
+    height:40px;
+            width:200px;
+border-radius: 2px;
+background-color: aqua;
+ position:absolute ;
+left: 50px; 
+top: 300px; 
+text-align: center;
+           
+ display: inline-block;
+padding: 1rem 1rem;
+            
+        }
+
+
+        .result:hover{
+
+            background-color: rgb(61, 149, 83);
+        }
+        
+
+
+
+
+
+
+
+.dev1{ background-color: rgba(214, 214, 227, 0.866);
+    height:100px ;
+    width: 100px;
+    position: absolute;
+    top: ;
+    left:5px ;
+border-radius: ;
+
+}
+
+
+.dev2{
+    background-color: rgba(214, 214, 227, 0.866);
+    height:100px ;
+    width: 100px;
+    position: absolute;
+    top: ; 
+    left:200px ;
+border-radius: ;
+}
+         
+    
+
+    .dev3{
+        background-color: rgba(214, 214, 227, 0.866);
+        height:100px ;
+        width: 100px;
+        position: absolute;
+        top: ;
+        left: 400px; ;
+       border-radius: ;
+}
+      
+        
+        .dev4{ background-color: rgba(214, 214, 227, 0.866);
+            height:100px ;
+            width: 100px;
+            position: absolute;
+            top: ;
+            left: 600px;
+           border-radius: ; 
+        }
+
+            
+
+            .dev5{ background-color: rgba(214, 214, 227, 0.866);
+                height:100px ;
+                width: 100px;
+                position: absolute;
+                top:200px ;
+                left:5px ;
+               border-radius: ;
+                }
+
+.dev6{background-color: rgba(214, 214, 227, 0.866);
+    height:100px ;
+    width: 100px;
+    position: absolute;
+    top:200px ;
+    left: 200px; ;
+         border-radius: ;       
+                }
+                .dev7{
+                    background-color: rgba(214, 214, 227, 0.866);
+                height:100px ;
+                width: 100px;
+                position: absolute;
+                top:200px ;
+                left:400px ;
+                border-radius: ;
+                    }
+                    .dev8{
+                        background-color: rgba(214, 214, 227, 0.866);
+                height:120px ;
+                width: 150px;
+                position: absolute;
+                top:200px ;
+                left: 600px;
+                background-color: blue;
+                border-radius: ;
+                        }
+
+
+#parent{
+    background-color: blue;
+    width: 40%;
+    height: 400px;
+border-radius:10px ;
+position: relative;
+left: 600px;
+
+}
+#subsection{
+margin: left;
+position: absolute;
+left: 100px;
+top: px;
+
+
+
+}
+.signin{
+    position: absolute;
+    top: 10px;
+    left: 420px;
+    background-color: rgb(21, 71, 132);
+}
+#img{
+
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+#centered{
+  position: relative;
+  top: 100px;
+  left:400px ;
+    
+}
+#category{width: 50%;
+    height: 500px;
+    
+position: relative;
+top: 100px;
+left: 400px;
+
+}
+
+
+
+
+
+#img2{
+    
+position: relative;
+top:100px;
+left: 300px;
+background-image:url(images/exercise1/hands.png);
+width: 30%;
+height: 300px;
+background-repeat: no-repeat;
+
+}
+#list{position: relative;
+ top:-200px;
+ left: 800px;
+    width:40%;
+    height: 400px;
+    
+
+}
+#position{
+position: relative;
+top: 200px;
+left: 200px;
+
+    width: 40%;
+    height: 200px;
+background-color: darkgrey;
+}
+
+#recently{
+ 
+position: relative;
+top: -100px; 
+left: 400px; ;
+width: 50%;
+height: 500px;
+    
+}
+
+#development{
+position: relative;
+top: 100px; 
+left: -200px;
+width: 150%;
+height: 500px;
+
+
+
+
+}
+.rec1{
+background-color: rgb(206, 206, 227);
+height:200px ;
+width: 25%;
+border-radius: 6px;
+float: left;
+position: absolute;
+left: ;
+
+text-align: center;
+
+}
+.rec2{
+background-color: rgb(214, 214, 233);
+height:200px ;
+width: 25%;
+border-radius: 6px;
+position: absolute;
+left:400px;
+top: -100;
+padding: ;
+text-align: center;
+}
+
+.rec3{
+    background-color: rgb(214, 214, 233);
+    height:200px ;
+    width: 25%;
+    border-radius: 6px;
+    position: absolute;
+    left:800px;
+    top: -100;
+    padding: ;
+    text-align: center;
+    }
+
+
+
+
+.rec4{
+    
+        background-color: rgb(217, 225, 222);
+        height:200px ;
+        width: 25%;
+        border-radius: 6px;
+        position: absolute;
+        left:px;
+        top: 250px;
+        padding: ;
+        text-align: center;
+        }
+   
+
+    
+    
+    .rec5{
+        background-color: rgb(214, 214, 233);
+        height:200px;
+        width: 100%;
+        border-radius: 6px;
+        position: absolute;
+        left:400px;
+        top: 0px;
+        text-align: center;
+        }
+        
+     
+    
+        
+        .rec6{
+            background-color: rgb(214, 214, 233);
+            height:200px ;
+            width: 100%;
+            border-radius: 6px;
+            position: absolute;
+            left:800px;
+            top: -9px;
+            
+            text-align: center;
+            }
+            
+            
+        
+
+
+.view{
+
+
+    height:10px;
+    width:200px;
+border-radius: 2px;
+background-color: aqua;
+position:relative ;
+left: 150px; 
+top: 100px; 
+text-align: center;
+   
+display: inline-block;
+padding: 1rem 1rem;
+
+}
+.view:hover{
+
+background-color: blanchedalmond;
+
+}
+#footer{
+    
+    position: relative;
+    top: 100px;
+     left:-200px ;
+    
+}
+
+
+
+
+
