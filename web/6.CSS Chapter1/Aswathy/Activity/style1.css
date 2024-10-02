@@ -1,0 +1,20 @@
+
+h1
+{
+   
+   margin:200px 100px 300px 300px; 
+    
+}
+p 
+{
+    /* width:100px; */
+    /* height: 100px; */
+    margin: 100px 200px 1000px 500px;
+    text-align:right;
+}
+div{
+    background-image:url(imagesc/istockphoto-1394701218-612x612.jpg);
+    background-repeat:repeat-x;
+    text-align:center;
+
+}
