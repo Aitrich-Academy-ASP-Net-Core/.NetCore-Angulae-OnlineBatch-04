@@ -1,0 +1,19 @@
+table,th,td
+{
+border:4px ;
+border-style: solid;
+border-color: aliceblue;;
+}
+.name{
+color: blue;
+}
+ th
+ {
+text-align: center;
+background-color:aliceblue;
+border-radius:4px;
+}
+td
+{
+    border-top: 0px;
+}
