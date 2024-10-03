@@ -1,0 +1,173 @@
+body{
+
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family:monospace;
+}
+#main{
+    height: 1200px;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+    top: -20px;
+
+}
+#parent{
+    width: 80%;
+    height: 700px;
+    position: absolute;
+    left: 300px;
+    top: 1px;
+background-color: white;
+
+}
+#child{
+width: 100%;
+height: 850px;
+position: absolute;
+left: px;
+top: 50px;
+background-color: rgb(233, 224, 241);
+
+
+}
+#search{
+    width:20% ;
+    height:35px ;
+    position: absolute;
+    left: 15px;px;
+    top: 15px;
+    background-color:white;
+    border-radius: 5px;
+    text-align: left;
+}
+#location{
+    width:15% ;
+    height:35px ;
+    position: absolute;
+    left: 290px;
+    top: 15px;
+    background-color:white;
+    border-radius: 5px;
+    text-align: left;
+}
+#img{ position: absolute;
+    left: 500px;
+    top: 15px;
+    background-color:white;
+    border-radius: 5px;
+
+}
+#job{
+    width:15% ;
+    height:35px ;
+    position: absolute;
+    right:10px;
+    top: 15px;
+    
+    border-radius: 5px;
+    text-align: left;
+}
+#software{width: 90%;
+    height: 250px;
+    
+    position: absolute;
+    left:10px ;
+    top:60px ;
+    border: 2px solid rgb(193, 162, 222);
+
+}
+#java{width: 90%;
+    height: 250px;
+    
+    position: absolute;
+    left:10px ;
+    top:300px ;
+    border: 2px solid rgb(193, 162, 222);
+
+}
+#Testeng{width: 90%;
+    height: 250px;
+    
+    position: absolute;
+    left:10px ;
+    top:560px ;
+    border: 2px solid rgb(193, 162, 222);
+
+}
+#list{
+
+list-style-type: none;
+
+
+
+}
+.edit{
+
+width: 10%;
+height: 30px;
+position: absolute;
+left: 25px;
+top:800px ;
+border-radius: 5px;
+
+}
+.edit:hover{
+    background-color: rgb(171, 141, 199);
+}
+#getnotified{
+    width: 50%;
+    height: 250px;
+    position: absolute;
+    top: 930px;
+    left: 500px;
+}
+#type{
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    
+}
+.subscribe{
+    width: 20%;
+    height: 30PX;
+    background-color: rgb(50, 34, 228);
+    position: absolute;
+    left: 400PX;
+    top: 3px;
+}
+.subscribe:hover{
+    background-color: aliceblue;
+}
+#footer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+    top: -20px;
+}
+#table{
+
+    position: absolute;
+    right: 150px;
+    top: 1px;
+    
+}
+#img2{height: 100px;
+    position: absolute;
+top: 20px;
+right: 100px;
+}
+.apply{width: 12%;
+    height: 30px;
+    position: absolute;
+    top: 190px;
+    right:80px ;
+    background-color: rgb(55, 158, 192);
+
+}
+.apply:hover{
+    background-color: azure;
+}
