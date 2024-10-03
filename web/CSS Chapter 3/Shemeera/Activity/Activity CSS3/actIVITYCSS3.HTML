@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+
+    <title>ACTIVITY </title>
+
+    <style>
+        .job-card {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            transition: transform 0.3s;
+        }
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+       .apply-button {
+               padding: 8px 15px;
+               background-color: #3498db;
+               border: none;
+               color: white;
+               transition: background-color 0.3s, transform 0.3s;
+           }	
+           .apply-button:hover {
+               background-color: #2980b9;
+               transform: scale(1.05);
+           }
+           @keyframes slideIn {
+               0% {
+                   transform: translateX(-100%);
+               }
+               100% {
+                   transform: translateX(0);
+               }
+           }
+           .card {
+               width: 200px;
+               padding: 10px;
+               border: 1px solid #ccc;
+               animation: slideIn 0.5s ease-out;
+           }
+
+           .ball {	
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { top: 0; }
+            50% { top: 200px; }
+        }
+
+
+</style>
+
+
+</head>
+<body>
+
+<H2>JOB CARD</H2>
+    <div class="job-card">
+        <h3>Software Developer</h3>
+        <p>Join our team as a software developer...</p>
+        <button>Apply Now</button>
+        </div>
+        
+<h2>BUTTON</h2>
+
+        <button class="apply-button">Apply Now</button>
+    <H2>ANIMATION</H2>
+        <div class="card">
+            <h3>Software Developer</h3>
+            <p>Join our team as a software developer...</p>
+            <button>Apply Now</button>
+            </div>	
+
+
+
+
+            
+            <div class="ball"></div>         
+
+
+
+    
+</body>
+</html>
