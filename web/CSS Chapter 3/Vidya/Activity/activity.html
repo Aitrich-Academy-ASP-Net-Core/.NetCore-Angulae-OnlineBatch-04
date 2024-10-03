@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="vidya">
+
+<style>
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* Question 1 */
+
+
+
+.job-card{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+
+}
+
+.job-card:hover{
+
+    transform: scale(1.05);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Question 2 */
+
+
+.apply-button {
+               padding: 8px 15px;
+               background-color: #3498db;
+               border: none;
+               color: white;
+               transition: background-color 0.3s, transform 0.3s;
+           }
+
+ .apply-button:hover {
+ background-color: #2980b9;
+transform: scale(1.05);
+ }
+
+
+
+
+
+ /* -------------------------------------------------------------------------------------------------------- */
+/* Question 3 */
+
+
+.job-card3 {
+               width: 200px;
+               padding: 10px;
+               border: 1px solid #ccc;
+               animation: slideIn 0.5s ease-out;
+               
+           }
+
+
+@keyframes slideIn {
+               0% {
+                   transform: translateX(-100%);
+               }
+               100% {
+                   transform: translateX(0);
+               }
+
+            }
+
+          
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* Question 4 */
+
+
+.ball {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { top: 0; }
+            50% { top: 200px; }
+        }
+
+
+
+/* ----------------------------------------------------------------------------------- */
+
+</style>
+</head>
+<body>
+<!-- Question 1 -->
+<h2>1.     Transforming Job Card on Hover:    </h2>
+<div class="job-card">
+
+
+    <h3>Software Developer</h3>
+    <p>Join our team as a software developer...</p>
+    <button>Apply Now</button>
+</div>
+<br>
+<hr>
+
+<!-- --------------------------------------------------------------- -->
+<!-- Question 2 -->
+
+
+    <h2>2. Adding Transition Effects to Buttons:</h2>        
+
+
+    <button class="apply-button">Apply Now</button>
+
+<br>
+<hr>
+<!-- --------------------------------------------------------------- -->
+<!-- Question 3 -->
+
+
+<h2>3.     Animating Job Card Entrance:    </h2>
+
+<div class="job-card3">
+    <h3>Software Developer</h3>
+    <p>Join our team as a software developer...</p>
+    <button>Apply Now</button>
+</div>
+<br><hr>
+
+<!-- ----------------------------------------------------------- -->
+<!-- Question 4 -->
+
+<div class="ball"></div>
+
+</body>
+</html>
