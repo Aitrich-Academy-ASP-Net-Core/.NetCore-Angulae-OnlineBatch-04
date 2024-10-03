@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .jobcard {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            background-color:pink;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            transition: transform 2s;
+        }
+        .jobcard:hover {
+            transform: scale(1.25);
+        }
+        .jobcard2
+        {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            background-color:pink;
+            position: absolute;
+            top: 150px;
+            left: 600px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .button {
+               padding: 8px 15px;
+               background-color: #3498db;
+               border: none;
+               color: white;
+               transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+               background-color: #2980b9;
+               transform: scale(1.25);
+        }
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            border-radius: 50%;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { top: 0; }
+            50% { top: 200px; }
+        }
+        @keyframes slideIn {
+               0% {
+                   transform: translateX(-100%);
+               }
+               100% {
+                   transform: translateX(0);
+               }
+           }
+           .job-card {
+               width: 100px;
+               padding: 5px;
+            background-color: yellow;
+               border: 1px solid #ccc;
+               animation: slideIn 0.5s ease-out;
+           }
+    </style>
+</head>
+<body>
+    <div class="jobcard">
+        <h3> <u>Software Developer</u></h3>
+        <p>Join our team as a software developer...</p>
+        <button style="position: absolute;top: 120px;left: 200px;">Apply Now</button>
+    </div>
+<div class="jobcard2">
+    <h3> <u>Business Analyst</u></h3>
+        <p>Join our team as a Business Analyst...</p>
+        <button class="button" style="position: absolute;top: 120px;left: 200px;">Apply Now</button>
+</div>
+<div class="ball"></div>
+<div class="job-card">
+    <h3>Search here...!</h3>
+    <p>Enjoy Amazing opportunities...</p> 
+         <!-- <button>Apply Now</button> -->
+    </div>
+</body>
+</html>
+  
+  
