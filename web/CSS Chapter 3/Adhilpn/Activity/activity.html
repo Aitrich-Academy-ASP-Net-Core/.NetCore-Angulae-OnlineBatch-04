@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Job Listings</title>
+       <style>
+           @keyframes slideIn {
+               0% {
+                   transform: translateX(-100%);
+               }
+               100% {
+                   transform: translateX(0);
+               }
+           }
+           
+           .job-card {
+               width: 200px;
+               padding: 10px;
+               border: 1px solid #ccc;
+               animation: slideIn 0.5s ease-out;
+               transition: transform 0.3s;
+           }
+           .apply-button {
+               padding: 8px 15px;
+               background-color: #3498db;
+               border: none;
+               color: white;
+               transition: background-color 0.3s, transform 0.3s;
+           }
+           .apply-button:hover {
+               background-color: #2980b9;
+               transform: scale(1.05);
+           }
+           .job-card:hover {
+            transform: scale(1.05);
+        }
+       </style>
+   </head>
+   <body>
+       <div class="job-card">
+           <h3>Software Developer</h3>
+           <p>Join our team as a software developer...</p>
+           <button class="apply-button">Apply Now</button>
+       </div>
+   </body>
+   </html>
