@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .trans
+        {
+           
+            width: 150px;
+          
+            border: 1px solid blue;
+            transition: transform 20.25s, background-color 10.25s; 
+            /* transition: background-color2.3s,transform 10.3s; */
+        }
+        .trans:hover
+        {
+             background-color: blueviolet; 
+            
+             transform: scale(10.05);
+        }
+
+
+
+
+        .transition
+        {
+
+            padding: 10px;
+            border: 1px solid red;
+            transition: tranform 20.85s,;
+            margin-left: 600px;
+            transition: transform 20.25s, background-color 10.25s; 
+        }
+
+        .transition:hover
+        {
+            transition: transform 20.25s, background-color 10.25s; 
+            background-color: rgb(58, 42, 165);
+            transform: scale(10.85);
+          
+            
+            
+        }
+
+
+        .animation
+        {
+
+            width: 200px;
+            height: 100px;
+            border: 1px solid blue;
+            animation: slideln 5.5s reverse;
+            /* animation:slideln 0.5s reverse; */
+            background-color: blueviolet;
+        }
+
+        @keyframes slideln
+    {
+
+        0%{
+            transform:translateY(-100%)
+        }
+        /* 50%{
+            transform: translatex(100);
+        } */
+
+        100%{
+
+            transform:translatey(0)
+        }
+    }
+
+    </style>
+   
+</head>
+<body>
+  
+
+    <h1>1)Transforming Job Card on Hover:</h1>
+    <div class="trans">
+        
+        
+      
+            <h3>Software Developer</h3>
+            <p>Join our team as a software developer.</p>
+            <!-- <button style="background-color: antiquewhite;color: blue;width: 115px;position: absolute;">Applay Now</button> -->
+    </div>
+
+    <h1>
+        qsno:2)Adding Transition Effect to Buttons
+    </h1>
+        <button class="transition">
+           <b>Applay Now</b>
+        </button>
+
+
+        <h1>third qs:animation</h1>
+        <div class="animation">
+            Job:ASP.Net Developer
+
+        </div>
+       
+</body>
+</html>
