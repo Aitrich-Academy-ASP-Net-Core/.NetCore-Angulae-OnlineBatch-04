@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .job-card
+    {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #c91b1b;
+        background-color: aqua;
+        transition: transform (12.9s);
+    }
+
+
+    .job-card:hover
+    {
+        transform: scale(5.05);
+    }
+
+    .applay-button
+    {
+        padding: 8px 15px;
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        transition: background-color2.3s,transform 10.3s;
+    }
+
+    .applay-button:hover
+    {
+        background-color: #c91b1b;
+        transform: scale(10.05);
+    }
+
+    @keyframes slideln
+    {
+
+        0%{
+            transform:translateX(-100%)
+        }
+
+        100%{
+
+            transform:translateX(0)
+        }
+    }
+    .job-card1
+    {
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #c91b1b;
+        background-color: aqua;
+        animation:slideln 0.5s reverse;
+    }
+
+    
+</style>
+
+<body>
+
+    <body>
+
+        <h1> Create a job listing card that scales up slightly when hovered over.(Tranceforming Job Card on Hover)</h1>
+        <div class="job-card">
+            <h3>Software Developer</h3>
+            <p>Join our team as asoftware developer</p>
+            <button>Applay Now</button>
+        </div>
+
+        <h1>
+            Adding Transition Effect to Buttons:
+        </h1>
+        <h3>Creating buttons with transition effects for a smoother experience</h3>
+
+
+        <button class="applay-button">Applay Now</button>
+
+        <br><br>
+
+        <h1><u style="color: #c91b1b;">Animating Job Card Entrance:</u></h1>
+        <h3><u>Task: Animate job listing cards with a slide-in animation as they appear on the page</u></h3>
+        <div class="job-card1">
+            <h3>Software Developer</h3>
+            <p>Join our team as asoftware developer</p>
+            <button>Applay Now</button>
+           
+        </div>
+    </body>
+
+</body>
+
+</html>
