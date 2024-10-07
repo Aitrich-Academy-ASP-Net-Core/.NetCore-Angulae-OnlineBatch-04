@@ -1,0 +1,124 @@
+.subsection1{
+    width: 150px;
+    height: 140px;
+    background-color:red ;
+    border: 1px solid pink;
+    border-radius:4px;
+    position:absolute;
+    top: 55px;
+    left: 50px;
+}
+.subsection2{
+    width: 150px;
+    height: 140px;
+    background-color:blue ;
+    border: 1px solid pink;
+    border-radius:4px;
+    position:absolute;
+    top: 55px;
+    left: 250px;
+}
+.subsection3{
+    width: 150px;
+    height: 140px;
+    background-color:green ;
+    border: 1px solid pink;
+    border-radius:4px;
+    position:absolute;
+    top: 55px;
+    left: 470px;
+}
+.subsection4{
+    width: 150px;
+    height: 140px;
+    background-color:magenta;
+    border: 1px solid pink;
+    border-radius:4px;
+    position:absolute;
+    top: 55px;
+    left: 700px;
+}
+.subsection5{
+    width: 150px;
+    height: 140px;
+    background-color:blue ;
+    border: 1px solid pink;
+    border-radius:4px;
+    position:absolute;
+    top: 55px;
+    left: 920px;
+}
+.subsection6{
+    width: 1000px;
+    height: 50px;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    position: absolute;
+    top: 330px;
+    left: 30px;
+  
+}
+.subsection7{
+    width: 1000px;
+    height: 50px;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    position: absolute;
+    top: 390px;
+    left: 30px;
+}
+.subsection8
+{
+    width:1000px;
+    height: 50px;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    position: absolute;
+    top: 450px;
+    left: 30px;
+}
+.subsection9
+{
+    width: 1000px;
+    height: 50px;
+    background-color: yellowgreen;
+    border-radius: 4px;
+    position: absolute;
+    top: 510px;
+    left: 30px;
+}
+.inpname
+{
+width: 900px;
+height: 30px;
+border-radius: 4px;
+position: absolute;
+top: 90px;
+left: 50px;
+}
+.inpemail{
+ width: 900px;
+height: 30px;
+border-radius: 4px;
+position: absolute;
+top: 100px;
+left: 50px;
+}
+.message
+{
+ width: 900px;   
+height: 100px;
+border-radius: 4px;
+position: absolute;
+top: 100px;
+left: 50px;
+}
+.btn1 
+{
+width: 800px;
+height: 40px;
+border-radius: 4px;
+position: absolute;
+top: 330px;
+left: 50px;
+}
