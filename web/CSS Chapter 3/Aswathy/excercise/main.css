@@ -1,0 +1,49 @@
+.item:hover
+{
+position: absolute;
+width: 700px;
+height: 45px;
+background-color: white;
+border-radius: 12px;
+}
+.foot-image1
+{
+    animation: homeslide 3s infinite;
+}
+@keyframes homeslide 
+{
+0%{
+    left: 900px;
+}
+50%
+{
+    left: 950px;
+}
+100%
+{
+    left: 900px;
+}
+}
+.foot-image2
+{
+    animation: calenderslide 3s infinite;
+}
+@keyframes calenderslide
+{
+0%{
+    left: 1100px;
+}
+50%
+{
+    left:1050px;
+}
+100%
+{
+    left: 1100px;
+}
+}
+.foot-image1,.foot-image2
+{
+    position: absolute;
+    top: 660px;
+}
