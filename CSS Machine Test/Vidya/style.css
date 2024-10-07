@@ -1,0 +1,182 @@
+
+body{
+
+    font-family: sans-serif;
+    /* background-color: blanchedalmond; */
+} 
+.parent{
+    color: white;
+    width: 100%;
+    height:3200px;
+    background-color: rgb(241, 219, 219);
+}
+ .mainheader{
+    position: absolute;
+    width:100% ;
+   
+    height: 150px;
+    background-image: linear-gradient(-225deg,rgb(248, 72, 72) 30%,rgb(242, 180, 180) 60%,rgb(86, 123, 86) 100%);
+    text-align: center;
+    /* color: white; */
+    
+}
+.nav{ list-style:none;
+    position: absolute;
+    top:100px;
+    text-decoration: none;
+    color:white;
+
+}
+.nav:hover{
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    color: black;
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+.about{
+    position: absolute;
+    left: 70px;
+    top: 200px;
+    width: 1100px;
+    height:100px;
+    background-color:white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: rgb(245, 214, 214) 0px,20px,30px,-10px;
+}
+.about:hover{
+    
+}
+ul{
+    list-style: none;
+}
+.gallery{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    text-align: center;
+    width: 1100px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.box{  text-align: center;
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    border-radius: 15px;
+} 
+
+.funbox{
+    position: absolute;
+    top:800px ;
+    left: 50px;
+    width: 1100px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* .limage{ 
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 900px;
+    height: 45px;
+    background-color: rgb(246, 192, 43);
+    border-radius: 12px;
+    
+} */
+ .box1{
+    position: absolute;
+    left: 50px;
+    width: 900px;
+    height: 45px;
+    background-color: rgb(246, 192, 43);
+    border-radius: 12px;
+ }
+.texts{
+    position: absolute;
+    left: 80px;
+    font-weight: lighter;
+}
+
+.contact{
+    position: absolute;
+    top: 1500px;
+    left: 50px;
+    width: 1100px;
+    height: 900px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.labels{
+    position: absolute;
+    left: 50px;
+    color: brown;
+}
+
+
+.heading{
+    animation: bounce 1s infinite;
+}
+@keyframes bounce{
+
+    0%{
+        transform: translate(0,0);
+      }
+      50%{
+        transform: translate(0,-20px);
+      }
+      
+}
+
+.about:hover{
+  transform: scale(1.05);
+}
+.gallery:hover{
+    transform: scale(1.05);
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+.funbox:hover{
+    transform: scale(1.05);
+}
+.box1:hover{
+    animation: shake .2s linear;
+}
+
+
+@keyframes shake{
+    0%{transform: translate(0)}
+    100%{transform: translate(20px);}
+    
+  
+}
+.contact:hover{
+    transform: scale(1.05);
+}
+
+.btn{
+    background-color: brown;
+    transition: background-color .2s ease, transform .2s ease-in-out;
+}
+
+
+.btn:hover{
+    background-color:green;
+    transform: scale(1.05);
+}
+
