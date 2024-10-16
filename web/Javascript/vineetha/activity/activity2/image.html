@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image Source</title>
+</head>
+<body>
+    <img id="image1" src="download.jpg" height="200px" width="200px" alt="Image 1" onclick="changeImage()">
+    <img id="image2" src="bird-8788491_1280.webp" height="200px" width="200px" alt="Image 2">
+
+    <script>
+        function changeImage() {
+            const image1 = document.getElementById('image1');
+            const image2 = document.getElementById('image2').src;
+            image1.src = image2;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect with JavaScript</title>
+    <style>
+        #hoverElement {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(232, 6, 6); /* Initial background color */
+            transition: background-color 0.3s; /* Smooth transition effect */
+        }
+    </style>
+</head>
+<body>
+    <div id="hoverElement"></div>
+
+    <script>
+        const hoverElement = document.getElementById('hoverElement');
+
+        hoverElement.addEventListener('mouseover', () => {
+            hoverElement.style.backgroundColor = 'red';
+        });
+
+        hoverElement.addEventListener('mouseout', () => {
+            hoverElement.style.backgroundColor = 'blue';
+        });
+    </script>
+</body>
+</html>
