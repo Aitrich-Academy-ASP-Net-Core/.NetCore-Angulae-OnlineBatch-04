@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+</head>
+<body>
+<p id="change">Hellow world</p>
+<button type="button"
+        onclick='document.getElementById("change").innerHTML="HELLOW"'>save</button>
+
+<h2>hide</h2>
+
+
+<p id="img"><img src="images/dashboard 1.png">image</p>
+
+<button type="button"
+        onclick='document.getElementById("img").style.display="none"'>save</button>
+
+        <h2 id="heading">mouse hover</h2>
+        
+        
+<h1>alert msg</h1>
+<input id="myinputfield"type="text">
+
+
+<p id="demo">Click to display the time.</p>
+
+<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+
+<h2>image</h2>
+<img id="image1"src="images/jingle-bell (1).png">
+<button id="changeimage">click</button>
+<p id="demo4"></p>
+
+
+<script>
+        
+        let heading=document.getElementById("heading");
+       heading.addEventListener("mouseover",function(){
+            heading.style.backgroundColor="red"
+        });
+    
+
+       
+const myinputfield=document.getElementById("myinputfield");
+myinputfield.addEventListener("keypress",function(){
+        alert("Alert")
+        
+
+        
+
+
+
+})
+
+const image1=document.getElementById("image1");
+const changeimage=document.getElementById("changeimage");
+
+changeimage.addEventListener("click", function() {
+        image1.src= "images/person3.jpg";
+
+})
+
+
+var countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+    
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+
+  document.getElementById("demo4").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo4").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+
+
+
+
+</script>       
+
+       
+    
+</body>
+</html>
