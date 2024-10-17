@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #clock {
+          font-size: 32px;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 100px;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="clock"></div>
+      <script>
+        function displayTime() {
+          var currentDate = new Date();
+          var hours = currentDate.getHours();
+          var minutes = currentDate.getMinutes();
+          var seconds = currentDate.getSeconds();
+          hours = hours < 10 ? "0" + hours : hours;
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+          var timeString = hours + ":" + minutes + ":" + seconds;
+          document.getElementById("clock").innerHTML = timeString;
+        }
+        setInterval(displayTime, 1000); // update every second
+      </script>
+</body>
+</html>
