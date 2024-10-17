@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="adhil">
+    <title>Activity2</title>
+    <style>
+        #image{
+            display: none;
+        }
+        #demo{
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Qn1 -->
+    <p class="txt">Hello World!</p>
+    <button id="change">Change text</button>
+    <!--------->
+    <br><br>
+    <!-- Qn2 -->
+    <img src="./images/logo-bluex.png" alt="" id="image">
+    <br>
+    <button id="display">Dispaly Image</button>
+    <!--------->
+    <br>
+    <br>
+    <!-- Qn3 -->
+     <p id="element">This is an element</p>
+    
+    
+     <!-- Qn5 -->
+      <p id="time"></p>
+      <button id="current_time">Show Current Time</button>
+      <br>
+      <br>
+
+    <!-- Qn6 -->
+     
+     <img src="./images/logo-bluex.png" alt="" id="chng_img">
+     <img src="./images/microsoft.png" alt="" id="chng_img2">
+     
+ <!-- Qn7 -->
+    <!-- Display the countdown timer in an element -->
+    <div id="some_div"></div>
+    
+    <script>
+        // Qn1
+        let element=document.querySelector(".txt")
+        let btm=document.querySelector("#change")
+        console.log(element);
+        console.log(btm);
+        
+        
+       
+        btm.addEventListener("click",function(){
+            element.innerHTML="Hello, DOM!"
+        })
+
+
+        // Qn2
+        let image=document.querySelector("#image")
+        let button=document.querySelector("#display")
+        console.log(image);
+        console.log(button);
+        
+        button.addEventListener("click",function(){
+            if(image.style.display=="none"){
+                image.style.display="block"
+
+            }else{
+                image.style.display="none"
+
+            }
+        })
+
+        // Qn3
+        let element2=document.getElementById("element")
+        element2.addEventListener("mouseout",function(){
+            element2.style.backgroundColor="white"
+        })
+        element2.addEventListener("mouseenter",function(){
+            element2.style.backgroundColor="red"
+        })
+        
+        // Qn4
+        addEventListener("keydown",function(event){
+            if(event.key=="Enter"){
+                alert("Enter key was pressed");
+            }
+        })
+
+        // Qn5
+        let current_time=document.getElementById("current_time")
+        let time=document.getElementById("time")
+        current_time.addEventListener("click",function(){
+            let d =new Date();
+            let t= d.toLocaleTimeString();
+            time.innerHTML=t
+        })
+
+        // Qn6
+        let image2=document.getElementById("chng_img")
+        let image3=document.getElementById("chng_img2")
+        console.log(image2);
+        
+        image2.addEventListener("click",function(){
+            this.src="./images/microsoft.png"
+        })
+        image3.addEventListener("click",function(){
+            this.src="./images/logo-bluex.png"
+        })
+
+
+        //Qn7
+        let timeLeft = 120;
+        let elem = document.getElementById('some_div');
+        let timerId = setInterval(countdown, 1000);
+
+            function countdown() {
+                if (timeLeft == -1) {
+                    clearTimeout(timerId);
+                    over();
+                } else {
+                    elem.innerHTML = timeLeft + ' seconds remaining';
+                    timeLeft--;
+                }
+            }
+
+            function over() {
+                alert("Time out");
+            }
+    </script>
+</body>
+</html>
