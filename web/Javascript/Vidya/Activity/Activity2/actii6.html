@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create two images on your webpage and write JavaScript code so that clicking one image changes its source to another image. -->
+     <br> 
+    
+<h1>Click the Image( Changing its Source) </h1><br>
+    
+<img id="image1" src="./image/girl2.png" alt="Photo 1" />
+<img id="image2" src="./image/Picture.png" alt="Photo 2" />
+
+<script>
+    document.getElementById('image1').addEventListener('click', function() {
+        this.src="./image/Picture.png";
+    });
+    
+    document.getElementById('image2').addEventListener('click', function() {
+        this.src="./image/girl2.png";
+    });
+</script>
+    
+</body>
+</html>

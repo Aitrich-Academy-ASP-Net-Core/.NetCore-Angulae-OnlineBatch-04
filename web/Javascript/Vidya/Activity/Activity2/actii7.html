@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <label for="secondsInput">Enter seconds:</label>
+    <input type="number" id="secondsInput" min="1" />
+    <button id="startButton">Start Countdown</button>
+    <div id="timerDisplay">0</div>
+
+    <script>
+        let countdownInterval;
+
+        document.getElementById('startButton').addEventListener('click', function() {
+            const seconds = parseInt(document.getElementById('secondsInput').value);
+            if (isNaN(seconds) || seconds <= 0) {
+                alert("Please enter a valid number of seconds.");
+                return;
+            }
+
+            clearInterval(countdownInterval); // Clear any existing timer
+            let remainingTime = seconds;
+
+            document.getElementById('timerDisplay').textContent = remainingTime;
+
+            countdownInterval = setInterval(function() {
+                remainingTime--;
+                document.getElementById('timerDisplay').textContent = remainingTime;
+
+                if (remainingTime <= 0) {
+                    clearInterval(countdownInterval);
+                    alert("Time up");
+                }
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
