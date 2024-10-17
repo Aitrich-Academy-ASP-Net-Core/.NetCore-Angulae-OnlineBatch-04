@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divstyle
+        {
+            width: 400px;
+            height: 300px;
+            background-color: thistle;
+            border: 2px  solid bisque;
+            /* display: block; */
+        }
+
+        #button
+        {
+
+            position: absolute;
+            top: 350px;
+        }
+
+
+        
+    </style>
+
+
+
+<script>
+
+   
+
+    
+</script>
+</head>
+<body>
+    <div id="divstyle">
+
+    </div>
+    <button type="button" id="button" >HIDE ME!</button>
+<script>
+   
+    let btn=document.getElementById("button");
+    let divbox=document.getElementById("divstyle");
+
+    btn.addEventListener("click",()=>
+{
+
+if(divbox.style.display==="none")
+{
+divbox.style.display="block"
+btn.textContent="HIDE ME!"
+
+}else{
+    divbox.style.display="none"
+    btn.textContent="SHOW ME!"
+}
+
+})
+
+
+
+   
+    </script>
+
+</body>
+</html>
