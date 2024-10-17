@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="countdown-display">10</div>
+    <button id="start-button">Start</button>
+    <script>
+        let seconds = 10; // initial countdown value
+let intervalId = null;
+const countdownDisplay = document.getElementById('countdown-display');
+const startButton = document.getElementById('start-button');
+
+startButton.addEventListener('click', startCountdown);
+
+function startCountdown() {
+  intervalId = setInterval(updateCountdown, 1000); // 1000ms = 1s
+  startButton.disabled = true;
+}
+
+function updateCountdown() {
+  seconds--;
+  countdownDisplay.textContent = seconds.toString().padStart(2, '0');
+
+  if (seconds === 0) {
+    clearInterval(intervalId);
+    alert('Countdown finished!');
+    startButton.disabled = false;
+  }
+}
+
+
+    </script>
+
+</body>
+</html>
