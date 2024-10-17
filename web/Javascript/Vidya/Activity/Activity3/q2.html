@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg{
+            width: 300px;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write JavaScript to display an alert with the message "Hello World" when a user hovers over a paragraph element. -->
+
+    <p id ="msg">JavaScript allows developers to create dynamically updating content.</p>
+
+    <script>
+        document.getElementById("msg").addEventListener("mouseover",function(){
+
+            alert("Hello World");
+        })
+    </script>
+</body>
+</html>
