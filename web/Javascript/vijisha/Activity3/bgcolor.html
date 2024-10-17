@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+       
+      #stylediv
+      {
+        height: 200px;
+        width: 400px;
+      }
+    </style>
+
+
+
+    <script>
+        //  DOM EVENT ACTIVITY
+        //first Qs:
+        // function color()
+        // {
+
+        //     document.getElementById("bgcolor").style.backgroundColor="red"
+        // }
+
+        let color=()=>
+    {
+ document.getElementById("bgcolor").style.backgroundColor="red"
+
+    }
+
+
+//qsno:3
+
+// let show=()=>
+// {
+
+    // let div=document.createElement('div')
+    // div.id="styledive";
+    // div.style.alignItems="center"
+    // div.style.backgroundColor="yellow"
+    // div.textContent=document.getElementById("input").innerText
+    // console.log(div.textContent);
+    // document.body.appendChild(div)
+
+
+
+    let div=document.createElement('div')
+        div.className="contactdetais";
+        div.style.alignItems="center";
+        div.style.backgroundColor="green";
+        div.textContent="Contact me for collaboration"
+        document.body.appendChild(div)
+
+
+    
+
+// }
+
+
+
+
+    </script>
+</head>
+<body>
+    <!-- //QS:1 -->
+    <button type="button" id="bgcolor" onclick="color()">click</button>
+    <br><br>
+<hr style="border: 2px solid blue;">
+
+
+
+
+
+
+
+
+
+</body>
+</html>
