@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write a JavaScript function to add a new list item to an unordered list each time a
+button is clicked.
+ -->
+
+ <button id="btn">Add New</button>
+ <ul id="listItem"></ul>
+
+ <script>
+    function myFunction(){
+  let list=  document.getElementById("listItem");
+   let newItem = document.createElement("li");
+
+    newItem.textContent="New Item";
+    list.appendChild(newItem);
+   
+}
+   let button= document.getElementById("btn");
+   button.addEventListener("click",myFunction)
+
+ </script>
+</body>
+</html>
