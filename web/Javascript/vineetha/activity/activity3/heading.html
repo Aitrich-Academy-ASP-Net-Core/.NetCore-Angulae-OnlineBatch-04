@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Change Text</title>
+</head>
+<body>
+    <h1 id="heading">Hover over me!</h1>
+
+    <script>
+        const heading = document.getElementById('heading');
+
+        heading.addEventListener('mouseover', () => {
+            heading.innerText = 'Hello, DOM!';
+        });
+
+        heading.addEventListener('mouseout', () => {
+            heading.innerText = 'Hover over me!';
+        });
+    </script>
+</body>
