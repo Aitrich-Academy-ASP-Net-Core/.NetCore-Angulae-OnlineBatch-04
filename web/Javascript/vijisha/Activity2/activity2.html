@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="change">Hello World</p>
+
+    <!-- <button type="button"  id="welcome" onclick="keep.textContent='Wlcome DOM'">click</button> -->
+     <button type="button" onclick="manipulate()">click</button>
+
+
+    <script>
+
+let keep
+        
+        console.log(keep.textContent);
+        function manipulate()
+            {
+                keep=document.getElementById('change').innerHTML="WELCOME DOM"
+                console.log(keep);
+                
+            }
+        
+        
+    </script>
+
+
+
+</body>
+</html>

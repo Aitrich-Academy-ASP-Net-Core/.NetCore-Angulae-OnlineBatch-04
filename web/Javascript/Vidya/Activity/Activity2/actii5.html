@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- code that displays the current time in a specified format (e.g., HH:MM:SS) in a paragraph element when a button is clicked.  -->
+    <br>
+     <!-- <button id="btn" onclick=" document.getElementById('cTime').innerHTML =new Date();">Show Current Time</button> <br> -->
+      <br>
+      <button id ="btn">Current Time</button>
+     <p id ="cTime"></p>
+
+
+     <script>
+       document.getElementById('btn').addEventListener('click',()=>{
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2,'0');
+        const minutes =String(now.getMinutes()).padStart(2,'0');
+        const seconds =String(now.getSeconds()).padStart(2,'0');
+        const currentTime =  `${hours}:${minutes}:${seconds}`;
+
+        document.getElementById('cTime').textContent = currentTime;
+
+       })
+      
+
+     </script>
+</body>
+</html>

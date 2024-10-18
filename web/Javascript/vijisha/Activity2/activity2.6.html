@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let time=0
+        switch(time)
+         {
+            case 0:
+
+        function flip()
+        {
+            let interchange1=document.getElementById("image1")
+interchange1.src="images/office-lady.jpeg"
+Image2= document.getElementById("image2")
+           image2.src="images/lady.jpeg"
+        }
+
+        function flip1()
+        {
+           Image2= document.getElementById("image2")
+           image2.src="images/lady.jpeg"
+           let interchange1=document.getElementById("image1")
+interchange1.src="images/office-lady.jpeg"
+        }
+        time=1;
+    case 1:
+
+         interchange1.src="images/lady.jpeg";
+         image2.src="images/office-lady.jpeg";
+         time=0;
+        //  break;
+
+    }
+        
+
+    </script>
+    <!-- <style>
+        #image1{
+
+        }
+    </style> -->
+</head>
+<body>
+    <img src="images\lady.jpeg" id="image1" onclick="flip()">
+    <img src="images\office-lady.jpeg" alt="picture of a lady" id="image2" onclick="flip1()">
+</body>
+</html>
