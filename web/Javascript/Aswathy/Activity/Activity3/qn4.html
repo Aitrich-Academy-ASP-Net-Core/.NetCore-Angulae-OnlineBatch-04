@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p>Qns4.Dynamically Add new list item in existing OL </p>
+
+    <input id="new-item" type="text" placeholder="Enter new item">
+    <button id="add-button">Add Item</button>
+    <ul id="my-list">
+     <!-- Existing list items -->
+     <li>Mango</li>
+     <li>Orange</li>
+</head>
+<body>
+    <script>
+const addButton = document.getElementById('add-button');
+const newListInput = document.getElementById('new-item');
+const myList = document.getElementById('my-list');
+addButton.addEventListener('click', addNewItem);
+function addNewItem() 
+{
+const newItemText = newListInput.value.trim();
+if (newItemText !== '')
+ {
+const newListItem = document.createElement('li');
+newListItem.textContent = newItemText;
+myList.appendChild(newListItem);
+newListInput.value = ''; 
+}
+}
+</script>
+</body>
+</html>

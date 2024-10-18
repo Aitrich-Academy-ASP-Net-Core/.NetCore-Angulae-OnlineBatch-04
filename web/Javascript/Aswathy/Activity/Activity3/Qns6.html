@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <button id="toggle-button">Toggle Div</button>
+    <div id="toggle-div" style="width: 200px; height: 100px; background-color: lightblue;"></div>
+    <style>
+    .hidden {
+        display: none;
+      }
+    </style>
+</head>
+
+<body>
+    <script>
+        const toggleButton = document.getElementById('toggle-button');
+        const toggleDiv = document.getElementById('toggle-div');
+
+       toggleButton.addEventListener('click', toggleVisibility);
+       function toggleVisibility()
+       {
+      toggleDiv.classList.toggle('hidden');
+       }
+      toggleDiv.classList.add('hidden');
+function toggleVisibility() 
+{
+  toggleDiv.style.display = toggleDiv.style.display === 'none' ? 'block' : 'none';
+}
+
+    </script>
+</body>
+</html>
