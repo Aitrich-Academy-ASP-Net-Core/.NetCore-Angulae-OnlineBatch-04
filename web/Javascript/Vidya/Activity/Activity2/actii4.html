@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Set up an event listener that detects when a specific key (e.g., the "Enter" key) is pressed, and displays an alert with a message. -->
+
+
+
+<script>
+ 
+ function keyPress(event) {
+    
+    if (event.key === "Home") {
+        
+        alert("You pressed the Home key");
+    }
+}
+
+document.addEventListener("keydown", keyPress);
+
+</script>
+</body>
+</html>

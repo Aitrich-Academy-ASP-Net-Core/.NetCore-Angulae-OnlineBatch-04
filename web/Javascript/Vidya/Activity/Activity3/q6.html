@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv{
+            width: 150px;
+            height: 100px;
+            background-color: darkseagreen;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write JavaScript to toggle the visibility of a <div> element when a button is clicked (i.e., hide it if it’s visible and show it if it’s hidden). -->
+        <br>  <div id="myDiv"></div>
+        <br>
+        <button id="btn">Toggle button</button>
+<script>
+    let d =document.getElementById("myDiv");
+    document.getElementById("btn").addEventListener("click",function(){
+     if(d.style.display== "none"){
+        d.style.display = "block";
+
+     }
+     else{
+        d.style.display = "none";
+     }
+        
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">hello world</h1>
+    <p id="text">This is awesome</p>
+    <script>
+        let heading=document.getElementById("heading")
+        console.log(heading);
+        heading.style.backgroundColor="red"
+
+        let textelement=document.getElementById("text")
+        textelement.style.color="yellow";
+        textelement.style.backgroundColor="violet"
+
+        let div=document.createElement('div')
+        div.className="contactdetais";
+        div.style.alignItems="center";
+        div.style.backgroundColor="orange"
+        div.textContent="Contact me for collaboration"
+        document.body.appendChild(div)
+
+
+        
+
+    </script>
+</body>
+</html>

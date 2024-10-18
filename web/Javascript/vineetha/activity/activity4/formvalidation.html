@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Form Validation</title>
+    <title> Form Validation</title>
     <style>
         .error { color: red; }
     </style>
@@ -16,12 +16,7 @@
         <label for="email">Email :   </label>
         <input type="email" id="email" name="email">
         <br><br>
-        <!-- <button type="submit">Submit</button> -->
-    <!-- </form> -->
     
-
-
-   
         <label for="password">Password:</label>
         <input type="password" id="password" name="password">
         <br><br>
@@ -31,8 +26,7 @@
         <button type="submit">Submit</button>
         <div id="errorMessages" class="error"></div>
     </form>
-    <!-- <div id="passwordErrorMessages" class="error"></div> -->
-
+   
     <script>
         document.getElementById('basicForm').addEventListener('submit', function(event) {
             const username = document.getElementById('username').value;
