@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label>Name:</label><br>
+        <input type="text" id="name" placeholder="minimum 5 letter" style="width: 350px;">
+        <p id="error3" style="color: blue; "></p>
+        <br>
+        <br>
+        <label>Password:</label><br>
+        <input type="password" id="password" style="width: 350px;">
+       
+        <br><br> <label>Confirm password:</label><br>
+        <input type="password" id="password2" style="width: 350px; color: blue;">
+        <p id="error2"   style="color: blue; "></p>
+
+        <label>Email:</label><br>
+        <input type="text" id="email" style="width: 350px;color: blue;">
+        <p id="error4" style="color: blue; "></p>
+
+        <br><br><br><br> <button type="submit" id="sub">submit</button>
+
+        <p id="error1" style="color: rgb(248, 17, 17); "></p>
+        <p id="error2" style="color: blue; "></p>
+        
+       
+    </form>
+
+
+<script>
+const regx= /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+// console.log(regx);
+// let c="vijishikesh@gmail.com"
+let em=document.getElementById("email").value
+console.log(em);
+
+
+// let d=regx.test(c)
+// console.log(d);
+
+
+const form=document.getElementById("form")
+
+
+form.addEventListener('submit',function(event){
+
+    const name=document.getElementById("name")
+const psd1=document.getElementById("password")
+
+const psd2=document.getElementById("password2")
+const error1=document.getElementById("error1")
+const error2=document.getElementById("error2")
+const error3=document.getElementById("error3")
+const error4=document.getElementById("error4")
+const email=document.getElementById("email")
+var sub=document.getElementById("sub")
+error1.textContent='';
+
+if(name.value=='' || psd2.value=='')
+{
+    event.preventDefault();
+error1.textContent="All field required"
+
+
+}else if(psd1.value==''){
+
+event.preventDefault();
+error1.textContent="All field required"
+
+}else if(psd2.value==''){
+
+
+
+event.preventDefault();
+error1.textContent="All field required"
+
+}else{
+    
+}
+
+
+if(psd1.value!=psd2.value)
+{
+    event.preventDefault(); 
+    error2.textContent="Enter same password"  
+}
+
+
+
+if(name.value.length<5)
+{
+    event.preventDefault(); 
+    error3.textContent="minimum 5 letters needed"  
+}
+
+
+
+// const regx=/^([a-zA-Z0-9\._]+)@([a-zA--Z0-9])+.([a-z]+)(.[a-z]+)?$/
+const regx= /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const keep=regx.test(email.value)
+if(keep==true)
+{event.preventDefault(); 
+    
+//    alert("enter")
+    
+}if(keep==false){
+
+    event.preventDefault(); 
+
+    error4.textContent="Add valid Email ID"  
+}
+
+}
+
+
+
+
+)
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

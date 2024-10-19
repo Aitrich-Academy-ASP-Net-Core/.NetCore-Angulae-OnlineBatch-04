@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+    <table height="800" width="100%" border="0">
+        
+        <tr>
+            <td align="right" valign="center" width="40%">
+                <image src="images\Screenshot 2024-09-12 150000.png" height="600" width="350">
+
+                </image>
+            </td><td width="10%">
+
+            </td>
+            <td width="50%" valign="top" cellpadding="80" cellspacing="10">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <table><tr><td>
+                <header>
+                    <font face="Garamond">
+                       <h1> Sign in to Admin Dashboard</h1>
+                    </font></header><br><br>
+
+
+                    <form id="validate"> 
+                <!-- <section> -->
+                    <label for=""><b>Email</b></label><br>
+                    <input type="text" id="email" name="email"  size="55" placeholder="input your email in here">
+                    <p id="error1"></p>
+                <!-- </section> -->
+                <!-- <article> -->
+                    <br>
+                    <label>
+                        <b>Password</b>
+                    </label><br>
+                    <input type="password" id="password" name="password"  size="55" placeholder="input your password in here" onclick="">
+                    <p id="error2"></p>
+                    <p id="error3"></p>
+                <!-- </article> -->
+
+                <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            </td><tr align="center"><td><article align="">
+                <input type="submit" id="submit"  value="sign in" >
+                </form>
+            </td></tr></table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <script>
+
+// let regex=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+// let check=regex.test(email)
+// console.log(check);
+
+
+let validate=document.getElementById("validate")
+validate.addEventListener('submit',function(event)
+
+
+// function validate(event)
+{
+let signin=document.getElementById("submit")
+   let email=document.getElementById("email").value
+   let password=document.getElementById("password").value
+    let error1=document.getElementById("error1")
+    error1.textContent='';
+    let error2=document.getElementById("error2")
+    error2.textContent='';
+    let error3=document.getElementById("error3")
+    error3.textContent='';
+
+if((email===''  || email===null) && (password==='' || password===null))
+{
+
+event.preventDefault();
+error1.textContent="All field have to be filled "
+
+
+
+}else if(email===''|| email===null)
+{
+    event.preventDefault();
+error1.textContent="Please Enter Your Email"
+
+
+}else if(password===''|| password===null)
+{
+    event.preventDefault();
+error2.textContent="Please Enter Your password"
+
+
+}
+else{
+
+}
+if(email!='')
+{
+let regex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+let check=regex.test(email)
+if(check==false)
+{
+ event.preventDefault();
+error1.textContent="Follow Email format"
+
+}else
+if(email==="viji@gmail.com"  &&  password==="1234")
+{
+    event.preventDefault();
+    window.location ="./myownchap3.html";
+}else{
+
+    event.preventDefault();
+   error3.textContent="Enter Valid Email and Password"
+
+}
+
+
+}
+
+
+
+})
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
