@@ -1,0 +1,43 @@
+
+
+#myForm{
+    position: absolute;
+    padding: 10px;
+    left: 100px;
+    align-content: center;
+    width: 700px;
+    height: 300px;
+    border-radius: 10PX;
+    border: 50px solid rgb(136, 24, 86);
+    background-color: aqua;
+}
+
+
+
+
+#errorUser{
+    color:red;
+}
+
+#errorEmail{
+    color:red;
+}
+
+#errorPassword{
+    color:red;
+}
+
+.lbl{
+    
+    color: darkblue;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#btn{ font-size:larger;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    color:blueviolet;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+}

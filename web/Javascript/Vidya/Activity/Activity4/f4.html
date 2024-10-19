@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Add a field for a username in the form and write JavaScript to ensure the
+username is at least 5 characters long before submission.
+ -->
+
+
+  <script>
+    function validateForm(event) {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirmPassword').value;
+
+        // Check username length
+        if (username.length < 5) {
+            event.preventDefault(); // Prevent form submission
+            alert("Username must be at least 5 characters long!");
+            return;
+        }
+
+        // Check password match
+        if (password !== confirmPassword) {
+            event.preventDefault(); // Prevent form submission
+            alert("Passwords do not match!");
+        }
+    }
+</script>
+</head>
+<body>
+<form onsubmit="validateForm(event)">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <br><br>
+    
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

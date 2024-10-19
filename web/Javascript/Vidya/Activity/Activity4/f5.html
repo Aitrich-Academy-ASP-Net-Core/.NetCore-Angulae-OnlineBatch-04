@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #errorUser{
+            color:red;
+        }
+
+        #errorEmail{
+            color:red;
+        }
+
+        #errorPassword{
+            color:red;
+        }
+
+
+
+    </style>
+</head>
+<body>
+  <form action="" name="myForm" id="myForm" onsubmit=" return isValid()">
+  <label for="">User Name</label>
+  <input type="text" id="uname">
+  <span id="errorUser"></span><br><br>
+  <label for="">Email</label>
+  <input type="text" id="email">
+  <span id="errorEmail"></span><br><br>
+  <label for="">Password</label>
+  <input type="password" id="pwd"><br><br>
+  <label for=""> Confirm Password</label>
+  <input type="password" id="cPwd">
+  <span id="errorPassword"></span><br><br>
+  <button id="btn">Submit</button>
+</form>
+
+<script>
+ 
+ let eu = document.getElementById("errorUser");
+ let ee = document.getElementById("errorEmail");
+ let ep = document.getElementById("errorPassword");
+
+
+ const emailRegx = /@./ 
+function isValid()
+{  let x = document.getElementById("uname").value;
+  let y = document.getElementById("email").value;
+  let p =document.getElementById("pwd").value;
+  let cp = document.getElementById("cPwd").value;
+
+ if(x.length<5)
+ {
+  //alert("User Name should be atleast 5 character long");
+  eu.textContent="User Name should be atleast 5 character long";
+  return false;
+  
+ }
+  else if(!emailRegx.test(y))
+ {  
+ //alert("Please enter valid email");
+ ee.textContent ="Please enter valid email";
+ return false;
+
+}else if(p!== cp || p==""){
+ // alert("Please enter valid password");
+ ep.textContent ="Please enter valid password";
+ return false;
+}
+else{
+ alert("Form Submited Successfully")
+
+  
+ }
+}
+
+</script>
+
+
+</body>
+
+</html>
