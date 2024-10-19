@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="adhil">
+    <title>Activity3</title>
+    <style>
+        #div_qn6{
+            padding: 20px;
+            border-radius: 10px;
+            background-color: aqua;
+            color: white;
+            font-size: 46px;
+            width: fit-content;
+            text-align: center;
+        
+        }
+        #qn2_para{
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(23, 147, 255);
+        }
+    </style>
+</head>
+<body>
+    <!-- Qn1 -->
+    <button id="qn1_btn">Click Me to change color</button>
+
+    <!-- Qn2 -->
+     <br>
+     <br>
+     <p id="qn2_para">Hover over me to to display alert message</p>
+<br>
+     <!-- Qn3 -->
+      
+      <input type="text" placeholder="Enter a value" id="qn3_input">
+        <input type="submit" id="qn3_btn"></input>
+      
+      <div id="qn3_div">This will change</div><br>
+
+      
+     <!-- Qn4 -->
+        <ul id="qn4_list">
+            <li>99</li>
+            <li>231</li>
+            <li>415</li>
+        </ul>
+        <button id="qn4_btn">Click to add new item</button>
+        <br><br>
+    <!-- Qn5 -->
+     
+        Name: <input type="text" placeholder="Enter Your Name"  id="input_qn5">
+        <button id="btn_qn5" onclick="validate()">Submit</button > 
+     <br><br>
+    <!-- Qn6 -->   
+        <div id="div_qn6">DIV</div>
+        <br>
+        <button id="btn_qn6">Toggle Visibility</button>
+
+    <!-- Qn7 --> <br><br>
+    <img src="./images/logo-bluex.png" alt="" id="chng_img">
+
+    <!-- Qn8 --> 
+    <ul id="qn8_list">
+        <li>100</li>
+        <li>32</li>
+        <li>43</li>
+    </ul>
+    <button id="qn8_btn">Click to add new item</button>
+    <br><br>
+    <!-- Qn9 --> 
+    <button id="qn_9_btn_minus">-</button>
+      <span id="qn9_span">0</span> 
+      <button id="qn_9_btn_plus">+</button>
+     
+
+    <!-- Qn10 --> 
+     <h1 id="qn10_heading">Heading Text</h1>
+     
+    <script>
+        //Qn1
+        let btn_qn1=document.getElementById("qn1_btn")
+        btn_qn1.addEventListener("click",()=>{
+            btn_qn1.style.backgroundColor="#40E0D0"
+            btn_qn1.style.border="none"
+            btn_qn1.style.color="white"
+            btn_qn1.style.padding="10px"
+            btn_qn1.style.borderRadius="10px"
+        })
+
+        //Qn2
+        let qn2_para=document.getElementById("qn2_para")
+        qn2_para.addEventListener("mouseover",()=>{
+            alert("Hello World")
+        })
+
+        //Qn3
+        
+
+        let qn3_div=document.getElementById("qn3_div")
+        
+        
+        let qn3_btn=document.getElementById("qn3_btn")
+        qn3_btn.addEventListener("click",()=>{
+            let qn3_input=document.getElementById("qn3_input").value
+            qn3_div.innerHTML=qn3_input
+            console.log(qn3_div);
+            
+        })
+        
+        console.log(qn3_btn);
+        
+
+        //Qn4
+        let qn4_ul=document.getElementById("qn4_list")
+        let qn4_btn=document.getElementById("qn4_btn")
+        let listitem=Math.random()
+        
+        qn4_btn.addEventListener("click",()=>{
+            let entry = document.createElement("li")
+            entry.appendChild(document.createTextNode(Math.round(Math.random()*100)))
+            qn4_ul.appendChild(entry)
+            
+            
+        })
+
+        //Qn5
+        
+        let btn_qn5=document.getElementById("btn_qn5")
+        function validate(){
+            let input_qn5=document.getElementById("input_qn5").value
+            if (input_qn5==""){
+                alert("Fill name")
+                return false
+                
+
+            }
+        }
+        
+        //Qn6
+        let btn_qn6=document.getElementById("btn_qn6")
+        let div_qn6=document.getElementById("div_qn6")
+        let display1=div_qn6.style.display.value
+        btn_qn6.addEventListener("click",function(){
+            if(div_qn6.style.display=="block"){
+                div_qn6.style.display="none "
+            }
+            else {
+                div_qn6.style.display="block"
+            }
+            console.log(display1);
+            
+            
+        })
+           
+        //Qn7
+
+        let image2=document.getElementById("chng_img")
+        
+        console.log(image2);
+        
+        image2.addEventListener("dblclick",function(){
+            let image=document.getElementById("chng_img").src
+            if(image.indexOf('logo-bluex.png')!=-1){
+               document.getElementById("chng_img").src="./images/microsoft.png"
+            }else{
+               document.getElementById("chng_img").src="./images/logo-bluex.png"
+            }
+            
+        })
+
+        //Qn8
+        let qn8_ul=document.getElementById("qn8_list")
+        let qn8_btn=document.getElementById("qn8_btn")
+       
+        
+        qn8_btn.addEventListener("click",()=>{
+            let entry = document.createElement("li")
+            entry.appendChild(document.createTextNode(Math.round(Math.random()*100)))
+            qn8_ul.appendChild(entry)
+            
+            
+        })
+
+        //Qn9
+        let qn_9_btn_minus=document.getElementById("qn_9_btn_minus")
+        let qn_9_btn_plus=document.getElementById("qn_9_btn_plus")
+        qn_9_btn_minus.addEventListener("click",function(){
+            
+            
+            
+            let qn9_span=document.getElementById("qn9_span")
+            let value1=parseInt( qn9_span.innerText)-1;
+            
+            
+            console.log(value1);
+            
+           qn9_span.innerText=value1;
+            
+            
+        })
+
+        qn_9_btn_plus.addEventListener("click",function(){
+            
+            let qn_9_btn_minus=document.getElementById("qn_9_btn_minus")
+            let qn_9_btn_plus=document.getElementById("qn_9_btn_plus")
+            let qn9_span=document.getElementById("qn9_span")
+            let value1=parseInt( qn9_span.innerText)+1;
+            
+            
+            console.log(value1);
+            
+           qn9_span.innerText=value1;
+            
+            
+        })
+
+        //Qn10
+
+        let qn10_heading=document.getElementById("qn10_heading")
+        qn10_heading.addEventListener("mouseenter",function(){
+            qn10_heading.innerHTML="I am the New Text"
+        })
+        qn10_heading.addEventListener("mouseleave",function(){
+            qn10_heading.innerHTML="Heading Text"
+        })
+    </script>
+</body>
+</html>
