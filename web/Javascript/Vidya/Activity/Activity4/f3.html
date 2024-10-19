@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  Create a form with inputs for a password and password confirmation. Write
+JavaScript to ensure that both passwords match before allowing the form to be
+Submitted.
+ -->
+    <form action="" id="myForm" name="myForm" onsubmit="return pwdCheck()">
+    <label for="">Password</label>
+    <input type="password" id="pwd" name="pwd" required> <br><br>
+    <label for="">Confirm Password </label>
+    <input type="password" id="pwdConfirmation" name="pwdConfirmation" required><br><br>
+    <button id="btn">Submit</button>
+     
+</form>
+
+<script>
+     
+
+    
+
+     function pwdCheck(){
+    let password = document.forms["myForm"]["pwd"].value;
+    let conPassword = document.forms["myForm"]["pwdConfirmation"].value;
+    if(password!==conPassword) {
+    
+       window.alert("Please re-enter the correct password");
+        return false;
+       }
+
+       
+}
+    
+</script>
+</body>
+</html>
