@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="registration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <span id="username-error" style="color: red;"></span>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="email-error" style="color: red;"></span>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="password-error" style="color: red;"></span>
+        <br><br>
+        <button type="submit">Register</button>
+      </form>
+      <script>
+        const usernameInput = document.getElementById('username');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const usernameError = document.getElementById('username-error');
+const emailError = document.getElementById('email-error');
+const passwordError = document.getElementById('password-error');
+
+usernameInput.addEventListener('input', validateUsername);
+emailInput.addEventListener('input', validateEmail);
+passwordInput.addEventListener('input', validatePassword);
+
+function validateUsername() {
+  const usernameValue = usernameInput.value.trim();
+  if (usernameValue.length < 5) {
+    usernameError.textContent = 'Username must be at least 5 characters.';
+  } else {
+    usernameError.textContent = '';
+  }
+}
+
+function validateEmail() {
+  const emailValue = emailInput.value.trim();
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!emailRegex.test(emailValue)) {
+    emailError.textContent = 'Invalid email address.';
+  } else {
+    emailError.textContent = '';
+  }
+}
+
+function validatePassword() {
+  const passwordValue = passwordInput.value.trim();
+  if (passwordValue.length < 8) {
+    passwordError.textContent = 'Password must be at least 8 characters.';
+  } else {
+    passwordError.textContent = '';
+  }
+}
+
+      </script>
+</body>
+</html>
