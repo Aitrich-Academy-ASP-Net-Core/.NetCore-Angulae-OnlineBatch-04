@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise2</title>
+    
+    <style>
+        #sendbtn{
+            width: 30px;
+            position: absolute;
+            right: 10px;
+            top: 2px;
+            
+        }
+        
+        #message{
+            width: 340px;
+            height: 30px;
+        }
+        .messagebar{
+            
+            position: fixed;
+            bottom: 20px;
+            
+            position: -webkit-sticky;
+        }
+        
+        .chatbox{
+            height: 700px;
+            width: 340px;
+           
+           
+        }
+        
+        .chat-bubble {
+            position:relative;
+            margin-left: auto;
+            margin-right: 0;
+           
+            
+            clip-path: polygon(0% 0%, 100% 0%, 100% 5%, 100% 84.75%, 85% 85%, 85% 100%, 70% 85%, 0% 85%);
+
+            border-radius: 5% 5% 5% 5% / 17% 17% 25% 25% ;
+
+            background-color: #117EBD;
+            width: fit-content;
+            padding: 10px;
+            text-align: center;
+            z-index: -1;
+            height: 30px;
+            bottom: 250px;
+            margin-bottom: 20px;
+
+            
+            
+           
+        }
+        .chat-bubble2{
+            max-height: 170px;
+            margin-bottom: 40px;
+            position:relative;
+            clip-path: polygon(5% 14.72%, 19.79% 14.72%, 15% 0%, 39.75% 14.72%, 95% 14.72%, 100% 19.25%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 19.25%);
+            background-color: #dedfdd;
+            width: fit-content;
+            padding: 10px;
+            text-align: center;
+            z-index: -1;
+        }
+        .chat-bubble3{
+            margin-left: auto;
+            margin-right: 0;
+            height: 30px;
+            margin-bottom: 40px;
+            position:relative;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 5%, 100% 84.75%, 85% 85%, 85% 100%, 70% 85%, 0% 85%);
+            border-radius: 5% 5% 5% 5% / 17% 17% 25% 25% ;
+            background-color: #117EBD;
+            width: fit-content;
+            padding: 10px;
+            text-align: center;
+            z-index: -1;
+        }
+        
+        body{
+            background-color: rgb(250, 250, 250);
+        }
+        #static1{
+            height: 100px;
+            padding-top: 25px;
+            bottom: 0px
+        };
+        
+        
+        
+        
+    </style>
+</head>
+<body id="body">
+    <div class="chatbox" id="chatboxborder">
+        <h4>John Kelton</h4>
+        <p style="font-style: italic;">Online</p>
+        <div class="chat-bubble" id="static1">
+            Thank you for expressing interest to join Aitrich Technologies. To get you started with your application we will ask some qustions.
+        </div>
+        <div class="chat-bubble2">
+            Proceed
+        </div>
+        <div class="chat-bubble3" id="static2">
+            Your Current Location
+        </div>
+        <div class="chat-bubble2">
+            Banglore
+        </div>
+        <div class="messagebar">
+            <input type="text" id="message" placeholder="Type your message here">
+           <a href="#sendbtn" > <img src="./images/send.png" alt="" id="sendbtn"></a>
+        </div>
+    </div>
+    
+    
+    <script src="script/main.js"></script>
+</body>
+</html>
+
