@@ -1,0 +1,177 @@
+body{
+   position: relative;
+}
+
+.hireMeNow{
+    width: 291px;
+    height: 1250px;
+    background-color: #117EBD;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+.hireMeNow h1{
+    position: absolute;
+    width: 226px;
+    height: 30px;
+    margin-left: 27px;
+    margin-top: 145px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+
+    color: #FFFFFF;
+}
+
+.s1{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 300px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.s2{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 355px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.s3{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 405px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.s4{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 460px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.s5{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 520px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.s6{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    left: 60px;
+    top: 585px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.s7{
+    position: absolute;
+    width: 182px;
+    height: 39px;
+    left: 90px;
+    top: 818px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.contacts{
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    
+
+}
+.chatBox{
+    position: absolute;
+    left: 900px;
+    top: 200px;
+}
+.iframe{
+    width: 440px;
+    height: 800px;
+}
+.iframe2{
+    width: 380px;
+    height: 800px;
+}
+
+
+.imgNotification{
+    position: absolute;
+width: 39px;
+height: 36px;
+margin-left: 1102px;
+margin-top: 65px;
+}
+.imgGirl{
+    position: absolute;
+width: 72px;
+height: 66px;
+margin-left: 1164px;
+margin-top: 49px;
+}
+.imgGroup{
+    position: absolute;
+width: 114.45px;
+height: 30px;
+left: 1260px;
+top: 66px;
+}
