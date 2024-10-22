@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divs
+        {
+          background-color: rgb(95, 95, 175); 
+          display: block;
+          text-align: center;
+          font-size: xx-large;
+          width: 100px; 
+          height: 30px;
+          position: relative;
+          left: 150px;
+          top: -20px;
+        }
+    </style>
+</head>
+<body>
+   <button type="button" id="btn1">increase</button> 
+   <button type="button" id="btn2">dicrease</button>
+   <span id="divs">20</span>
+
+
+   <script>
+    let store=document.getElementById("btn1")
+    let store2=document.getElementById("btn2")
+    let spanstore=document.getElementById("divs").textContent
+    console.log(spanstore);
+    
+    store.addEventListener("click",()=>
+{
+    document.getElementById("divs").textContent=spanstore++;
+})
+
+
+store2.addEventListener("click",()=>
+{
+    document.getElementById("divs").textContent= spanstore--;
+})
+
+
+   </script>
+</body>
+</html>

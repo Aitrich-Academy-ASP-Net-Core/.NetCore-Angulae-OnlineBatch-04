@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="adhil">
+    <title>Activity4</title>
+    <style>
+        #username_error,#email_error,#pass_error1,#pass_error2{
+            color: red;
+        }
+        
+        .input,.submit{
+            width: 500px;
+            padding: 10px;
+            
+            background-color: aliceblue;
+            border: none;
+           
+        }
+        .submit{
+            width: 520px;
+            color: white;
+            padding: 10px;
+            font-size: large;
+            background-color: rgba(0, 0, 255, 0.504);
+            
+        }
+
+
+    </style>
+</head>
+<body >
+    <!-- Qn1 -->
+    <!-- Qn6 -->
+    <form action="" id="qn1_form">
+        <input type="text" placeholder="Enter Username" id="qn1_username" class="input">
+        <span id="username_error"></span> <!-- Qn5 -->
+        <br>
+        <br>
+        <input type="text" placeholder="Enter Email" id="qn1_email" class="input"> <!-- Qn2 -->
+        <span id="email_error"></span> <!-- Qn5 -->
+        <br>
+        <br>
+        <input type="password" placeholder="Enter password" id="qn3_pass" class="input"> <!-- Qn3 -->
+        <span id="pass_error1"></span> <!-- Qn5 -->
+        <br>
+        <br>
+        <input type="password" placeholder="Re-Enter password" id="qn3_pass2" class="input"> <!-- Qn3 -->
+        <span id="pass_error2" ></span> <!-- Qn5 -->
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="submit">
+
+    </form>
+    
+
+    
+
+    
+
+   
+
+    
+
+    <script>
+        //Qn1
+        let qn1_form= document.getElementById("qn1_form")
+        //Qn2
+        const emailRegex=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+        
+        const pass_regex=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/   //Qn3
+        let qn3_pass=document.getElementById("qn3_pass")   //Qn3
+        let qn3_pass2=document.getElementById("qn3_pass2")  //Qn3
+        let qn1_email=document.getElementById("qn1_email")  
+        let pass_error1=document.getElementById("pass_error1")  //Qn5
+        let pass_error2=document.getElementById("pass_error2") //Qn5
+        let email_error=document.getElementById("email_error")//Qn5
+        let username_error=document.getElementById("username_error")//Qn5
+        
+        let pass_validation=pass_regex.test(qn3_pass)
+        qn1_form.addEventListener("submit",function(event){  
+            let pass=qn3_pass.value
+            let pass2=qn3_pass2.value
+            let validation=emailRegex.test(qn1_email.value)
+            console.log(validation);
+            
+            let qn1_username=document.getElementById("qn1_username")
+            if(qn1_email.value=="" ){
+                event.preventDefault()
+
+                email_error.innerHTML="Enter email"
+                
+                
+            }else{
+                email_error.innerHTML=""
+            }
+             if(qn1_username.value==""){
+                event.preventDefault()
+                
+                username_error.innerHTML="Enter username"
+            }else{
+                username_error.innerHTML=""
+            }
+             if(validation==false){
+                event.preventDefault()
+                
+                email_error.innerHTML="Invalid Email"
+            }else{
+                email_error.innerHTML=""
+            }
+             
+            if(qn3_pass.value==""){
+                event.preventDefault()
+                
+                pass_error1.innerHTML="Enter Password"
+            }else{
+                pass_error1.innerHTML=""
+            }
+            
+            if((pass!=pass2)&&(pass!="")){
+                event.preventDefault() //Qn3
+                if(pass=""){
+                    pass_error1.innerHTML="Enter Password"
+                    pass_error2.innerHTML=""
+                }else {
+                    pass_error2.innerHTML="Password incorrectly re-entered"
+                }
+                
+            }else if(pass2==""){
+                event.preventDefault()
+                pass_error2.innerHTML="Re-Enter Password";
+            }
+            else{
+                pass_error2.innerHTML=""
+            }
+
+             if(qn1_username.value.length<5){
+                event.preventDefault()//Qn4
+                
+                username_error.innerHTML="Username should be atleast 5 characters long"
+            }else{
+                username_error.innerHTML=""
+            }
+            
+            })
+        
+            
+                
+           
+        
+        
+
+        
+
+        //Qn6
+
+       
+    </script>
+</body>
+</html>

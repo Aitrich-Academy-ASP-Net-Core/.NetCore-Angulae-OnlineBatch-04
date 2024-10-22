@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- . Email Validation
+o Extend the previous form validation to check if the entered email address is in a
+valid format (e.g., contains an &quot;@&quot; and a domain).
+ -->
+    
+
+     <form action="" name="myForm" onsubmit="validateForm()" id="myForm">
+        <label for="">User Name :</label>
+        <input type="text" id="uname" ><br><br>
+        <label for="email">Email ID :</label>
+        <input type="email" id="email" name="email" >
+        <span id="error-message" style="color: red;"></span>
+        <br><br>
+        <button id="btn">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            const uname = document.getElementById("uname").value;
+            const email = document.getElementById("email").value;
+            if (uname == "" || email == "") {
+                alert(" error - Both User Name and Email are required");
+            }
+
+
+        }
+       
+        document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const emailInput = document.getElementById('email').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Regular expression for validating email format
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(emailInput)) {
+                errorMessage.textContent = 'Please enter a valid email address.';
+            } else {
+                errorMessage.textContent = '';
+               
+                alert('Email is valid!');
+                // Optionally, you can submit the form here if needed
+            this.submit();
+            }
+        });
+    </script>
+</body>
+
+</html>

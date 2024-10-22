@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="btn">click</button>
+<h2>2. alert</h2>
+<p  id="demo">my input </p>
+
+<h3>Using DOM Manipulation</h3>
+<input type="text"id="doc">
+<button onclick="displayvalue()">save</button>
+<div id="box" style="background-color: red;height: 20px;width: 80px;"></div>
+
+<h2>list</h2>
+<ul id="Mylist">
+    <li>item1</li>
+    <li>item2</li>
+</ul>
+<button onclick="addItem()">add item</button>
+<br>
+<br>
+
+<form name="myForm"action="/action_page.php" onsubmit="return validateForm()" method="post" required >
+    <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form>
+
+<br>
+<br>
+
+  <button onclick="myFunction()">Try it</button>
+  <div id="mydv" style="background-color: blueviolet;height: 100px;width: 40%;">
+    my div
+  </div>
+
+<br>
+
+<h2>image</h2>
+<img id="image1"src="images/jingle-bell (1).png" ondblclick="change();">
+<br>
+<br>
+
+<button onclick="decrement()">-</button>
+<span id="valueDisplay">0</span>
+<button onclick="increment()">+</button>
+
+<h1 onmouseover="changeText(this)">Hover me!</h1>
+<script>
+
+    let btn=document.getElementById("btn");
+    btn.addEventListener("click",function(){
+        btn.style.backgroundColor="red"
+     });
+
+   let demo=document.getElementById("demo");
+demo.addEventListener("mouseover",function(){
+        alert("hellow world");
+     
+    
+        
+    })
+function displayvalue(){
+    const inputvalue=document.getElementById("doc").value;
+    document.getElementById("box").innerText=inputvalue;
+}
+        
+function addItem(){
+const ul=document.getElementById('Mylist');
+const li=document.createElement('li');
+li.appendChild(document.createTextNode('new item'));
+ul.appendChild(li);
+}
+
+function validateForm() {
+  var form= document.forms["myForm"]["fname"].value;
+  if (form == "" || form == null) {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+function myFunction() {
+  var div=document.getElementById("mydv");
+  if (div.style.display === "none") {
+    div.style.display = "block";
+  } else {
+    div.style.display = "none";
+  }
+}
+function change(){
+    let image=document.getElementById("image1");
+    image.src="images/user.png";
+}
+
+
+let count=0
+const valueDisplay=document.getElementById("valueDisplay");
+function increment(){
+    count++;
+   valueDisplay.innerText=count;
+}
+function dicrement(){
+    count--;
+   valueDisplay.innerText=count;
+}
+function changeText(element) {
+  element.innerHTML = "Changed!";
+}
+</script>
+
+
+
+
+    
+</body>
+</html>

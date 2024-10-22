@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <!-- Write JavaScript to dynamically add a new list item to an existing unordered list (<ul>) when a button is clicked -->
+
+    <button id="btn">Add List</button>
+    <ul id="myList"><li>HTML</li>
+    <li>CSS</li></ul>
+
+    <script>
+        const button = document.getElementById('btn');
+        const list = document.getElementById('myList');
+
+        button.addEventListener('click', function() {
+            const newItem = document.createElement('li'); // Create a new list item
+            newItem.textContent = 'JavaScript'; // Set its text
+            list.appendChild(newItem); // Add the new item to the list
+        });
+
+    </script>
+</body>
+</html>
