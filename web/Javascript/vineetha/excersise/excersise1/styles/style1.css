@@ -1,0 +1,149 @@
+body{
+    overflow: hidden;
+    position: relative;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image
+{
+    position: absolute;
+    height:700px;
+    width: 700px;
+    background-color: rgba(229, 235, 235, 0.942);
+    margin-left: -3px;
+    margin-right: -3px;
+}
+.slider1{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+}
+.header{
+    position: absolute;
+    width: 250px;
+    height: 68px;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+.wrapper1{
+    width: 100%;
+    display: flex;
+}
+.wrapper1 img{
+    width: 100%;
+    margin-left: 210px;
+    margin-top: 70px;
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-150%);
+    }
+    
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.signin{
+    margin-left:835px;
+    margin-top: 100px;
+    position: absolute;
+    width: 700px;
+    height: 900px;
+    background-color: #ffffff;
+}
+
+ 
+
+
+.sp1{
+    position: absolute;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.email1
+{
+    
+        position: absolute;
+        margin-left: 5px;
+        font-weight: bold;
+        margin-top: 30px;
+}
+
+ .da1
+{
+  position: absolute;
+  
+            width: 380px;
+            height: 35px;
+            margin-top:25px;
+            margin-left:-35px;
+            border-radius: 6px;
+            border: 1px solid #5541d7;
+            
+}
+.da2
+{
+    position: absolute;
+  
+    width: 380px;
+    height: 35px;
+    margin-top:25px;
+    margin-left:-60px;
+    border-radius: 6px;
+    border: 1px solid #5541d7; 
+}
+.pwd
+{
+    position: absolute;
+        margin-left: 5px;
+        font-weight: bold;
+        margin-top:180px;
+}
+.p{
+    position: absolute;
+
+    margin-top: 100px;
+    margin-left: 60px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 120%;
+
+    letter-spacing: .5px;
+
+    color: #11142D;
+}
+.button{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 325px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 24px;
+    gap: 10px;
+    border: 0;
+    position: absolute;
+    width: 385px;
+    height: 48px;
+    color: white;
+
+    background: #5541D7;
+    border-radius: 8px;
+}
