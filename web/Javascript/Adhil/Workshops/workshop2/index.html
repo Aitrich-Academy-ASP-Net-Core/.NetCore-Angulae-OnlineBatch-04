@@ -1,118 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Javascript-chapter1-workshop2</title>
+    <title>Javascript-chapater2-workshop2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
-   
-    <style>
-        .googleBtn{
-            background-color: #fff;
-            width: 375px;
-            height: 42px;
-            position: absolute;
-            margin-left: 110px;
-            position: absolute;
-            margin-top: 204px;
-            border: 0.1em solid grey;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            font-weight: bold;
-            font-size: 14px;
-        }
-        .loginWithGoogle h2{
-            font-size: 17.5px;
-            margin-left: 230px;
-            position: absolute;
-            margin-top: 204px;
-        } 
-        .inpTxt{
-            margin-left: 108px;
-            width: 370px;
-            height: 40px;
-            margin-top: 320px;
-            position: absolute;
-            border: 1px solid rgba(0, 0, 0, 0.31);
-        }
-        .inpPwd{
-            margin-left: 108px;
-            width: 370px;
-            height: 40px;
-            margin-top: 380px;
-            position: absolute;
-            border: 1px solid rgba(0, 0, 0, 0.31);
-        }
-        .checkbox{
-            position: absolute;
-            margin-top: 440px;
-            margin-left: -375px;
-        }
-    
-        .p1{
-            color: #636262;
-            margin-left:170px;
-            margin-top: 100px;
-            position: absolute;
-        }
-        .span{
-            width: 90px;
-            position: absolute;
-            color: #000000;
-            text-decoration: underline;
-            font-weight: bold;
-            font-size: 16px;
-        }
-    </style>
-    
+    <meta name="adhil">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+    <script src="scripts/main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="leftContainer" >
-            <div class="logo">
-                <img src="images/Logo.png">
-            </div>
-            <h1 style="position: absolute;width: 332px;height: 72px;margin-left: 135px;margin-top: 120px; font-family: 'Roboto';font-style: normal;font-weight: 700;
-            font-size: 28px;line-height: 42px;text-align: center;color: #000000;">Welcome Back</h1>
-            <a href=""><div class="loginWithGoogle">
-                <img src="images/Login with google shape.png" style="margin-left: 105px;width: 380px;margin-top: 180px;position: absolute;">
-                <img src="images/Google symbol.png" style="position: absolute;margin-left: 150px;margin-top: 200px;width: 25px;">
-                <h2><a href="#" style="text-decoration: none;">Log in with Google</a></h2>
-           
-            </div></a>
-           
-
-            <h2 style="margin-left: 180px;margin-top: 270px; position: absolute;width: 249px;height: 20px;font-family: 'Roboto';font-style: normal;font-weight: 700;font-size: 13px;line-height: 19px;text-align: center;color: #C5BEBE;">OR LOGIN WITH E-MAIL</h2>
-            <div style="margin-left: 380px;margin-top: 275.5px; box-sizing: border-box;position: absolute;width: 100px;height: 0px;border: 3px solid #F5F5F5;">
-
-            </div>
-            <form onsubmit="return validateUser()">
-                <input type="text" name="email" id="email" class="inpTxt" placeholder="   Your Email" style="font-weight: bolder;color: #000000;" >
-                <input type="password" name="password" id="password" class="inpPwd" placeholder="   Your Password" style="position: relative; font-weight: bolder;color: #000000;">
-                <input type="checkbox" class="checkbox">
-                <h2 style="margin-left: 130px;margin-top: 14px; position: absolute;font-size: 15px;">Keep me logged in</h2>
-                <input type="submit" style=" position: absolute;
-                margin-top: 480px;
-                margin-left: -375px;
-                width: 375px;
-                height: 40px;
-                background-color: #64B7F5;
-                border: 1px solid rgba(0, 0, 0, 0.31);
-                font-weight: bolder;
-                color: #F5F5F5;" value="Log in" onclick="return loginCheck()">
-            </form>
-            
-            <div class="p1">
-                <p>Don't have an account yet ? <a href="#" class="span"> Sign up</a></p>
+    <div class="parent">
+        <div class="sidebar">
+            <h2 style="text-align: center;margin-top:80px;color:white;">HireMe Now!</h2>
+            <div class="sidebar-menu">
+                <ul type="none">
+                    <li> <a href="#"> <img src="images/dashboard 1.png" align="center">Dash Board</p></a> </li>
+                    <li> <a href="#"><img src="images/suitcase 2.png" align="center">Jobs</a></li><br>
+                    <li><a href="#"> <img src="images/application (1) 1.png" align="center">Applications</a></li><br>
+                    <li><a href="#"><img src="images/question (1) 1.png" align="center">Interviews</a></li><br>
+                    <li><a href="#"><img src="images/message 1.png" align="center">Messages</a></li><br>
+                    <li> <a href="#"> <img src="images/settings 1.png" align="center">Settings</a></li><br>
+                </ul>
+                <div style="text-align: center;">
+                    <a href="#"><img src="images/add-group (1) 1.png"><br>AddNew</a>
+                </div>
             </div>
         </div>
 
-
-
-        <div class="rightContainer">
-            <img src="images/LoginPageImg.png" width="650px" height="600px">
+        <div class="header">
+            <div >
+                <table  style="float: right;">
+                    <tr>
+                        <td><a href=""><img src="images/notification-bing.png"></a></td>
+                        <td><a href=""><img src="images/girl.png"></a></td>
+                        <td><a href=""><img src="images/exit 1.png" align="center">Logout</a></td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
-    <script src="scripts/main.js"></script>
+    <div class="main">
+        <div class="profile">
+            <div align="center" style="font-family:monospace;margin-top: 30px;">
+                <p><img src="images/girl.png"></p>
+                <div style="font-size: 1.5em;"><b>Bindhu Pillai</b></div>
+                <div>Java Developer</div>
+                <div style="height: 30px;width: 250px;background: #ecf0f1;align-items: center;border-radius: 5px;">
+                    <a href="">
+                        <h4><img src="images/upload 1.png" align="center">RESUME</h4>
+                    </a>
+
+                </div>
+            </div>
+            <div style="margin-top: 40px;">
+                <ul type="none">
+                    <li><img src="images/sms.png" align="center">bindhu1996@gmail.com</li><br>
+                    <li><img src="images/call.png" align="center">123 456 789</li><br>
+                    </li><img src="images/Vector.png" align="center">Location<button style="float:right;border:0"><img
+                            src="images/icons8-pencil-drawing-32.png" align="right" height="30px" width="30px"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="skills" style="overflow: auto; ">
+            <h3 style="margin-left: 82px;"><img src="images/light-bulb 1.png" align="center" height="20px"
+                    width="20px">Skills</h3>
+            <ul id="skillList">
+                <li>Operating Systems : Windows 9x/NT/2000,
+                    DOS/ Unix/LinuxIDE Tools : JBuilderDatabases : PL/SQLLanguages : Java, C, C++, C#, Asp.Net,
+                    PHPWeb Technologies : HTML, JSP, Servlets, Struts Framework,
+                    PhotoshopApplication Servers : BEA WebLogic7.0Web Servers : Tomcat 5.0,
+                    Apache</li>
+            </ul>
+            <hr width="90%">
+            <button style="float:right;border:0" onclick="showForm(this.id)" id="myButton1"><img
+                    src="images/icons8-pencil-drawing-32.png" height="20px" width="20px"></button>
+            <div align="center">
+                <input type="text" height="50px" width="150px" align="center" style="display: none;" id="myTextBox">
+                <button style="display: none;" id="myButton" onclick="add('skill')">add</button>
+            </div>
+        </div>
+    </div>
+    <div class="skills" style="overflow: auto; ">
+        <h3 style="margin-left: 80px;"><img src="images/portfolio 1.png" align="center" height="20px"
+                width="20px">Education</h3>
+        <div style="margin-left: 80px;">
+            <div style="float:left">Bachelor of Arts - Design</div>
+            <div style="float:right;"> Nov ‘13 - Dec ‘17</div><br>
+            <div style="float:left">Field & Fort University </div>
+            <div style="float:right;"> Mansfield, Ohio</div><br>
+            <ul id="eduList">
+                <li>Top 10 percentile of the class</li>
+            </ul>
+            <p>Master of arts Texas University</p>
+            </p>
+        </div>
+        <hr width="90%">
+        <button style="float:right;border:0" onclick="showForm(this.id)" id="myButton2"><img
+                src="images/icons8-pencil-drawing-32.png" height="20px" width="20px"></button>
+        <div align="center">
+            <input type="text" height="50px" width="150px" style="display: none;" align="center" id="eduTextBox">
+            <button style="display: none;" id="eduButton" onclick="add('edu')">add</button>
+        </div>
+    </div>
+
+    </div>
+    <div class="aboutme" style="overflow: auto; ">
+        <h3 style="margin-left: 10px;">About Me</h3>
+        <p style="margin-left: 10px;">Hard working,dedicated candidate with proffesional qualification in IT,Seeking an
+            oppurtunity
+            to work with a growth oriented organization on a real time software development project.
+        </p>
+        <hr width="80%">
+        <button style="float:right;border:0" onclick="showForm(this.id)" id="myButton4"><img src="images/icons8-pencil-drawing-32.png" height="20px"
+                width="20px"></button>
+        <ul id="aboutList">
+            
+        </ul>
+        <div align="center">
+            <input type="text" height="50px" width="150px" style="display: none;" align="center" id="aboutTextBox">
+            <button style="display: none;" id="aboutButton" onclick="add('about')">add</button>
+        </div>
+    </div>
+    <div class=" skills experience" style="overflow: auto; ">
+        <h3 style="margin-left: 80px;"><img src="images/portfolio 2.png" align="center" height="20px"
+                width="20px">Experience</h3>
+        <ul id="experienceList">
+            <li>Advertising Speciality Institute, San Francisco, TX - Graphic Designer <br>
+                Dec ‘18 - June ‘20</li><br>
+            <li>Advertising Age - Graphic Design Intern<br>
+                Jan ‘21 - Nov ‘22</li>
+        </ul>
+        <hr width="90%">
+        <button style="float:right;border:0" onclick="showForm(this.id)" id="myButton3"><img src="images/icons8-pencil-drawing-32.png" height="20px"
+                width="20px"></button>
+
+        <div align="center">
+            <input type="text" height="50px" width="150px" style="display: none;" align="center" id="expTextBox">
+            <button style="display: none;" id="expButton" onclick="add('exp')">add</button>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="accept">
+            <button class="button"><img src="images/upload 1.png">Accept</button>
+        </div>
+        <div class="accept">
+            <button class="button"><img src="images/upload 1.png">Reject</button>
+        </div>
+        <div class="accept"><button class="button"><img src="images/upload 1.png">Shedule </button></div>
+    </div>
+
+    <div class="footer">
+        <img src="images/Decoration.png" style="width:682px">
+
+    </div>
 </body>
+
 </html>
