@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="name">
+        EMAIL: <input type="email"placeholder="enter email id" name="email"id="email">
+        <input type="submit" value="Submit">
+      </form>
+
+<br>
+<h2>Email</h2>
+
+      <form   onsubmit="return validate()" method="post">
+     EMAIL: <input type="email"placeholder="enter email id" name="email"id="email">
+     <input type="submit" value="Submit">
+</form>
+<br>
+<h2>password</h2>
+
+<form   onsubmit="return matchpass()" method="post"name="form1">
+ Enter password<input type="password"name ="password1"> <br>
+ <br>
+ Re-enter password<input type="password"name ="password2"><br>
+ <button type="submit">set password</button>
+</form>
+<h2>username</h2>
+
+<form   onsubmit="return lengthpass()" method="post"name="form2">
+ User name<input type="text"name ="uname"> <br>
+ <button  type="submit">submit</button>
+</form>
+
+<h2>Error</h2>
+
+<form   onsubmit="return userpass()" method="post"name="form3">
+  <span id="error"></span><br>
+   firstname<input type="text"name ="fname1"> <br>
+  <button  type="submit">submit</button>
+ </form>
+
+
+<H2>realtime</H2>
+ <form   onsubmit="return realtime()" method="post"name="form4">
+  
+  Username<input type="text"name ="fname2"> <br>
+  <BR>
+  Email<input type="email"name ="email1"> <br>
+  <br>
+ Password<input type="text"name ="opassword"> <br>
+  <button  type="submit">submit</button>
+
+
+<script>
+    function validateForm() {
+  let name = document.myForm.name.value;
+  let email= document.myForm.email.value;
+  if (name=="") {
+    alert("Name must be filled out");
+    return false;
+  }else if(email==""){
+    alert("enter email id")
+  }
+}
+
+
+function validate(email) {
+  var email= document.getElementById[email].value;
+var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+var result=reg.test(email);
+if (reg.test(email) == false) 
+{
+    alert('Invalid Email Address');
+    return (false);
+}return true;
+}
+
+function matchpass(){
+
+  var firstpassword=document.form1.password1.value;
+  var secondpassword=document.form1.password2.value;
+  if(firstpassword==secondpassword){
+    return true;
+  }else {
+    alert("password must not be same")
+    return false;
+  }
+}
+function lengthpass(){
+  var uname=document.form2.uname.value;
+  if (uname.length<5){
+    return true;
+
+  }else{
+    alert("name must be 5 char")
+  }
+}
+
+function userpass(){
+
+  var firstname=document.form3.fname1.value;
+  var error=document.getElementById("error");
+  if( firstname<3){
+         error.textContent="name must have 3 character"
+         return false;
+
+  }else textContent="";
+}
+function realtime(){
+  var username1=document.form4.fname2.value;
+  var email1=document.form4.email1.value;
+  var opassword=document.form4.opassword.value;
+  
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
