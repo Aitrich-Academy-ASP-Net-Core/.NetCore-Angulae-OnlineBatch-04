@@ -1,123 +1,94 @@
-.opentowork
-{
-     position: absolute;
-     left: 80px;
-     top: 169px;
-     background: #4CB32B;
-     border-radius: 4px;
-     padding:6px;
-     font-size:13px;
-     font-family:Bahnschrift;
-     color: white;
+
+
+body{
+
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family:monospace;
 }
+.sidebar{
+    height:990px;
+    width:20%;
+    background:#117ebd;
+    float: left;
 
-.rightside a
-{
-     position: absolute;
-     font-weight: 900px;
-     font-size: 22px;
-     width: 84px;
-     height: 29px;
-     left: 50px;
-     top: 30px;
-     font-family:Bahnschrift;
-     color: black;
 }
+.sidebar-menu{
 
-.digitalproductdesigner
- {
-     padding: 12px;
-     gap: 8px;
-     position: absolute;
-     width: 328px;
-     height: 48px;
-     left: 330px;
-     top: 120px;
-     background: #FFFFFF;
-     border-radius: 8px;
- }
- .Location
- {
-     align-items: center;
-     padding: 12px;
-     gap: 8px;
-     position: absolute;
-     width: 176px;
-     height: 48px;
-     left: 720px;
-     top: 120px;
-     background: #FFFFFF;
-     border-radius: 8px;
- }
+        padding: 10px 10px 10px 20px;
+        font-size: 20px;
+        display: block;
+      }
+      .sidebar-menu li:hover{
+        background-color: white;
+        border-radius: 10px;
+      }
 
- .jobs
- {
-     position: absolute;
-     width: 128px;
-     height: 21px;
-     left: 330px;
-     top: 192px;
-     font-family: calibri;
-     font-style: normal;
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 21px;
- }
+.header{
+    height:80px;
+    width:75%;
+    vertical-align: middle;
+    float: left;
+   }
+.profile{
+     border:1px solid rgb(232, 224, 224);
+    height:400px;
+    width:20%;
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+    }
 
- .sorting
- {
-     align-items: center;
-     padding: 0px;
-     gap: 8px;
-     color: #C7C7C7;
-     position: absolute;
-     width: 186px;
-     height: 21px;
-     left: 790px;
-     top: 192px;
-     font-family: calibri;
-     font-weight: 500;
- }
+    .skills{
 
- .sorting img
- {
-     position: absolute;
-     margin-top: -38px;
-     margin-left: 150px;
- }
+        border:1px solid rgb(233, 226, 226);
+        height:200px;
+        width:52%;
+        margin-top: 20px;
+        float: left;
+        margin-left: 20px;
+        }
+    .aboutme{
+            border:1px solid black;
+            height:200px;
+            width:20%;
+            margin-top: 20px;
+            float: left;
+            margin-left: 20px;
+         }
+         button:hover{
+            background-color:#117ebd;
+         }
+         td:hover{
 
- .ui-ux,.product-designer,.ui,.ux
- {
-     position: absolute;
-     width: 630px;
-     height: 210px;
-     left: 332px;
-     top: 241px;
-     border-radius: 10px;
- 
- }
-
- .ui-ux
- {
-     margin-top: 10px;
-     border: 1px solid gray;
- }
-
- .product-designer
- {
-     margin-top: 250px;
-     border: 1px solid gray;
-     background-color: white;
- }
-
- .ui
- {
-     margin-top: 490px;
-     border: 1px solid gray;
- }
-
- .ux
- {
-     margin-top: 730px;
-     border: 1px solid gray;
- }
+            background-color: #117ebd;
+         }
+         .accept{
+            /* float:left; */
+            height:150px;
+            width:250px;
+            margin-top: 50px;
+            align-items: center;
+            text-align: center;
+            margin-left: 10px;
+            display: inline-block;
+            padding: 1rem 1rem;
+         }
+         .button {
+            background-color: #ecf0f1; /* Green */
+            border: none;
+            color: rgb(57, 86, 158);
+            padding: 10px 70px;
+            text-align: center;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            
+          }
+          .footer{
+            height:209px;
+            width:99%;
+            background-repeat: repeat;
+            background-color: #117ebd;
+          }
