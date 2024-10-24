@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    const form1=document.getElementById("form1")
+    const uname=document.getElementById("uname")
+    const email=document.getElementById("email")
+    const usermessage=document.getElementById("usermessage")
+    const emailmessage=document.getElementById("emailmessage")
+    form1.addEventListener("SUBMIT",(e)=>
+{
+    if(uname.value==null || uname.value=="")
+   {
+        e.preventDefault();
+        usermessage.innerHTML="This field is required";
+   }
+   if(email.value==null ||email.value=="")
+   {
+     e.preventDefault();
+     emailmessage.innerHTML="This field is required"
+   }
+});
+
+    </script>
+</head>
+<body>
+
+    
+        <form action="" name="form1" method="POST" >
+            <!-- <h1>Registration Form</h1> -->
+
+            <label for="username">Name</label>
+            <input type="text" id="uname" placeholder="Enter your name"><br>
+            <span id="usermessage" style="color: red;"></span><br>
+         
+     
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter Your Email"><br>
+            <span id="emailmessage" style="color: red;"></span>
+
+            <button type="button">SUBMIT</button>
+
+        </form>
+    
+
+    </div>
+</body>
+</html>

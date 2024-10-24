@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double-Click Image Change</title>
+</head>
+<body>
+    <img id="myImage" src="bird-8788491_1280.webp" height="200px" width="200px" alt="bird Image">
+
+    <script>
+        document.getElementById('myImage').addEventListener('dblclick', () => {
+            document.getElementById('myImage').src = 'download.jpg';
+        });
+    </script>
+</body>

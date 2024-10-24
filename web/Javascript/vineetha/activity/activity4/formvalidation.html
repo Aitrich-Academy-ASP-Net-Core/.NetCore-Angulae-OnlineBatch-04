@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Validation</title>
+    <style>
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <form id="basicForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        <label for="email">Email :   </label>
+        <input type="email" id="email" name="email">
+        <br><br>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <br><br>
+        <button type="submit">Submit</button>
+        <div id="errorMessages" class="error"></div>
+    </form>
+   
+    <script>
+        document.getElementById('basicForm').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            let errorMessages = '';
+
+            if (!username) {
+                errorMessages += 'Username is required. ';
+            }
+            if (!email) {
+                errorMessages += 'Email is required. ';
+            }
+            const emailPattern = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+            if (!email.match(emailPattern)) {
+                errorMessages += 'Invalid email format. ';
+            }
+            if (username.length < 5) {
+                errorMessages += 'Username must be at least 5 characters long. ';
+            }
+            if (password !== confirmPassword) {
+                errorMessages += 'Passwords do not match. ';
+            }
+
+            if (errorMessages) {
+                event.preventDefault();
+                document.getElementById('errorMessages').innerText = errorMessages;
+            }
+        });
+    </script>
+     
+    
+</body>
+</html>

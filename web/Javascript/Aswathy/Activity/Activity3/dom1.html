@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#div1
+{
+    margin-top:20px;
+    padding: 10px;
+    border: 1px solid mediumvioletred;
+    border-radius: 5px;
+    width:30%;
+}
+
+</style>
+
+<body>
+    <p><b>Qns1.To Change Background color When Clicked</b></p>
+    <button id="sub">Submit</button>
+    <p><b>Qns2.Display Alert Message</b></p>
+    <p id="alertmessage"><b>Click Here</b></p>
+    <p><b>Qns3.Display text in div When the button is clicked</b></p>
+    <div id="div1"></div>
+    <input type="text" id="text1">
+    <button id="btn1">Enter</button><br>
+   
+
+    
+    <script>
+        let sub = document.getElementById("sub")
+        sub.addEventListener("click",function()
+    {
+        sub.style.backgroundColor="red"
+    });
+    let alertmessage=document.getElementById("alertmessage");
+    alertmessage.addEventListener("mouseover",function(){
+    let alertmessage=alert("Hello World!")
+    });
+    let div1=document.getElementById("div1")
+    let text1=document.getElementById("text1")
+    let btn1=document.getElementById("btn1")
+    btn1.addEventListener("click",function()
+    {
+        div1.innerHTML=text1.value;
+
+    });
+
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{ 
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Write JavaScript to change the text of a heading (<h1>) when  it is hovered on it. -->
+        <h1 id="heading">First Heading</h1>
+
+        <script>
+            let Heading =document.getElementById("heading");
+            document.getElementById("heading").addEventListener("mouseover",function(){
+                Heading.innerText= "Second Heading ";
+                Heading.style.color ="blue";
+                
+            })
+        </script>
+</body>
+</html>
