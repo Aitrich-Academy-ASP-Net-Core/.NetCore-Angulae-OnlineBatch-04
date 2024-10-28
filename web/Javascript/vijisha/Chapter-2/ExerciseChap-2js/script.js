@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 ul.classList.add('unorderedList')
                 // console.log(`${obj}:${candidate[obj]}`);
 
-                li.textContent = `\n${candidate[obj]}`
+                // li.textContent = `\n${candidate[obj]}`
+                li.textContent+= candidate[obj]
             }
             num++;
         }
