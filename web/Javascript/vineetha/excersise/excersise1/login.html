@@ -17,8 +17,8 @@
 
             font-family: 'Mulish';
             font-style: normal;
-            font-weight: 700;
-            font-size: 28px;
+            font-weight: 700px;
+            font-size: 35px;
             line-height: 120%;
         
 
@@ -47,7 +47,23 @@
             margin-left: 400px;
             margin-top: -11px;
         }
-        .error { color: red; }
+        .error { color: red;
+       
+    }
+    .errormsg1
+    {
+    
+        margin-top: 40px;
+        border: none;
+        width:fit-content;
+    }
+    .errormsg2
+    {
+        margin-top: 40px;
+        border: none;
+        width:fit-content;
+    }
+
         
     </style>
 
@@ -55,15 +71,18 @@
 <body>
     <div class="main">
         <div class="image">
-            <div class="header">
+            <!-- <div class="header">
                 <img src="images/Group 8.png" >
                 <img src="images/Hire me Now.png"  style="position: absolute;margin-top: 20px;margin-left: 20px;" >
-            </div>
+            </div> -->
             <div class="slider1">
                 <div class="wrapper1">
+                    <img src="images/Group.png" alt="">
+                    <img src="images/Group.png" alt="">
+                    <img src="images/Group.png" alt="">
+                    <!-- width: 600px; height: 600px;">
                     <img src="images/Group.png" style="width: 600px;height: 600px;">
-                    <img src="images/Group.png" style="width: 600px;height: 600px;">
-                    <img src="images/Group.png" style="width: 600px;height: 600px;">
+                    <img src="images/Group.png" style="width: 600px;height: 600px;"> -->
                 </div>
             </div>
         </div>
@@ -74,30 +93,40 @@
 
             <!-- </form> onsubmit="return formValidation()" > -->
                
-                <form id="form1">
+                <form id="form1" name="form1" onSubmit="return formValidation()"> 
                     
                 <div >
-                    <p style="font-size: 25px; font-weight: 600;">Sign in to Admin Dashboard</p>
+                    <p style="font-size: 20px ;font-weight: 700;">Sign in to Admin Dashboard</p>
                     
                 </div>
                 <div class="email1">
                    
-                    <label for="email">Email</label>
+                    <label for="email">Email   </label>
                     <input type="text" name="email" id="email" class="da1" placeholder="input your email here"
                 style="font-size:14px;" >
-                <div id="errormsg" class="error"></div>
+                  <div class="errormsg1">
+                    <div id="errormsg" class="error"></div>
+                    <!-- <p id="errormsg" class="error"></p> -->
+                  </div>
                 </div>
+                
                 <div class="pwd">
                     <label for="password">Password</label>
-                    <input type="text" name="pwd" id="pwd" class="da2"  placeholder="input your password in here"
+                    <input type="text" name="password" id="password" class="da2"  placeholder="input your password in here"
                 style="font-size:14px;" >
-                <div id="errormsg" class="error"></div>
+               <div class="errormsg2">
+                <div id="errormessage" class="error"></div>
+               </div>
                 </div>
+             
                 <div class="forgot">
                     forgot password?
                 </div>
-                <button class="button " type="submit" onclick="formValidation()">Sign in</button>
-                <div id="errormsg" class="error"></div>
+                <div>
+                <button class="button " type="submit" >Sign in</button>
+                
+                 <!-- <p id="errormsg" class="error"></p> -->
+                </div>
                 </div>
             </form>
         
@@ -105,7 +134,8 @@
         
         
     </div>
-    <script src="scripts/script1.js"  type="text/javascript"></script> 
+    <script src="scripts/script1.js"  type="text/javascript"></script>
+     
 </body>
 
 </html>
