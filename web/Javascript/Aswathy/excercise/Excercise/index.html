@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+    
+          <div class="sidebar">
+            <h2 style="text-align: center;margin-top:80px;color:white;">HireMe Now!</h2>
+            <div class="sidebar-menu">
+              <ul type="none">
+                <li> <a href="#"> <img src="images/dashboard 1.png" align="center">&nbsp;&nbsp;&nbsp;Dash Board</p></a>
+                </li>
+                <li> <a href="#"><img src="images/suitcase jobnew.png" align="center">&nbsp;&nbsp;&nbsp;Jobs</a></li><br>
+                <li><a href="#"> <img src="images/application new.png" align="center">&nbsp;&nbsp;&nbsp;Applications</a>
+                </li><br>
+                <li><a href="#"><img src="images/question new.png" align="center" >&nbsp;&nbsp;&nbsp;Interviews</a></li>
+                <br>
+                <li><a href="#"><img src="images/message new.png" align="center">&nbsp;&nbsp;&nbsp;Messages</a></li><br>
+                <li> <a href="#"> <img src="images/settingnew.png" align="center">&nbsp;&nbsp;&nbsp;Settings</a></li><br>
+              </ul>
+              <div style="text-align: center;">
+                <a href="#"><img src="images/add-group.png" width="80px" height="80px" onclick="createTable()"><br>AddNew</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="content">
+
+            <!-- Add your content area content here -->
+      
+            <header>
+      
+              <!-- Add your header content here -->
+      
+              <p style="margin-left: 80%;">
+                <a href=""><img src="images/icons8-notification-24.png" width="30px" height="30px"></a>
+                <a href=""><img src="images/person5.pngnew.png" width="40px" height="40px"></a>
+                <a href=""><img src="images/logout (2).png" width="30px" height="30px" align="">Logout</a>
+              </p>
+              <!-- <div id="table" style="width: 400px" height="450px" borderwidth="5px"></div> -->
+           
+              <!-- </ul> -->
+            </header>
+            <h1>shortlist</h1>
+            <!-- <table id="employee-table" ></table> -->
+            <div id="employee-table" style="width: 400px" height="450px" borderwidth="5px"></div>
+             <!-- <img src="images/member (3).png" alt=""> -->
+          
+ 
+<script>
+  const contentArea=document.getElementById('employee-table');
+  const table=document.createElement('table');
+  const row=document.createElement('tr');
+  const cell=document.createElement('td');
+  const image=document.createElement('img');
+  image.src="images/member (1).png";
+  image.width=100;
+  image.height=100;
+  cell.appendChild(image);
+  const name1=document.createElement('p');
+  name1.innerHTML='Alen';
+  cell.appendChild(name1);
+  const qualification1=document.createElement('p');
+  qualification1.innerHTML='Qualification:MCA';
+  cell.appendChild(qualification1);
+  const experience1=document.createElement('p');
+  experience1.innerHTML='Experience:3 Years';
+  cell.appendChild(experience1);
+  const Location1=document.createElement('p');
+  Location1.innerHTML='Location:Banglore';
+  cell.appendChild(Location1);
+  row.appendChild(cell);
+  const cell2=document.createElement('td');
+  const image2=document.createElement('img');
+  image2.src="images/person5.png";
+  image2.width=100;
+  image2.height=100;
+  cell2.appendChild(image2);
+  const name2=document.createElement('p');
+  name2.innerHTML='Sarah';
+  cell2.appendChild(name2);
+  const qualification2=document.createElement('p');
+  qualification2.innerHTML='Qualification:MSC';
+  cell2.appendChild(qualification2);
+  const experience2=document.createElement('p');
+  experience2.innerHTML='Experience:2 Years';
+  cell2.appendChild(experience2);
+  const Location2=document.createElement('p');
+  Location2.innerHTML='Location:Chennai';
+  cell2.appendChild(Location2);
+  row.appendChild(cell2);
+  const row2=document.createElement('tr');
+  const cell3=document.createElement('td');
+  const image3=document.createElement('img');
+  image3.src="/images/member (2).png";
+  image3.width=100;
+  image3.height=100;
+  cell3.appendChild(image3);
+  const name3=document.createElement('p');
+  name3.innerHTML='Vivek';
+  cell3.appendChild(name3);
+  const qualification3=document.createElement('p');
+  qualification3.innerHTML='Qualification:B-Tech';
+  cell3.appendChild(qualification3);
+  const experience3=document.createElement('p');
+  experience3.innerHTML='Experience:5 Years';
+  cell3.appendChild(experience3);
+  const Location3=document.createElement('p');
+  Location3.innerHTML='Location:Thiruvanathapuram';
+  cell3.appendChild(Location3);
+  row2.appendChild(cell3);
+  const cell4=document.createElement('td');
+  const image4=document.createElement('img');
+  image4.src="images/member (3).png";
+  image4.width=100;
+  image4.height=100;
+  cell4.appendChild(image4);
+  const name4=document.createElement('p');
+  name4.innerHTML='Deepak Roy';
+  cell4.appendChild(name4);
+  const qualification4=document.createElement('p');
+  qualification4.innerHTML='Qualification:B Tech';
+  cell4.appendChild(qualification4);
+  const experience4=document.createElement('p');
+  experience4.innerHTML='Experience:2 Years';
+  cell4.appendChild(experience4);
+  const Location4=document.createElement('p');
+  Location4.innerHTML='Location:Calicut';
+  cell4.appendChild(Location4);
+  row2.appendChild(cell4);
+  table.appendChild(row);
+  table.appendChild(row2);
+  contentArea.appendChild(table);
+ </script>
+
+         
+        
+</body>
+</html>
