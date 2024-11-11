@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .listStyle{
+            width: 400px;
+            height: 50px;
+           margin-top: 10px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            text-align: center;
+           
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+            margin-left: -40px; 
+            
+
+        }
+        .buttonStyle{
+            width: 90px;
+            height: 40px;
+            background-color: tomato;
+            border-radius:50px ;
+            margin-top: 5px;
+            margin-right:10px ;
+        }
+        #totalQuantity{
+            position: relative;
+            top: -50px;
+            left: 150px;
+
+        }
+        #item
+        {
+            width: 250px;
+            height: 40px;
+            font-size: x-large;
+        }
+        #quantityInput{
+            width: 250px;
+            height: 40px; 
+            font-size: x-large;
+        }
+        body{
+            background-color: rgb(229, 226, 38);
+        }
+       
+    </style>
+</head>
+<body>
+    <div style="position: absolute; left: 400px;">
+    <label>AddItem   :</label>
+    <input type="text" id="item"><br><br>
+    <label>Quantity  :</label>
+    <input type="number" id="quantityInput"><br><br>
+    <button type="button" onclick="additem()" style="background-color: rgb(98, 176, 231); width: 120px;height: 45px;margin-left: 140px;">ADD</button><br><br>
+    <h3>Total Quantity:</h3>
+    <h1 id="totalQuantity"></h1>
+    <ul id="ul" style="list-style: none;"></ul>
+</div>
+    <script>
+         let total=0
+        const additem=()=>{
+        let item=document.getElementById('item')
+        let ul=document.getElementById('ul')
+        let quantityInput=document.getElementById('quantityInput')
+        let totalQuantity=document.getElementById('totalQuantity')
+        let Quantity=quantityInput.value
+       
+        if(totalQuantity.textContent!='')
+        {
+        let total =parseInt(quantityInput.value)+parseInt(totalQuantity.textContent)
+       totalQuantity.textContent=total
+    }else{
+        totalQuantity.textContent=quantityInput.value
+    }
+        console.log(total);
+        quantityInput.value=''
+        let newList=document.createElement('li')
+        newList.textContent=item.value+":"+Quantity
+        newList.classList.add('listStyle')
+        
+        let deleteBtn=document.createElement('button')
+        deleteBtn.innerText="Delete"
+        deleteBtn.style.float='right'
+        deleteBtn.classList.add('buttonStyle')
+        console.log(Quantity);
+        newList.appendChild(deleteBtn)
+            ul.appendChild(newList)
+            
+            item.value=''
+           deleteBtn.addEventListener('click',()=>{
+            let total =parseInt(totalQuantity.textContent)-parseInt(Quantity)
+       totalQuantity.textContent=total
+            newList.remove()
+           }) 
+
+
+    }
+
+    </script>
+    
+</body>
+</html>
