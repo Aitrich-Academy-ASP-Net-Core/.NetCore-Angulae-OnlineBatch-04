@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="firstDiv">
+        <form action="" id="form1">
+    <input type="text" id="inputField">
+    <button id="addItem">Add Item</button>
+    <h3 style="display: none;" id="heading">Shopping List</h3>
+     <ul id="ulist" style="list-style: none;"></ul></form>
+    </div>
+    <div class="container">
+     <form action=""id=myform> <br>
+       
+     <label for="">Item Name</label>
+     <input type="text" id="itemInput" size="50"><br><br>
+     <label for="">Item Quantity</label>
+     <input type="text" id="itemQuantity" size="45"><br><br>
+     <button id="addItemButton">Add-Items</button>
+      <h1 id="totalQuantity"></h1>
+      <ul id="shoppingList" style="list-style: none;"></ul>
+      <p id="msg"></p>
+     </form>
+
+     </div>
+   
+    <script>
+        // 1st question
+        let ulist= document.getElementById('ulist');
+        let input= document.getElementById('inputField');
+        document.getElementById('addItem').addEventListener('click',function(event){
+            event.preventDefault();
+        document.getElementById('heading').style.display="block";
+        let list= document.createElement('li');
+        list.classList.add('li');
+        list.textContent=input.value;
+        ulist.appendChild(list);
+
+          input.value="";
+
+        });
+    </script>
+    <script src="script.js"></script>
+</main>
+</body>
+</html>
