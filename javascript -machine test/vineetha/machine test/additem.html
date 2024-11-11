@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding: 1;
+          }
+          li
+          {
+            margin: 5px 0;
+          }
+          button{
+            margin-left: 20px;
+          }
+    </style>
+</head>
+<body>
+    <input type="text" id="textInput" placeholder="Enter an item">
+    <input type="text" id="quantityInput" placeholder="enter quantity">
+    <button onclick="addItem()">Add</button>
+    
+    <h1>Total Quantity :<span id="totalQuantity">0</span></h1>
+    <ul id="itemList"></ul>
+    <script>
+        function addItem()
+        {
+            let item=document.getElementById('textInput');
+           var quantity=document.getElementById('quantityInput');
+            let itemList=document.getElementById('itemList');
+           var totalQuantity=document.getElementById('totalQuantity');
+
+            if(item.value !=="" && quantity.value !== "")
+        {
+           let li=document.createElement('li');
+            //    let qu=parseInt(quantity.value);
+           var qu=parseInt(quantity.value);
+            li.appendChild(document.createTextNode("Item :"+item.value + "    Quantity :"+ qu));
+     
+           
+           var deleteButton=document.createElement('button');
+          deleteButton.appendChild(document.createTextNode('Delete'));
+            deleteButton.onclick = function(){
+                itemList.removeChild(li);
+                totalQuantity.textContent=parseInt(totalQuantity.textContent)-qu;
+            //    totalQuantity.textContent=parseInt(totalQuantity.textContent)- qu;
+        //         totalQuantity.textContent=totalQuantity.textContent-qu;
+            };
+            li.appendChild(deleteButton);
+            itemList.appendChild(li);
+            // totalQuantity.textContent=parseInt(totalQuantity.textContent)+qu;
+            totalQuantity.textContent=parseInt(totalQuantity.textContent)+qu;
+            item.value="";
+            quantity.value="";
+            
+            }
+            
+            
+
+        }
+        
+    </script>
+</body>
+</html>
