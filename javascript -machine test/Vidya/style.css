@@ -1,0 +1,72 @@
+
+
+body{
+    background-color: antiquewhite;
+}
+.container{
+    border-radius: 25px;
+    padding: 20px;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    width:700px;
+    background-color: aquamarine;
+    height: 500px;
+    text-align: center;
+}
+
+.firstDiv{
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+}
+
+.del{ width: 100px;
+    margin-bottom: 20px;
+    color: brown;
+    background-color: white;
+    border-radius:10px;
+}
+
+#addItemButton{
+    top: 200px;
+    color:white;
+    height: 30px;
+    background-color: rgb(192, 93, 188);
+    border-radius:10px;
+}
+.msg{
+    color: red;
+}
+input{ color: white;
+    font-size: large;
+     height:25px;
+    border-radius: 15px;
+    background-color: cornflowerblue;
+}
+label{
+    font-size: x-large;
+    color: blue;
+}
+
+#addItem{
+    position: absolute; 
+  
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(110, 2, 103);
+}
+
+#totalQuantity{
+    color:blue ;
+}
+.li{ font-size:larger;
+    color: rgb(62, 10, 166);
+}
+
+#heading{
+    color: blue;
+}
