@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+#item{
+width: 20%;
+height: 40px;
+border-radius: 30px;
+
+}
+#btn{
+
+width: 10%;
+height: 40px;
+border-radius: 10px;
+background-color: cornflowerblue;
+
+}
+
+#item1{
+width: 20%;
+height: 40px;
+border-radius: 30px;
+
+}
+#qty{
+width: 20%;
+height: 40px;
+border-radius: 30px;
+
+}
+#button{
+
+width: 10%;
+height: 40px;
+border-radius: 10px;
+background-color: rgb(222, 130, 209);
+
+}
+#total{
+width: 10%;
+display:none;
+background-color: darkslategray;
+font-size: medium;
+
+}
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Shopping List</h1>
+<br>
+<br>
+
+<ul id="itemlist">
+
+</ul>
+
+<input type="text" id="item" placeholder="Please Enter the Item">
+<button id="btn">Add Item</button>
+
+<br>
+<BR>
+<h1>shopping list 2</h1>
+<br>
+<br>
+<br>
+
+<ul id="shopping">
+
+
+
+
+</ul>
+<h1 id="total">Total Quantity</h1>
+<input type="text"id="item1"placeholder="enter the item">
+<input type="number"id="qty"placeholder="enter the Qty">
+
+
+
+<button id="button">Add Item</button>
+
+
+
+
+<script>
+
+    var button=document.getElementById("btn");
+ 
+    button.addEventListener("click", function (){
+    
+    var item=document.getElementById("item").value;
+    var itemlist=document.getElementById("itemlist");
+    let li=document.createElement("li");
+    li.innerHTML=item;
+    itemlist.appendChild(li);
+    document.getElementById("item").value = "";
+    document.getElementById("item").focus();
+    } );
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    var button=document.getElementById("button");
+
+button.addEventListener("click", function (){
+
+var item=document.getElementById("item1").value;
+var qty=document.getElementById("qty").value;
+var total=document.getElementById("total");
+var itemlist=document.getElementById("shopping");
+let li=document.createElement("li");
+li.innerHTML="ITEM:"+item+","+""+"QUANTITY="+qty;
+
+total.innerHTML="TOTAL QTY="+qty;
+total.style.display="block";
+
+let buttonremove=document.createElement("button");
+buttonremove.innerHTML="Delete";
+buttonremove.style.height="40px";
+buttonremove.style.backgroundColor="Red";
+buttonremove.style.width="10%";
+
+
+
+buttonremove.addEventListener("click",() => {
+li.remove();
+
+});
+
+
+
+li.appendChild(buttonremove);
+ 
+ itemlist.appendChild(li);
+ document.getElementById("item1").value = "";
+    document.getElementById("item1").focus();
+    document.getElementById("qty").value = "";
+    document.getElementById("qty").focus();
+    
+}  );
+
+
+
+
+    
+</script>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+}
+
+.sidebar
+{
+    height: 800px;
+    width: 235px;
+   background: #4042c0;
+   float: left;
+}
+.sidebar-menu{
+
+    padding: 10px 10px 10px 20px;
+    font-size: 20px;
+    display: block;
+    color: white;
+  }
+  
+  .header{
+    height:80px;
+    width:75%;
+    vertical-align: middle;
+    float: left;
+   }
+   .jobs
+    {
+        /* border: 2px solid gray; */
+        height: 150px;
+        width: 995px;
+        position: absolute;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: normal;
+        margin-left: 450px;
+        
+    }
+    
+    .jobs img
+    {
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .jobs h4
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    .jobs p
+    {
+        position: absolute;
+        margin-left: 125px;
+        margin-top: 55px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    .rightside
+    {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex: 1;
+        position: absolute;
+      }
+
+    #content {
+        
+        flex: 1;
+       padding:5px;
+       margin-top: 25px;
+       left:500px; 
+       position: absolute;
+       
+       /* top:50px; */
+      }
+    
+    
+    
+      .rightimage {
+        flex: 1;
+        padding: 10px;
+        left: 700px;
+        margin-left: 800px;
+        /* position: absolute; */
+      }

@@ -1,0 +1,48 @@
+.sidebar{
+    position: absolute;
+    
+    width: 300px;
+    height: 1100px;
+    color: white;
+    background:#117ebd;
+}
+
+.ulist{
+    list-style: none;
+    position: relative;
+    left: 50px;
+}
+
+.image{
+      width: 35px;
+      padding: 5px;
+}
+img{ 
+    width: 110px;
+    padding: 17px;
+}
+.span{
+    position: relative;
+    left: 15px;
+    font-size: larger;
+
+}
+.rightmain{
+    position:absolute;
+    
+    left: 300px;
+    width: 900px;
+    height: 1100px;
+    background-color:white;
+}
+.right{
+    position:absolute;
+    top: -20px;
+    left: -210px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-bottom: 25px;
+}

@@ -97,17 +97,17 @@
             <div class="white">
                 <img src="./image/profilePicture.png" alt="" style="position: relative;top:20px; left: 10px;width: 45px;">
                 <div>
-                    <form action="" name="myForm" id="myForm" onsubmit="return false">
+                    <form action="" name="myForm" id="myForm" onsubmit="myFunction()">
                         <label for="" class="lbl" style="top:40px">Full Name</label>
                          <input type="text" class="inputs" id="fName" style="top:120px">
                         <label for="" class="lbl" style="top:110px;left: -35px;">User Name</label>
-                        <input type="text" class="inputs" id="uName" style="top:190px">
+                        <input type="text" class="inputs" id="uName" style="top:190px" required>
                         <label for="" class="lbl" style="top:190px;left: -115px;">Email</label>
-                        <input type="email" class="inputs" id="email" style="top:270px">
-                        <label for="" class="lbl" style="top:270px;left: -155px;">Phone No</label>
+                        <input type="email" class="inputs" id="email" style="top:270px" required>
+                        <label for="" class="lbl" style="top:270px;left: -155px;" >Phone No</label>
                         <input type="tel" class="inputs" id="phoneNo" style="top:350px">
                       
-                         <button class="upBtn" id="btn">Update Details</button>
+                         <button class="upBtn" id="btn" type="=submit">Update Details</button>
                     </form>
                 </div>
             </div>

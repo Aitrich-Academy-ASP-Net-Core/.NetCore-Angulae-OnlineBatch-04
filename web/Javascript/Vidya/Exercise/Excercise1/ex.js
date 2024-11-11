@@ -10,8 +10,11 @@ var rphone =document.getElementById("rPhone");
 var rbutton =document.getElementById("rBtn");
 var rResult =document.getElementById("result");
 
-document.getElementById("btn").addEventListener("click",function(){
+// document.getElementById("btn").addEventListener("click",function(){
+ 
 
+ function myFunction(){
+    event.preventDefault();
     if(fullname.value&&username.value&&email.value&&pnumber.value !=""){
        
         var f = fullname.value;
@@ -31,12 +34,12 @@ document.getElementById("btn").addEventListener("click",function(){
         alert("Please enter all form details")
     }
 
-})
+}
     
     function cbtnClose(){
-    rResult.style.display="none";
+     rResult.style.display="none";
     document.getElementById("mainbox").style.display ="none";
-   // document.body.style.opacity =1;
+
 
 }
 
