@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btnSubmit{
+            height: 45px;
+            border-radius: 20%;
+            width: 150px;
+        }
+        .btnReset{
+            height: 45px;
+            width: 175px;
+            border-radius: 35%;
+        }
+    </style>
+</head>
+<body>
+    <br>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+        <!-- d-flex -->
+         <h2>d-flex</h2>
+<div class="d-flex bg-success">
+
+<div class="p-2 bg-primary text-white">Vidya</div>
+ <div class="p-1 text-white bg-warning">Vidya</div>
+ <div class="p-3 text-danger bg-secondary ">Vidya</div>
+<div class="p-2 text-success bg-white">vidya</div>
+</div>
+</div>
+<br>
+
+<!-- d flex reverse -->
+<h2>flex reverse</h2>
+<div class="row bg-info">
+<div class="d-flex flex-row-reverse"> 
+
+    <div class="p-2 text-white bg-danger">Flex Box 1</div>
+    <div class="p-2 bg-black text-white">Flex Box 2</div>
+    <div class="p-3 text-info bg-warning">Flex Box 3</div>
+
+</div></div> <br>
+<!-- d flex inline -->
+<div class="row bg-info">
+<h2>flex inline</h2>
+<div class="d-inline-flex bg-info">
+
+<div class="p-1 bg-primary text-danger">Flex Box 1</div>
+
+<div class="p-1 bg-warning text-success">Flex Box 2</div>
+<div class="p-1 bg-secondary text-white">Flex Box  3</div>
+</div></div>
+<br> <br>
+<!-- flex direction - vertical -->
+<h2>flex direction -vertical</h2>
+<div class="row bg-info">
+<div class="d-flex flex-column">
+
+    <div class="p-3 bg-success text-white">Vertical Flex Box 1</div>
+    <div class="p-3 bg-warning text-secondary">Vertical Flex Box 2</div>
+     <div class="p-3 bg-danger text-white">Vertical Flex Box 3</div>
+</div></div>
+<br>
+<!-- flex direction - vertical column reverse -->
+ <h2>flex direction column reverse</h2>
+ <div class="row bg-info">
+<div class="d-flex flex-column-reverse">
+
+<div class="p-2 bg-warning" >Vertical Flex Box 1</div>
+<div class="p-2 bg-info">Vertical Flex Box 2</div>
+<div class="p-2 bg-secondary">Vertical Flex Box 3</div>
+</div></div>
+<br>
+<div class="row">
+<div class="d-inline-flex bg-secondary">
+<button class="p-2 text-primary bg-warning btnSubmit">Submit</button>
+<button class="p-2 text-info bg-danger btnReset">Reset</button>
+</div></div>
+<br><br>
+<div class="row">
+
+
+<!--Aligning Flex Items on the Main Axis -->
+ <h3>Aligning Flex Items on the Main Axis-justify-content-start </h3>
+ <div class="row">
+    <div class="col-6">
+ <div class="d-flex justify-content-start bg-secondary mb-3">
+    <div class="p-2 bg-info">Flex item start 1</div>
+    <div class="p-2 bg-warning">Flex item start 2</div>
+    <div class="p-2 bg-primary">Flex item start 3</div>
+  </div>
+</div></div>
+ <br>
+ <h3>Aligning Flex Items on the Main Axis-justify-content-end </h3>
+
+<div class="row">
+    <div class="col-7">
+        <div class="d-flex justify-content-end bg-info">
+            <div class="p-2 bg-danger">Flex Box End 1</div>
+            <div class="p-2 bg-primary">Flex Box End 2</div>
+
+        </div>
+    </div>
+<br><br>
+<h3>Aligning Flex Items on the Main Axis-justify-content-center </h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-center bg-warning">
+     <div class="p-2 bg-primary">Flex Box Center</div>
+     <div class="p-2 bg-white">Flex Box Center</div>
+
+     <div class="p-2 bg-secondary">Flex Box Center</div>
+
+    </div></div>
+</div>
+</div>
+</div>
+</div>
+    
+ 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
