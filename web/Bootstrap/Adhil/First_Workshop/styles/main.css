@@ -1,0 +1,71 @@
+#sidebar{
+    background-color: #9aaf90;
+    width: 250px;
+    transition: 0.5s ease-in;
+    
+}
+.sidebaritem{
+    color: white;
+    display: inline-block;
+}
+.sidebaritem:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in;
+   
+    
+
+}
+.close{
+    color: white;
+    margin-left: 5px;
+}
+.d-flex{
+    background-color: #9aaf90;
+}
+.main{
+    background-color: #9aaf90b9;
+    height: 690px;
+}
+.card-body{
+    background-color: #9aaf90;
+    transform: translateZ(-1);
+}
+.card-title{
+    font-size: small;
+}
+/*
+.aside:hover{
+    transform: translateZ(1);
+    
+    
+}
+
+ #sidebar_hover:hover{
+    background-color: #9aaf90;
+   transition: background-color 0.3s ease;
+   
+   
+    
+}
+.names{
+    display: none;
+}
+.sidebarview:hover{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+} */
+#sidebar{
+    transform: translateX(-70%); /* Adjust to control how much remains visible */
+    visibility: visible !important; /* Ensure it's always visible */
+    transition: transform 0.3s ease-in-out;
+}
+#sidebar.show {
+    transform: translateX(0); /* Fully visible */
+}
+#page_no{
+    color: #9aaf90;
+}
