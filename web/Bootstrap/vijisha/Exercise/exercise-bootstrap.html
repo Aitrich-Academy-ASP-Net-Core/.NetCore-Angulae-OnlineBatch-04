@@ -11,13 +11,15 @@
   
   <style>
     .sidebar{
-        height: 740px;
        
+        /* position: absolute; */
+        min-height: 100vh;
+            padding: 20px 10px;
     }
-    .sidebar .col-sm{
+    /* .sidebar .col-sm{
         width:600px;
        
-    }
+    } */
 
     li:hover{
         background-color: rgb(110, 185, 251);
@@ -26,42 +28,86 @@
         border-radius:25px;
         width: 140px;
     }
-    
+    /* .dashboarditem {
+  display: block;
+} */
+
+/* 
+li:hover .dashboarditem {
+  display: block; 
+}
+
+
+@media (max-width: 991px) {
+  li:hover .dashboarditem {
+    display:display;
+  }
+}
+
+@media (min-width:768px) {
+  .dashboarditem {
+    display: none; 
+  }
+}
+.drop {
+    margin-top: 10px;
+    height: 40px;
+    width:60px ;
+
+} */ */
+
+
+.hide{
+  opacity: 0;
+}
+.show{
+  opacity: 1;
+}
+
+
   </style>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row  ">
-
+        <div class="row">
+        
             <div class="col d-flex">
-                <div class="bg-primary bg-primary  sidebar  col-2 " >
+            
+                <div class="bg-primary  sidebar  col-12   col-md-2 d-column collapse d-md-block" id="col1">
+
+                  
+
+
                     <h4 class="p-4 text-white col-md hire" > 
-                        Hire Me Now!
+                        Hire Me Now!  <div class="float-end">
+                          <button class="btn btn-light justify-content-start d-block d-md-none mb-3 drop" data-bs-toggle="collapse" type="button" data-bs-target="#col1" id="firstbtn"><i class="bi bi-caret-right-fill"></i></button>
+                        </div>
                     </h4>
                     <ul class="mt-5 ms-5 list-unstyled ">
-                        <li class="mt-5 d-flex flex-direction-row "><i class="bi bi-grid-fill  "></i><a href="#" class="text-white text-decoration-none d-none d-md-block">Dash Board</a></li>
-                        <li class="mt-5 d-flex flex-direction-row"><i class="bi bi-wallet-fill"></i><a href="#" class="text-white text-decoration-none  d-none d-md-block">   Jobs</a></li>
-                        <li class="mt-5 d-flex flex-direction-row"> <i class="bi bi-file-earmark-spreadsheet-fill"></i><a href="#" class="text-white text-decoration-none  d-none d-md-block">   Applications </a> </li>
-                        <li class="mt-5 d-flex flex-direction-row"><i class="bi bi-wechat"></i><a href="#" class="text-white text-decoration-none  d-none d-md-block">    Interviews</a></li>
-                        <li class="mt-5 d-flex flex-direction-row "> <i class="bi bi-chat-right-dots-fill"></i><a href="#" class="text-white text-decoration-none d-none d-md-block">   Messages </a></li>
-                        <li class="mt-5 d-flex flex-direction-row"> <i class="bi bi-gear-wide"></i><a href="#" class="text-white text-decoration-none  d-none d-md-block">  Settings   </a> </li>
+                        <li class="mt-5 d-flex flex-direction-row "><i class="bi bi-grid-fill  "></i><a href="#" class="text-white text-decoration-none  dashboarditem" >Dash Board</a></li>
+                        <li class="mt-5 d-flex flex-direction-row"><i class="bi bi-wallet-fill"></i><a href="#" class="text-white text-decoration-none   dashboarditem">   Jobs</a></li>
+                        <li class="mt-5 d-flex flex-direction-row"> <i class="bi bi-file-earmark-spreadsheet-fill"></i><a href="#" class="text-white text-decoration-none dashboarditem">   Applications </a> </li>
+                        <li class="mt-5 d-flex flex-direction-row"><i class="bi bi-wechat"></i><a href="#" class="text-white text-decoration-none   dashboarditem">    Interviews</a></li>
+                        <li class="mt-5 d-flex flex-direction-row "> <i class="bi bi-chat-right-dots-fill"></i><a href="#" class="text-white text-decoration-none dashboarditem">   Messages </a></li>
+                        <li class="mt-5 d-flex flex-direction-row"> <i class="bi bi-gear-wide"></i><a href="#" class="text-white text-decoration-none   dashboarditem">  Settings   </a> </li>
                     </ul>
                     <img src="images\add-group.png " class="img-fluid w-50 ms-5">
                     <h5 class="ms-5 text-white">Add New</h5>
                 </div>
-             
 
-              <div class="col-10 ">
+                
+
+              <div class=" col-10 col-md-10 d-column " id="contentarea">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                   <div class="container-fluid d-flex justify-content-end">
                     <div class="d-flex justify-content-end gap-2">
                     <i class="bi bi-bell-fill"></i>
                     <img src="images\olivia-round.png" class="img-fluid "style="width: 30px;" >
                     
-                   
+                  
                     
-                    <div class="dropdown">
-                      <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown" >
+                      <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="firstbtn">
                         Olivia
                       </button>
                       <ul class="dropdown-menu">
@@ -75,7 +121,11 @@
                   </div>
                 </nav>
                 <div class=" border border-grey w-100 d-flex justify-content-end ">
-                  <h4 class="me-5">Short List</h4>
+                  <div class="float-end">
+                    <button class="btn btn-primary justify-content-start d-block d-md-none mb-3 drop" data-bs-toggle="collapse" type="button" data-bs-target="#col1" id="btnsec"><i class="bi bi-caret-right-fill"></i></button>
+                    <h4 class="me-5">Short List</h4>
+                  </div>
+                  
                   <pre>            <div class=""></div></pre>
                 </div>
                 <form class="w-75 float-end mt-4">
@@ -93,17 +143,17 @@
                 <input class="w-75  mt-3 form-control me-5" type="text" placeholder="Enter Time"  readonly><img src="images\location.png" class="img-fluid al"style="width: 50px; " ></div>
 
 
-                <div class="container mt-5 d-flex">
+                <div class="container mt-5 d-md-flex">
                   <form class="d-flex align-items-center">
                     <button type="button" class="btn btn-primary me-3">Send</button>
               
-                    <!-- Toggle for Push Notification -->
+                   
                     <div class="form-check form-switch me-4">
                       <input class="form-check-input" type="checkbox" id="pushNotification" checked>
                       <label class="form-check-label" for="pushNotification">Push Notification</label>
                     </div>
               
-                    <!-- Toggle for Email Notifications -->
+                    
                     <div class="form-check form-switch">
                       <input class="form-check-input" type="checkbox" id="emailNotification" checked>
                       <label class="form-check-label" for="emailNotification">Email Notifications</label>
@@ -113,20 +163,22 @@
 
               </div> </div>
               <!-- shortlist -->
-
+            </div>
              
 
         </div>
     </div>
-    <!-- <div class="container px-5">
-        <div class="row gx-5">
-          <div class="col">
-           <div class="p-3 border bg-light">Custom column padding</div>
-          </div>
-          <div class="col">
-            <div class="p-3 border bg-light">Custom column padding</div>
-          </div>
-        </div>
-      </div> -->
+  <script>
+let btnsec=document.getElementById('btnsec')
+let contentarea=document.getElementById('contentarea')
+btnsec.addEventListener('click',()=>(
+  contentarea.classList.add('hide')
+))
+let firstbtn=document.getElementById('firstbtn')
+firstbtn.addEventListener('click',()=>{
+  contentarea.classList.remove('hide')
+})
+
+  </script>
 </body>
 </html>
