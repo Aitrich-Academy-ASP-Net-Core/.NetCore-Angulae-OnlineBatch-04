@@ -1,0 +1,46 @@
+#sidebarMenu{
+    background-color: #9aaf90;
+    
+}
+
+
+.nav-link{
+    color: white;
+}
+#body,.navigation{
+    background-color: #a5a9a2;
+}
+.icon{
+    font-size: 75px;
+    color: white;
+    padding: 10px;
+    position: relative;
+    right: 9px;
+}
+.icon2{
+    position: relative;
+    top: 10px;
+    font-size: 60px;
+    color: white;
+    padding: 10px;
+}
+.card{
+    color: white;
+    
+}
+.number{
+    font-size: 40px;
+}
+.nav-item{
+    padding: 10px;
+}
+.nav-item:hover{
+    background-color: white;
+    
+}
+/* #sidebarMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+} */
