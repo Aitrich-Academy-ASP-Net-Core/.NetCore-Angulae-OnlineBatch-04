@@ -20,7 +20,6 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
-
     </style>
     <title>Document</title>
 </head>
@@ -35,23 +34,22 @@
             </div>
             <p class="bg-secondary text-center fs-6 py-2 rounded fw-bold text-white">Open to work</p>
             <div class="sideitem fs-6 mt-5 py-1 rounded text-white" style="background-color:rgba(43, 16, 131, 0.945);">
-                <i class="bi bi-suitcase-lg-fill fs-4 px-3 "></i><a class="text-white" href="#"><span class="d-none d-sm-inline">All Jobs</span></a>
+               <a class="text-white" href="#"> <i class="bi bi-suitcase-lg-fill fs-4 px-3 "></i><span class="d-none d-sm-inline">All Jobs</span></a>
             </div>
             <div class="sideitem fs-6 mt-4 py-1 rounded text-white" style="background-color:rgba(43, 16, 131, 0.945);">
-                <i class="bi bi-file-text-fill fs-4 px-3"></i><a class="text-white" href="#"><span class="d-none d-sm-inline">My Application</span></a>
+                <a class="text-white" href="#"><i class="bi bi-file-text-fill fs-4 px-3"></i><span class="d-none d-sm-inline">My Application</span></a>
             </div>
             <div class="sideitem fs-6 mt-4 py-1 rounded text-white" style="background-color:rgba(43, 16, 131, 0.945);">
-                <i class="bi bi-chat-dots-fill fs-4 px-3 text-white"></i><a class="text-white" href="#"><span class="d-none d-sm-inline">Message</span></a>
+                <a class="text-white" href="#"><i class="bi bi-chat-dots-fill fs-4 px-3 text-white"></i><span class="d-none d-sm-inline">Message</span></a>
             </div>
             <div class="sideitem fs-6 mt-4 py-1 rounded" style="background-color:rgba(43, 16, 131, 0.945);">
-                <i class="bi bi-person-circle fs-4 px-3 text-white"></i><a class="text-white" href="Add new.html.html"><span class="d-none d-sm-inline">My Profile</span></a>
+                <a class="text-white" href="Add new.html.html"><i class="bi bi-person-circle fs-4 px-3 text-white"></i><span class="d-none d-sm-inline">My Profile</span></a>
             </div>
             <div class="sideitem fs-6 mt-4 py-1 rounded text-white" style="background-color:rgba(43, 16, 131, 0.945);">
-                <i class="bi bi-gear-fill fs-4 px-3 mb-5"></i><a class="text-white" href="Settings.html"><span class="d-none d-sm-inline">Settings</span></a>
+               <a class="text-white" href="Settings.html"> <i class="bi bi-gear-fill fs-4 px-3 mb-5"></i><span class="d-none d-sm-inline">Settings</span></a>
             </div>
             
         </div>
-        
 
 
       
@@ -61,91 +59,55 @@
             </div>
 
 
-            <div class="row mt-4">
-                <div class="col-md-4 ms-3">
-                    <div class=card>
-                        
-                        <div><img class="rounded-pill mt-4" src="smiling-girl.png"></div>
-                        <div class="py-1"></div>
-                        <div class="text-center py-1 fw-bold ">Aparna Ratheesh</div>
-                        <div class="text-center py-2 fw-bold">aparna@gmail.com</div>
-                        <div class="py-3 fw-bold  text-center text-info fw-bold">Choose Resume File</div>
-
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
-                     
-                        <div class="text-center py-1 mt-2 "><button type="button"
-                                class="btn btn-primary position-relative "><a class="text-white" href="#">Upload Resume</a></button></div>
-                        <div class="py-4"><i class="bi bi-telephone px-2 bg-secondary"></i><span>9846365633</span>
-                        </div>
-                        <div><i class="bi bi-geo-alt px-2 bg-secondary"></i><span>Location</span></div>
-
-                    </div>
-
-
-               
-                    <div class="card border-2 mt-2 ">
-                        <div><i class="bi bi-menu-button"></i>Skills:</div>
-                        <button
-                            class="position-absolute px-0 top-0 m-5 end-0 btn border-3 py-0 border-secondary bg-primary "><i
-                                class="bi bi-pencil-square"></i>Edit</button>
-                        <div><textarea type="text" class="form-control mb-3"></textarea></div>
-                      
-                    </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                   
+                    <div class="py-4 mt-5 fw-bold fs-5">Settings</div>
+                    <div class="card border-dark border-bottom border-1"></div>
                     
-
-
-
-
-
+                    <p class="fw-bold mt-4 d-flex align-items-center">
+                        Profilepic
+                        <input class="form-control w-50 ms-3 px-5" type="file" id="formFileMultiple">
+                        Profile image
+                      </p>
+                     
+                      <label class="fw-bold mt-5">First Name</label>
+                      <div><input class="form-control py-3 border-4"type="text" placeholder="Please Enter Your First Name"></div>
+                     
+                      <label class="fw-bold mt-5">Last Name</label>
+                      <div><input class="form-control py-3 border-4"type="text" placeholder="Please Enter Your last Name"></div>
+                      
+                      <label class="fw-bold mt-5">User Name</label>
+                      <div><input class="form-control py-3 border-4"type="text" placeholder="Please Enter Your User Name"></div>
+                      
+                      <label class="fw-bold mt-5">Phone Number</label>
+                      <div><input class="form-control py-3 border-4"type="number" placeholder="Please Enter Your Phone number"></div>
+                    
+                      <label class="fw-bold mt-5">Email</label>
+                      <div><input class="form-control py-3 border-4"type="text" placeholder="Please Enter Your email"></div>
+                      
+                      <label class="fw-bold mt-5">Password</label>
+                      <div><input class="form-control py-3 border-4"type="Password" placeholder="Please Enter Your Password"></div>
+                     
+                      <div class="text-center py-5 mt-5 "><button type="button" class="btn btn-primary position-relative py-3 px-5 fw-bold" >Update Profile</button></div>
                 </div>
-                <div class="col-md-7">
-                    <div class="row ms-5 mt-3">
-                        <div class="card border-2 col-md-12 py-3">
-                            <div><i class="bi bi-mortarboard  "></i>Qualification:</div>
-
-                            <textarea class="px-5 ms-1 pt-2 pb-2 border-secondary rounded-start "
-                                type="text"></textarea>
-                            <button
-                                class="position-absolute px-0 top-0 m-5 end-0 btn border-3 py-0 border-secondary bg-primary "><i
-                                    class="bi bi-pencil-square mb-2"></i>Edit</button>
-                          
-                        </div>
-                        
-                        <div class="card border-2 mt-5 mb-2 py-3 col-md-12 mt-2">
-                            <div><i class="bi bi-mortarboard "></i>Experience:</div>
-
-                            <textarea class="px-5 ms-1 pt-2 pb-2 border-secondary rounded-start "
-                                type="text"></textarea>
-                            <button
-                                class="position-absolute px-0 top-0 m-5 end-0 btn border-3 py-0 border-secondary bg-primary "><i
-                                    class="bi bi-pencil-square mb-5"></i>Edit</button>
-                            
-                        </div>
-
-
-
-
-                    </div>
-
-
-
+                <div class="col-2"></div>
+                
+                
+                
+                
                 </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </div>
 
 
 
