@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+
+    <style>
+        .mainbox {
+            height: 700px;
+        }
+
+        #sidebar {
+            height: 700px;
+            width: 70px;
+            transition: width .3s ease-in;
+            background-color: #ffc107;
+        }
+
+        
+        #sidebar:hover {
+            width: 270px; 
+        }
+
+        
+        .textsidebar {
+            display: none;
+        }
+        
+        #sidebar:hover .textsidebar {
+            display:inline; 
+        }
+        
+
+    </style>
+  
+</head>
+<body>
+    <div class="container-fluid mainbox bg-success">
+        <div class="row">
+            <div class="col-md-3 g-0">
+                <ul class="nav flex-column sidebar" id="sidebar">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-house-add-fill"></i>
+                            <span class="ms-4 textsidebar">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-0-circle-fill"></i>
+                            <span class="ms-4 textsidebar">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-dots-fill"></i>
+                            <span class="ms-4 textsidebar">Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-gear-fill"></i>
+                            <span class="ms-4 textsidebar">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span class="ms-4 textsidebar">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <h1 class="text-warning text-center">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, sit. Enim adipisci alias non iusto, recusandae magni repellendus soluta id.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis vel, eveniet incidunt tempora dolores id error et eaque quos, quae, esse illo dolorum harum reprehenderit explicabo quod minus ab nesciunt officiis laudantium? Fugit provident blanditiis aspernatur rem explicabo, nesciunt voluptates, odio magni eos vero, dolore rerum reprehenderit at dolor.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nemo facilis natus eligendi odio commodi alias porro, sit veritatis tempore numquam laborum, quos est nam temporibus ipsa a corporis tempora! Ducimus temporibus reprehenderit atque totam iste aut delectus quidem ipsum, magni, sed fugiat neque aliquam perferendis nostrum voluptates, dolore ullam iure explicabo adipisci voluptas dolores obcaecati deserunt tempore. Deleniti, fugiat laudantium? Nam iste sunt libero numquam ex vero eaque, facilis recusandae maxime similique iure. Iste necessitatibus quasi eos nostrum suscipit vel eligendi corrupti quidem quis id, soluta in, ipsum non sapiente. Ea dolorum, ratione atque vel nisi cumque distinctio placeat.</p>
+                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quo sit qui rem praesentium veniam quae eos! Velit placeat sit maxime veritatis fugiat, provident facere ea aliquam atque possimus debitis perspiciatis assumenda voluptatem ipsam voluptates iusto ducimus quae doloremque minima tempora fuga. Inventore at illo, ea atque quas delectus error.</blockquote>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
