@@ -1,0 +1,244 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job List</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <style>
+            body{
+                  background-color: #F2F2F2;
+                  
+              }
+          #sidebar{
+              background-color: #053575;
+          }
+          #sidebar-div .nav .nav-item{
+                  width: 100%;
+                  position:relative;        
+                 
+              } 
+              
+              ul.nav .nav-item .nav-link, ul.nav .nav-item .nav-link:visited { 
+                  padding: 20px;       
+                  color: white;   
+              }
+      
+              ul.nav .nav-item .nav-link:hover, ul.nav .nav-item .nav-link:active {
+                  color: rgb(0, 0, 0) !important;
+              }
+             .nav-item:hover::after  {
+                  content: "";
+                  position: absolute;
+                  background-color: transparent;
+                  bottom: 100%;
+                  right: 0;
+                  height: 100%;
+                  width: 45px;
+                  
+                
+                }
+               .nav-item:hover::before  {
+                  content: "";
+                  position: absolute;
+                  background-color: transparent;
+                  top: 100%;
+                  right: 0;
+                  height: 100%;
+                  width: 45px;
+                  
+                
+                } 
+                #main-content::before  {
+                  content: "";
+                  position: absolute;
+                  background-color: transparent;
+                  top: 0%;
+                  left: 16.7%;
+                  height: 25%;
+                  width: 50px;
+                  
+                
+                }
+                .card{
+                  color: #FFFFFF;
+                }
+                .btn{
+                    
+                    color: white;
+                }
+                .btn:hover{
+                    border: solid 2px #124f9e;
+                    background-color:white;
+                    color:#053575;
+                }
+                .card-body
+                {
+                    font-size: .90em;
+                }
+                
+      </style>
+          <script src='main.js'></script>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <!-- Sidebar -->
+            <div class="col-auto col-md-3 col-xl-2 px-0 pt-3" id="sidebar">
+                <img class="img-fluid mx-2 mb-3" src="images/The Job Center(4).jpg" alt="Logo" width="200">
+                <div class="d-flex flex-column text-white min-vh-100" id="sidebar-div">
+                    <ul class="nav nav-pills flex-column mb-auto align-items-start" id="menu">
+                        <li class="nav-item py-1">
+                            <a href="./dashboard.html" class="nav-link link-light">
+                                <i class="bi-house fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="./job_provider.html" class="nav-link link-light">
+                                <i class="bi-person-fill-gear fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Job Providers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="./jobseekers.html" class="nav-link link-light">
+                                <i class="bi-person-badge-fill fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Job Seekers</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="./joblist.html" class="nav-link link-light">
+                                <i class="bi-briefcase-fill fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Jobs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="#" class="nav-link link-light">
+                                <i class="bi-person-fill fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">My Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="#" class="nav-link link-light">
+                                <i class="bi-chat-dots fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="./listskill.html" class="nav-link link-light">
+                                <i class="bi-gear-wide fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="./login.html" class="nav-link link-light">
+                                <i class="bi-door-open fs-5 ms-3"></i>
+                                <span class="ms-1 d-none d-sm-inline">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col py-3">
+                <div class="container">
+                    <!-- Job List Header -->
+                    <div class="row mb-5">
+                        <div class="col">
+                            <h3>Job List</h3>
+                            <input type="text" class="form-control rounded-pill mt-3" placeholder="Search by Title, Company, or Keywords">
+                        </div>
+                    </div>
+                    <!-- Suggestions -->
+                    <div class="row mb-4">
+                        <div class="d-flex gap-1 pt-4 ms-1">
+                            <h5>Suggestions</h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <button class="btn btn-primary rounded-pill px-3"style="width: 14rem;height: 2rem;">Programmer</button>
+                                <button class="btn btn-primary rounded-pill px-3"style="width: 14rem;height: 2rem;">Software Engineer</button>
+                                <button class="btn btn-primary rounded-pill px-3"style="width: 14rem;height: 2rem;">Developer</button>
+                                <button class="btn btn-primary rounded-pill px-3"style="width: 14rem;height: 2rem;">Accounting</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job Results -->
+                    <div class="row mb-4">
+                        <div class="col mt-5">
+                            <strong>Showing 101 Job Results</strong>
+                            <p class="text-muted mb-0">Based on your preferences</p>
+                        </div>
+                    </div>
+                    <!-- Job Cards -->
+                    <div class="row gy-4 mt-5">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card shadow mb-3" style="width: 22rem; height: 23rem;">
+                                <div class="card-body text-dark mb-3">
+                                    <h6 class="card-title mb-1"><strong>Job Title: Asp.NET Developer </strong></h6>
+                                    <p class="mb-1 fs-5"><strong>Job Summary:Developing of programs</strong></p>
+                                    <p class="mb-1"><strong>Job Category Name: Technical Skills</strong></p>
+                                    <p class="text-primary"><b>Location: Kollam</b></p>
+                                    <div class="col mt-5 ms-4 mb-3">
+                                    <p class="mb-1"><strong>Industry: Infopark</strong></p>
+                                    <p class="mb-1"><strong>Posted Date: 2024-03-12T12:43:00</strong></p>
+                                    <p class="mb-1">PostedByNavigationFirstName:Ayana</p>
+                                    <p class="mb-1"><strong>Saved: False</strong></p>
+                                    <button class="btn btn-danger btn-sm rounded-pill">Remove <i class="bi bi-trash-fill"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card shadow mb-3" style="width: 22rem;height: 23rem;">
+                                    <div class="card-body text-dark mb-3">
+                                        <h6 class="card-title mb-1"><strong>Job Title: Angular Developer </strong></h6>
+                                        <p class="mb-1 fs-5"><strong>Job Summary:Angularis</strong></p>
+                                        <p class="mb-1"><strong>Job Category Name: Technical Skills</strong></p>
+                                        <p class="text-primary"><b>Location: Kollam</b></p>
+                                        <div class="col mt-5 ms-4 mb-3 ">
+                                            <p class="mb-1"><strong>Industry: Infopark</strong></p>
+                                            <p class="mb-1"><strong>Posted Date: 2024-02-29T11:45:00</strong></p>
+                                            <p class="mb-1">PostedByNavigationFirstName:Soorya</p>
+                                            <p class="mb-1"><strong>Saved: False</strong></p>
+                                        <button class="btn btn-danger rounded-pill btn-sm">Remove <i class="bi bi-trash-fill"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card shadow mb-3" style="width: 22rem;height: 23rem;">
+                                        <div class="card-body text-dark mb-3 ">
+                                            <h6 class="card-title mb-1"><strong>Job Title:Web Developer </strong></h6>
+                                            <p class="mb-1 fs-5"><strong>Job Summary:Developing </strong></p>
+                                            <p class="mb-1"><strong>Job Category: Technical Skills</strong></p>
+                                            <p class="text-primary mb-1"><b>Location: Kollam</b></p>
+                                            <div class="col mt-5 ms-4 mb-3">
+                                                <p class="mb-1"><strong>Industry: Infosys</strong></p>
+                                                <p class="mb-1"><strong>Posted Date: 2024-03-11T13:08:00</strong></p>
+                                                <p class="mb-1">PostedByNavigationFirstName:Ayana</p>
+                                                <p class="mb-1"><strong>Saved: False</strong></p>
+                                            <button class="btn btn-danger  rounded-pill btn-sm">Remove <i class="bi bi-trash-fill"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

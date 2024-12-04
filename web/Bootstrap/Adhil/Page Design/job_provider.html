@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="adhil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Providers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row header p-5 mb-5">
+            <div class="col-2 ">
+
+            </div>
+            
+            
+            <div class="col-10 ">
+                
+                        <div class="dash_Head" >Job Providers</div>
+                 
+            </div>     
+        </div>
+        <div class="row main">
+            <div class="col-2 col-md-1 fixed-top" id="col_sidebar">
+                <button class="navbar-toggler bg-light mt-2 rounded-pill " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" id="threeDots1"><i class="bi-three-dots" ></i></button>
+                <button class="navbar-toggler bg-light mt-2 rounded-pill " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar1" id="threeDots"><i class="bi-three-dots" ></i></button>
+               
+                <ul class=" nav flex-column ">
+                    <li class="nav-item">
+                        <a href="./dashboard.html" class="nav-link">
+                            <i class="bi-house"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./job_provider.html" class="nav-link">
+                            <i class="bi-person-fill-gear"></i> 
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./jobseekers.html" class="nav-link">
+                            <i class="bi-person-badge-fill"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./joblist.html" class="nav-link">
+                            <i class="bi-briefcase-fill"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-person-fill"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-chat-dots"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./listskill.html" class="nav-link">
+                            <i class="bi-gear-wide"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">
+                            <i class="bi-door-open"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <nav class=" navbar-expand-xl navbar-light  col-md-3 col-sm-1 col-xl-2  d-xl-block collapse fixed-top " id="sidebar">
+                <div class="d-flex justify-content-center">
+                    <img class="navbar-brand img-fluid w-100 brand" src="./images/The Job Center(4).jpg">
+                </div>
+                <ul class=" nav flex-column ">
+                    <li class="nav-item">
+                        <a href="./dashboard.html" class="nav-link">
+                            <i class="bi-house"></i> Dashbord
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./job_provider.html" class="nav-link">
+                            <i class="bi-person-fill-gear"></i> Job Providers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./jobseekers.html" class="nav-link">
+                            <i class="bi-person-badge-fill"></i> Job Seekers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./joblist.html" class="nav-link">
+                            <i class="bi-briefcase-fill"></i> Jobs
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-person-fill"></i> My Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-chat-dots"></i> Messages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./listskill.html" class="nav-link">
+                            <i class="bi-gear-wide"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">
+                            <i class="bi-door-open"></i> Logout
+                        </a>
+                    </li>
+
+                </ul>
+                <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" id="closed"><i class="btn-close"></i></button>
+            </nav>
+
+            <nav class=" navbar-expand-xl navbar-light   col-md-4 col-sm-5 col-xl-3    collapse fixed-top " id="sidebar1">
+                <div class="d-flex justify-content-center">
+                    <img class="navbar-brand img-fluid w-75 brand" src="./images/The Job Center(4).jpg">
+                </div>
+                <button class="navbar-toggler bg-light float-end" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar1" id="closed"><i class="btn-close"></i></button>
+
+                <ul class=" navbar-nav  navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                    <li class="nav-item">
+                        <a href="./dashboard.html" class="nav-link">
+                            <i class="bi-house"></i> Dashbord
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./job_provider.html" class="nav-link">
+                            <i class="bi-person-fill-gear"></i> Job Providers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-person-badge-fill"></i> Job Seekers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-briefcase-fill"></i> Jobs
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-person-fill"></i> My Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-chat-dots"></i> Messages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi-gear-wide"></i> Skills
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./login.html" class="nav-link">
+                            <i class="bi-door-open"></i> Logout
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            
+            <div class="row">
+                <div class="col-1 ">
+
+                </div>
+                <div class="col-1 ">
+                
+                </div>
+                <div class="col-10 ">
+                    <div class="row">
+                        <div class="col ">
+                            
+                            <div class="d-flex justify-content-center">
+                                <input type="text" class="form-control rounded-pill mt-5" placeholder="Search by Title, Company or any jobs keyword">
+                            </div>
+                            <br>
+                            <p class="text-info">Showing <strong>65</strong>  Companies</p>
+                            <p class="text-secondary small">Based on your preferences</p>
+                            
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+                                <div class="col mb-5">
+                                    <div class="card mt-5 job h-100 ">
+                                        <div class="d-flex justify-content-center card-img">
+                                            <img src="./images/jgf.png" class="img-fluid w-100" alt="">
+                                        </div>
+                                        <br>
+                                        <div class="card-body mt-3">
+                                            <strong>Legal Name:</strong> Datamate
+                                           
+                                            
+                                            <br><br>
+                                            <strong>Summary:</strong> Designed exclusively for hotels of 5-star and above category, the solution has unique features that provide a holistic management approach for us.
+                                            <br><br>
+                                            
+                                            <strong>Industry:</strong> Software company
+                                            <br><br>
+                                            <strong>Email:</strong> datamate@gmail.com
+                                            <br><br>
+
+                                            <strong>Phone:</strong> 9188093440
+                                            <br><br>
+                                            <strong>Address:</strong> Datamate,India
+                                            <br><br>
+                                            <strong>Website:</strong> www.jgf.com 
+                                            <br><br>
+                                            <strong>Location:</strong>
+                                            ne34231-13132-4cf3-bad-ada7aa888776e
+                                            <br><br>
+                                            <i class="bi-trash3 link-primary  float-start "  ></i> <i class="bi bi-dash-circle link-danger float-end" ></i>
+                                            
+                                            
+
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card mt-5 job h-100 ">
+                                        <div class="d-flex justify-content-center card-img">
+                                            <img src="./images/TCS.NS-7401f1bd.png" class="img-fluid w-75 mt-3" alt="">
+                                        </div>
+                                        <br>
+                                        <div class="card-body ">
+                                            <strong>Legal Name:</strong> TCS
+                                            
+                                            
+                                            <br><br>
+                                            <strong>Summary:</strong> TCS, a global leader in IT services, consulting, and business solutions, leverages technology for business transformation and helps catalyze change.
+                                            <br><br>
+                                            <strong>Industry:</strong> Consultancy Services
+                                            <br><br>
+                                            <strong>Email:</strong> tcs@gmail.com
+                                            <br><br>
+
+                                            <strong>Phone:</strong> 2131315121
+                                            <br><br>
+                                            <strong>Address:</strong> TCS, India
+                                            <br><br>
+                                            <strong>Website:</strong> www.tcs.com
+                                            <br><br>
+                                            <strong>Location:</strong>
+                                            ne34231-13132-4cf3-bad-ada7aa888776e
+                                            <br><br>
+                                            <i class="bi-trash3 link-primary  float-start" ></i> <i class="bi bi-dash-circle link-danger float-end" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">  
+                                    <div class="card mt-5 job h-100">
+                                        <div class="d-flex justify-content-center card-img">
+                                            <img src="./images/Accenture-Logo-3969515967.png" class="img-fluid w-100" alt="">
+                                        </div>
+                                        
+                                        <div class="card-body mt-1">
+                                            <strong>Legal Name:</strong> Accenture
+                                            
+                                            
+                                            <br><br>
+                                            <strong>Summary:</strong> Accenture is a global professional services company that provides a wide range of services and solutions in strategy, consulting.
+                                            <br><br>
+                                            <strong>Industry:</strong> Business management consultancy 
+                                            <br><br>
+                                            <strong>Email:</strong> accenture@gmail.com
+                                            <br><br>
+
+                                            <strong>Phone:</strong> 213311424
+                                            <br><br>
+                                            <strong>Address:</strong>
+                                            Accenture, India
+                                            <br><br>
+                                            <strong>Website:</strong> www.accenture.com
+                                            <br><br>
+                                            <strong>Location:</strong>
+                                            ne34231-13132-4cf3-bad-ada7aa888776e
+                                            <br><br>
+                                            <i class="bi-trash3 link-primary  float-start" ></i> <i class="bi bi-dash-circle link-danger float-end" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-5">
+                                    <div class="card mt-5 job h-100">
+                                        <div class="d-flex justify-content-center card-img">
+                                            <img src="./images/Flanco_logo.png" class="img-fluid w-100" alt="">
+                                        </div>
+                                        <br>
+                                        <div class="card-body">
+                                            <strong>Legal Name:</strong> Flanco
+                                            <br><br>
+                                            
+                    
+                                            <strong>Summary:</strong> Flanco is a Romanian consumer electronics retailer. The company has 120 stores in 74 cities, and has over 1,500 employees.
+                                            <br><br>
+                                            <strong>Industry:</strong> Electronics retail company
+                                            <br><br>
+                                            <strong>Email:</strong> flanco@gmail.com
+                                            <br><br>
+
+                                            <strong>Phone:</strong> 21321331
+                                            <br><br>
+                                            <strong>Address:</strong> Flanco, Romania
+                                            <br><br>
+                                            <strong>Website:</strong> www.flanco.com
+                                            <br><br>
+                                            <strong>Location:</strong>
+                                            ne34231-13132-4cf3-bad-ada7aa888776e
+                                            <br><br>
+                                            <i class="bi-trash3 link-primary  float-start" ></i> <i class="bi bi-dash-circle link-danger float-end" ></i>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <br><br><br><br><br>
+                            
+                        </div>
+
+                    </div>
+                    
+                    
+                    
+                </div>     
+            </div>
+           
+        </div>
+        
+
+    </div>
+    <script src="./scripts/resize.js"></script>
+</body>
+</html>
