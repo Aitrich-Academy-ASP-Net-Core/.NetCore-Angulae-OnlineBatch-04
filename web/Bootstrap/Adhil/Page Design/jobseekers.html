@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobSeeker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+  <style>
+    * {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    
+   @media (min-width:344px) and (max-width: 1023px){
+body{
+
+    background-color: white;
+    
+}
+   
+
+#btnsidebar{
+ 
+  border:solid 2px #fafcff;
+  background-color: #053575;
+  color: #e9edf1;
+}
+.kalar{
+  background-color: whitesmoke;
+}
+
+}
+    
+
+  #sidebar {
+    background-color: #053575;
+    height: 110vh;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.15s ease;
+    
+  }
+    /* .side{
+      transition: 0.5s ease;
+      transform: translateX(-180px);
+    } */
+
+
+    #contentarea {
+      position: relative;
+    }
+
+    .btn{
+      /* position: absolute; */
+      /* width: 6rem;
+      height: 2rem;
+     justify-content:center; */
+     width:8rem;
+      height: 4rem;
+      border: 1px #053575 ;
+     justify-content:center;
+     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);  
+     
+   
+   }
+
+   .card{
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.25);
+   }
+   .card :hover{
+    transform: scale(1.05 ); 
+    transition: transform 0.3s ease;
+   }
+
+   
+
+
+   .img-fluid{
+  height: 20vh;
+
+}
+
+
+   @media (min-width:768px) and (max-width:1024px) {
+ #list .iconname{
+  opacity: 0;
+}
+#list:hover .iconname
+{
+  opacity: 1;
+  color: #053575 ;
+}
+
+/* .appear
+{
+  opacity: 1;
+  color: #053575 ;
+} */
+
+
+
+}
+
+
+
+ 
+
+@media (min-width:375px) and (max-width:1024px){
+  #sidebar {
+    height: 140vh;
+  }
+} 
+
+
+ul li{
+  color: white;
+
+}
+  
+ul li:hover{
+    background-color:white;
+    color: #053575 ;
+    border:solid 2px #124f9e;
+    border-radius: 20px;
+    opacity: 1;
+    width: 10rem;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+
+   }
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <button class="btn  d-block d-lg-none " data-bs-toggle="collapse" id="btnsidebar" type="button" data-bs-target="#sidebar">&#9776</button>
+    </div>
+      <div class="row">
+      <div class="collapse  d-lg-block   col-sm-1  col-md-2 side  " id="sidebar">
+        <div class="d-flex justify-content-center d-none d-lg-block"><img src="images\The Job Center(4).jpg"  class="img-fluid ms-xl-3 ">
+          <!-- <h2 class="text-light">Jobie</h2> -->
+        </div>
+        <div class="">
+          <ul class="list-unstyled  col-sm-dropdown-menu col-sm-dropdown-menu-end">
+            <li class="mt-4 ms-1 ms-md-2 list " id="list"><a href="./dashboard.html" class="nav-link"><i
+                class="bi bi-house-door-fill p-3" id="list"></i></i><span class="iconname">Dashboard</span></a></li>
+            <li class="mt-5 ms-1 ms-md-2   " id="list"><a href="./job_provider.html" class="nav-link"><i class="bi-person-fill-gear p-3 col-sm"></i><span class="iconname">Job
+                Providers</span></a></li>
+            <li class="mt-5  ms-md-2  " id="list"><a href="./jobseekers.html" class="nav-link"><i class="bi bi-person-badge-fill p-3"></i><span class="iconname">Job
+                Seekers</span></a></li>
+            <li class="mt-5 ms-1 ms-md-2  "id="list"><a href="./joblist.html" class="nav-link"><i class="bi bi-briefcase-fill p-3"></i><span class="iconname">Jobs</span></a></li>
+            <li class="mt-5 ms-1 ms-md-2  "id="list"><a href="#" class="nav-link"><i class="bi bi-person-fill p-3"></i><span class="iconname">My
+                Profile</span></a></li>
+            <li class="mt-5 ms-1 ms-md-2  "id="list"><a href="#" class="nav-link"><i class="bi bi-chat-dots-fill p-3"></i><span class="iconname">Messages</span></a>
+            </li>
+            <li class="mt-5 ms-1 ms-md-2  "id="list"><a href="listskill.html" class="nav-link"><i class="bi bi-gear-wide p-3"></i><span class="iconname">Skills</span></a>
+            </li>
+            <li class="mt-5 ms-1 ms-md-2   "id="list"><a href="./login.html" class="nav-link"><i class="bi bi-door-open-fill p-3"></i><span class="iconname">Logout</span></a>
+            </li>
+        
+          </ul>
+        
+        </div>
+
+
+      </div>
+      
+      <div class="col-sm-11 col-md-10  custom-h  d-flex flex-column ms-sm-0 " id="contentarea">
+        <span class="fs-5 mt-5 p-5 "><b> Job Seekers</b></span>
+
+        <div class="row p-4 gap-5 d-flex ">
+          <div class="d-flex col-12 col-md-6  col-lg-4  col-xl-3 ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><strong class="me-3">FirstName :</strong>Anu</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>Anupama</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>Sekhar</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9012483212</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>anu@gmail.com</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex col-12 col-md-6   col-lg-4 col-xl-3 ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text"><strong class="me-3">FirstName :</strong>Karthik</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>KARTHI</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>Mohan</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9086578542</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>karthi@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="d-flex  col-12 col-md-6  col-lg-4 col-xl-3 ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text"><strong class="me-3">FirstName :</strong>Lissy</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>Lissy</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>Ferno</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9086547124</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>lissy@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        
+
+        <!-- <div class="d-md-flex  p-4 gap-5 "> -->
+          <div class="d-flex   col-12 col-md-6   col-lg-4 col-xl-3 ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text"><strong class="me-3">FirstName :</strong>Marvi</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>marvi</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>yovin</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9086544589</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>marvi@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex    col-12 col-md-6   col-lg-4 col-xl-3  ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text"><strong class="me-3">FirstName :</strong>alka</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>alaka</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>sriya</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9084265212</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>alka@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class=" d-flex    col-12 col-md-6 col-lg-4   col-xl-3   ">
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <p class="card-text"><strong class="me-3">FirstName :</strong>Nayomi</p>
+                <p class="card-text"><strong class="me-3">UserName :</strong>nayomi</p>
+                <p class="card-text"><strong class="me-3">LastName :</strong>Sagar</p>
+                <p class="card-text"><strong class="me-3">Phone :</strong>9086896212</p>
+                <p class="card-text"><strong class="me-3">Email :</strong>nayomi@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+let button=document.getElementById('btnsidebar')
+let sidebar=document.getElementsByClassName('side')
+button.addEventListener('click',()=>{
+sidebar.classList.add('showsidebar')
+
+})
+
+
+
+// let iconname=document.getElementById('iconname')
+// let list=document.getElementById('list')
+// list.addEventListener('click',()=>{
+
+//   iconname.classList.add('appear')
+// })
+
+    </script>
+
+</body>
+
+</html>

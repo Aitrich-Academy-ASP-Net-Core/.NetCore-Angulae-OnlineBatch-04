@@ -1,0 +1,127 @@
+.header{
+    background-color: #053575;
+
+}
+body{
+    background-color: aliceblue;
+}
+#sidebar{
+    height: 100vh;
+    transition:0.3s  ease-in-out;
+    background-color: #053575;
+}
+#sidebar1{
+    height: 100vh;
+    transition:0.3s  ease-in-out;
+    background-color: #053575;
+}
+#closed{
+    
+    padding: 5px;
+}
+#col_sidebar{
+    height: 100vh;
+    background-color: #053575;
+}
+.dash_Card{
+    font-size: 70px;
+    position: relative;
+    top: 7px;
+    
+}
+.dash_Cards{
+    background-color:#053575;
+    color: white;
+    animation: 1s starts ease-in-out;
+}
+.dash_Cards:hover{
+    background-color:white;
+    color: #053575;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.job{
+   
+    animation: 1s starts ease-in-out;
+}
+.job:hover{
+    border:solid 2px #053575;
+    
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+.dash_Card_num{
+    font-size: 40px;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-link:hover{
+    color: black;
+    background-color: white;
+}
+.nav-link{
+    padding: 20px;
+    color: white;
+    
+}
+#threeDots,#threeDots1{
+    padding: 5px;
+}
+.brand{
+    animation: 1.5s startsbrand ease-in-out;
+}
+@keyframes starts{
+    
+        0%   {transform: translateX(-1000px) ;}
+        100%  {transform: translateX(0px) ;}
+        
+      
+}
+@keyframes starts2{
+    
+    0%   {transform: translateX(2000px) ;}
+    
+    100%  {transform: translateX(0px) ;}
+    
+  
+}
+
+@keyframes jump{
+    
+    0%   {transform: translateY(-100px);}
+    
+    
+    
+    100%  {transform: translateY(0px) ;}
+    
+  
+}
+.dash_Head{
+    font-size: 50px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px  black;
+    animation:  1s jump;
+}
+@keyframes startsbrand{
+    
+    0%   {transform: scale(0.8) ;}
+    100%  {transform: scale(1) ;}
+    
+  
+}
+#signIn{
+    background-color: #124f9e;
+    color: white;
+}
+#signIn:hover{
+    border: solid 2px #124f9e;
+    background-color: white;
+    color: #053575;
+}
+.chart{
+    animation: 2s starts2 ease-in-out ;
+   
+}
