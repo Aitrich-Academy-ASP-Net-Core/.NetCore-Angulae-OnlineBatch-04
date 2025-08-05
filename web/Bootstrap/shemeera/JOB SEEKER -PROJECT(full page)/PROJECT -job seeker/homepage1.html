@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage/All jobs</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <style>
+    /* Custom styles for sidebar, profile image, and text */
+    .profile-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .on-work {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
+      background-color: gray;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border-bottom: 50px;
+      
+      font-size: 12px;
+    }
+
+    a {
+            text-decoration: none;
+        }
+
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      background-color: rgba(43, 16, 131, 0.945); /* Dark background for sidebar */
+      padding: 20px;
+      color: white; /* Set text color to white */
+      z-index: 10;
+      transition: transform 0.3s ease-in-out;
+    }
+    .sidebar.closed{
+        transform: translateX(-100%);
+    }
+
+    .sidebar ul li {
+      background-color:rgba(43, 16, 131, 0.945);   /* Background color for each item */
+      padding: 17px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li:hover {
+      background-color: rgb(88, 225, 232);/* Lighter background on hover */
+      color: black;
+    }
+
+    .line {
+      border-top: 2px solid #ddd;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .content-area {
+      margin-left: 250px;
+      padding: 20px;
+    }
+
+    /* Ensure content area is visible without sidebar */
+    @media (max-width: 768px) {
+      .content-area {
+        margin-left: 0;
+      }
+    }
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+    }
+    .navbar .navbar-nav .nav-item img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%; 
+      object-fit: cover;
+    }
+    
+    .card-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .card-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .card-left i {
+      font-size: 24px; /* Icon size */
+      margin-right: 15px;
+    }
+
+    .card-left .text-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-left .text-content span {
+      font-size: 14px;
+    }
+
+    /* Save Job text in the top right corner with icon */
+    .save-job {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      
+      color: rgb(8, 8, 8);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .save-job i {
+      margin-right: 5px;
+    }
+
+    /* Image on the right side of the card */
+    .card-right img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      /* border-radius: 50%; */
+    }
+
+    /* Text below each card */
+    .text1 {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Rounded button styling */
+    .btn1{
+      margin-top: 10px;
+      background-color: rgb(187, 177, 177); 
+      color:white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 30px; /* Rounded button */
+      font-size: 14px;
+      cursor: pointer;
+      width: 20%;
+    }
+
+    .btn1:hover {
+      background-color: #8a6c6c;
+    }
+    .line1 {
+      border-top: 3px solid rgb(64, 60, 60);
+      margin-top: 40px;
+      line-height: 2px;
+    }
+
+    
+
+    .content1-item {
+      
+      display: flex;
+      align-items: left;
+    }
+
+    .content1-item i {
+      font-size: 24px;
+      margin-right: 20px;
+      background-color: #f5f3f3db;
+    }
+
+    .content1-item span {
+      font-size: 16px;
+    }
+    .info-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgb(130, 121, 121);
+      background-color: #d8d1c7b0;
+      height: 80%;
+      width: 100%;
+    }
+    .footer .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      width: 48%;
+    }
+    .footer .btn-apply {
+      background-color: blue;
+      color: white;
+    }
+
+    .footer .btn-message {
+      background-color: gray;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <img src="images/leslie.png" width="30px" alt="User Picture">&nbsp;lesile123
+          </a>
+        </li>
+        
+            
+      </ul>
+      <div class="d-flex ">
+        <button class="navbar-toggler" type="button" id="sidebarToggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+  
+
+  <div class="line"></div>
+
+  <!-- Sidebar -->
+  <div class="sidebar   " id="sidebar"style="background-color:rgb(30, 9, 91);">
+    <h4>Hire Me Now !</h4>
+    
+    <!-- Profile Image Container -->
+    <div class="profile-container">
+      <img src="images/leslie.png" class="profile-image  " alt="Profile Image">
+      <div class="on-work py-2   mt-5 ">Open to Work</div>
+    </div>
+    
+    <ul class="list-unstyled mt-3 py-4 ">
+      <a href="homepage1.html"class="text-white fw-bold fs-6"> <li><i class="bi bi-briefcase"></i>&nbsp;&nbsp;All Jobs</li></a>
+      <a href="myapplications.html"class="text-white fw-bold fs-6 "> <li><i class="bi bi-file-earmark-text"></i> &nbsp;&nbsp;My Applications</li></a>
+      <a href="messages1.html"class="text-white fw-bold fs-6"><li><i class="bi bi-chat-right-dots"></i>&nbsp;&nbsp;Messages</li></a>
+      <a href="Add new.html"class="text-white fw-bold fs-6">    <li><i class="bi bi-person-fill"></i>&nbsp;&nbsp; Profile</li>
+        <a href="Settings.html"class="text-white fw-bold fs-6"> <li><i class="bi bi-gear"></i>&nbsp;&nbsp; Settings</li>
+    </ul>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content-area">
+    <div class="container-fluid">
+      <div class="row">
+       
+        <div class="col-md-6 ">
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              
+              <div class="save-job">
+
+                <i class="bi bi-floppy2-fill"></i> Save Job</div>
+              <div class="card-left">
+                <img src="images/icons8-t-32.png" alt="Job Image">
+                <!-- <i class="bi bi-briefcase"></i> -->
+                <div class="text-content">
+                  <span>ASP .net developer</span>
+                  <span>infopark .kollam</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="text1">
+              Developing of programes.
+            </div>
+            <!-- Calicut Rounded Button -->
+            <button class="btn1">Kollam</button>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <!-- Save Job Button with Icon -->
+              <div class="save-job">
+
+                <i class="bi bi-floppy2-fill"></i> Save Job</div>
+              <div class="card-left">
+                <img src="images/icons8-t-32.png" alt="Job Image">
+                <!-- <i class="bi bi-briefcase"></i> -->
+                <div class="text-content">
+                  <span>pubg</span>
+                  <span>Tcs . Calicut</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="text1">
+              pubg mobile.
+            </div>
+            <!-- Calicut Rounded Button -->
+            <button class="btn1">Calicut</button>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <!-- Save Job Button with Icon -->
+              <div class="save-job">
+
+                <i class="bi bi-floppy2-fill"></i> Save Job</div>
+              <div class="card-left">
+                <img src="images/icons8-t-32.png" alt="Job Image">
+                <!-- <i class="bi bi-briefcase"></i> -->
+                <div class="text-content">
+                  <span>Angular</span>
+                  <span>Technopark .calicut</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="text1">
+              Front end.
+            </div>
+            <!-- Calicut Rounded Button -->
+            <button class="btn1">Calicut</button>
+          </div>
+        </div>
+
+        <!-- Large Card in Another Column -->
+        <div class="col-md-6 ">
+          <div class="card mb-4  " style="height: 70vh;" >
+            <!-- <div class="card-header"> -->
+             
+            <!-- </div> -->
+            <!-- </div> -->
+            <div class="text-left pt-2">12 Applicants</div>
+              
+            <div class="position-absolute start-50 translate-middle rounded-circle p-3 text-light bg-dark">
+              <img src="images/arrow-145786_1280.webp"width="30px">
+           </div>
+          <div class="text-right ms-auto">Posted 6 days ago</div>
+            <div class="card-body">
+             <div class="line1"></div>
+            
+          
+            <div class="row ">
+              <div class="col md-6  ms-3 pt-0">
+                <div class="content1-item ">
+                  <i class="bi bi-briefcase" style="color: rgb(232, 227, 220);"></i>
+                  <span>New York</span>
+                </div>
+                <div class="py-1"></div>
+                <div class="content1-item">
+                  <i class="bi bi-geo-alt"style="color: rgb(232, 227, 220);"></i>
+                  <span>Location</span>
+                </div>
+              </div>
+              <div class="col md-6 ">
+                <div class="content1-item">
+                  <i class="bi bi-cash"style="color: rgb(232, 227, 220);"></i>
+                  <span>Salary range</span>
+                </div>
+                <div class="py-1"></div>
+                <div class="content1-item">
+                  <i class="bi bi-binoculars"style="color: rgb(232, 227, 220);"></i>
+                  <span>Onsite/Remote</span>
+                </div>
+              </div>
+              <div class="info-text ">
+                <div>company</div>
+                <div>Job desc</div>
+                <div>Responsibilities</div>
+              </div>
+              
+               
+             </div>
+            <!-- </div> -->
+            <div class="pt-0"></div>
+             
+  
+        </div>
+            <div class="text-left">
+              <h6>Responsibilities</h6>
+              <p>List of job responsibilities goes here</p>
+             </div>
+            <div class="footer py-3" style="display: flex;justify-content: space-between;margin-top: 30px;">
+              <button class="btn btn-apply">Apply Job</button>
+          <button class="btn btn-message">Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  
+  <!-- Bootstrap Icons (for icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="script.js"></script>
+  
+</body>
+</html>
