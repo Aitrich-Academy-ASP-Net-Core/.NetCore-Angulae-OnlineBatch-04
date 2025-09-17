@@ -1,0 +1,82 @@
+<div>
+    <app-filter
+  [all]="getAllBooks()"
+  [free]="getFreeBooks()"
+  [premium]="getPremiumBooks()"
+  (message)="getData($event)">
+    </app-filter>
+</div>
+<div class="row  d-flex   g-4 mt-3 px-2 mb-2 ">
+    <div class="col ml-2" *ngFor="let course of courses">
+      <div class="card card text-center" >
+        <img [src]="course.img" class="card-img-top" alt="..." >
+        <div class="card-body ">
+          <h5 class="card-title">{{course.Name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{course.Author}}</h6>
+          <button type="button " class="btn btn-secondary justify-center justify-content rounded-pill  ">Show</button>        
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="row bg-warning text-center">
+ <h1>{{messagefromchild}}</h1>
+</div>
+  
+   
+   
+   
+    <!-- <div class="col">
+      <div class="card card text-center" style="width: 18rem;">
+        <img src="../../assets/Images/OIP.jpg" class="card-img-top" alt="..." >
+        <div class="card-body ">
+          <h5 class="card-title">Maximos Team</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Database Programmer</h6>
+          <h6>14,000-25,000</h6>
+          <p class="card-text">Hello, this is Bing! I’m the new AI-powered chat mode of Microsoft Bing that can help you quickly get summarized answers and creative inspiration 🙌.</p>
+          <button type="button" class="btn btn-secondary  rounded-pill float-start ">REMOVE</button> 
+          <span class="float-end mt-2">London,England</span>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card text-center" style="width: 18rem;">
+        <img src="../../assets/Images/OIP.jpg" class="card-img-top" alt="..." >
+        <div class="card-body ">
+          <h5 class="card-title">Maximos Team</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Database Programmer</h6>
+          <h6>14,000-25,000</h6>
+          <p class="card-text">Hello, this is Bing! I’m the new AI-powered chat mode of Microsoft Bing that can help you quickly get summarized answers and creative inspiration 🙌.</p>
+          <button type="button" class="btn btn-secondary  rounded-pill float-start ">REMOVE</button> 
+          <span class="float-end mt-2">London,England</span>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card text-center" style="width: 18rem;">
+        <img src="../../assets/Images/OIP.jpg" class="card-img-top" alt="..." >
+        <div class="card-body ">
+          <h5 class="card-title">Maximos Team</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Database Programmer</h6>
+          <h6>14,000-25,000</h6>
+          <p class="card-text">Hello, this is Bing! I’m the new AI-powered chat mode of Microsoft Bing that can help you quickly get summarized answers and creative inspiration 🙌.</p>
+          <button type="button" class="btn btn-secondary  rounded-pill float-start ">REMOVE</button> 
+          <span class="float-end mt-2">London,England</span>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+   -->
+  
+  
+
