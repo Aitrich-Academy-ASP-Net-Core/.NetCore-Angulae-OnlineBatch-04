@@ -1,0 +1,7 @@
+<h2>ngOnChanges Example</h2>
+
+<p>Parent name: {{ studentName }}</p>
+<button (click)="changeName()">Change Name</button>
+
+<!-- Pass parent value to child -->
+<app-child [name]="studentName"></app-child>
