@@ -1,0 +1,14 @@
+<h2>Built-in Pipes Example</h2>
+
+<p>Original Name: {{ name }}</p>
+<p>Uppercase: {{ name | uppercase }}</p>
+<p>Lowercase: {{ name | lowercase }}</p>
+<p>Today (default): {{ today }}</p>
+<p>Today (short): {{ today | date:'shortDate' }}</p>
+<p>Today (full): {{ today | date:'fullDate' }}</p>
+
+<h2>Custom Pipe Example</h2>
+
+<p>Original: {{ 'Angular is very powerful' }}</p>
+<p>Short (10 letters): {{ 'Angular is very powerful' | shortText:10 }}</p>
+<p>Short (5 letters): {{ 'Angular' | shortText:5 }}</p>
