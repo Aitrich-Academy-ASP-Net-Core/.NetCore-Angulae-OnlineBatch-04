@@ -1,0 +1,12 @@
+<h2>Parent component</h2>
+<p>Message we will send to child: {{ parentMessage }}</p>
+
+<!-- Pass data down with [message] -->
+<!-- Listen for child's notify event with (notify) -->
+<app-child
+  [message]="parentMessage"
+  (notify)="onNotify($event)">
+</app-child>
+
+<hr />
+<p>Message received from child: <strong>{{ messageFromChild }}</strong></p>
