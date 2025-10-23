@@ -1,0 +1,25 @@
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+
+  <label>Name:</label><br>
+  <input type="text" formControlName="name">
+  <div *ngIf="studentForm.get('name')?.touched && studentForm.get('name')?.invalid">
+   
+    <small>Name is required.</small>
+  </div>
+  <br>
+
+  <label>Email:</label><br>
+  <input type="email" formControlName="email">
+  
+  <br>
+
+  <label>Age:</label><br>
+  <input type="number" formControlName="age">
+  <div *ngIf="studentForm.get('age')?.touched && studentForm.get('age')?.invalid">
+    <small *ngIf="studentForm.get('age')?.errors?.['min']">Minimum age is 18.</small>
+    <small *ngIf="studentForm.get('age')?.errors?.['max']">Maximum age is 60.</small>
+  </div>
+  <br>
+
+  <button type="submit" [disabled]="studentForm.invalid">Submit</button>
+</form>
