@@ -1,0 +1,22 @@
+<h2>Simple Dynamic Names (FormArray)</h2>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+
+  <!-- link to the FormArray named "names" -->
+  <div formArrayName="names">
+    <div *ngFor="let ctrl of names.controls; let i = index">
+      <!-- for FormControl use [formControlName]="i" -->
+      <input [formControlName]="i" placeholder="Enter name {{ i + 1 }}" />
+      <button type="button" (click)="removeName(i)">Remove</button>
+    </div>
+  </div>
+
+  <div style="margin-top:8px;">
+    <button type="button" (click)="addName()">Add</button>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
+<hr>
+<h4>Current Form Value</h4>
+<pre>{{ form.value | json }}</pre>
