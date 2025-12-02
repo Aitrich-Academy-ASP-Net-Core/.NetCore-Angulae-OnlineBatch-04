@@ -1,0 +1,28 @@
+<h2>Add New Student</h2>
+
+<!-- Simple Form -->
+<form #studentForm="ngForm" (ngSubmit)="addStudent()">
+  <!-- Name Input -->
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required [(ngModel)]="name" name="name">
+  </div>
+
+  <!-- Age Input -->
+  <div>
+    <label for="age">Age:</label>
+    <input type="number" id="age" required [(ngModel)]="age" name="age">
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">Add Student</button>
+</form>
+
+<hr>
+
+<h2>Student List</h2>
+<ul>
+  <li *ngFor="let student of students">
+    {{student.id}} - {{student.name}} ({{student.age}})
+  </li>
+</ul>
