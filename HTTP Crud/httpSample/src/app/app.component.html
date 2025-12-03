@@ -24,5 +24,7 @@
 <ul>
   <li *ngFor="let student of students">
     {{student.id}} - {{student.name}} ({{student.age}})
+     <button (click)="startEdit(student)">Edit</button>
+    <button (click)="deleteStudent(student.id)">Delete</button>
   </li>
 </ul>
